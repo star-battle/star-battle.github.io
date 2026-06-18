@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 4.0 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 4.0 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">Oct 29, 2021</span>
+    <span class="status-badge status-live">Live on Battle.net</span>
+    <span class="tag tag-new-content">new-content</span> <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-ui">ui</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-40---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-40---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 4.0 - Patch Notes</h1>
+<h2 id="general"><a class="anchor" aria-hidden="true" tabindex="-1" href="#general"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>General</h2>
+<ul>
+<li>Introduced basic <code>Ship Restrictions</code><ul>
+<li>Ships are now locked behind win requirements. (Requirements are subject of change).</li>
+<li>Can be disabled via lobby attribute.</li>
+<li>Restrictions don't apply on:<ul>
+<li>Unranked games.</li>
+<li>Tournament participiants who placed 4th or higher.</li>
+<li>On ranked games, if specific team doesn't have at least 3 players with 70 wins, or more on their side.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tweaked <code>Ship Limit</code> so that VoidRay and Carrier share the same pool.</li>
+<li>Implemented new skins for tournaments:<ul>
+<li>Elite Dreadnought (credits to AlleyViper)</li>
+<li>Elite Colossus (credits to Kerberus)</li>
+<li>Elite Overlord</li>
+</ul>
+</li>
+</ul>
+<h2 id="ui"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ui"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>UI</h2>
+<ul>
+<li>Extended standard unit panel with extra informations:<ul>
+<li>Movement speed (and engine upgrade level in case of capital ships).<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel1.png" alt="" /><blockquote>
+<p>While this info was already available in the tooltips, now it's exposed in equal to its importance.</p>
+</blockquote>
+</li>
+<li>Passive life, energy and shield regeneration (in tooltips).<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel2.png" alt="" /><blockquote>
+<p>1st value = amount of vital regenerated per in-game second<br />2nd value = delay in in-game seconds needed for passive regen to kick in (aka <em>out of combat time</em>).</p>
+</blockquote>
+</li>
+<li>On-Board Fighters amount (in tooltips).<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel3.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="ships--balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ships--balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Ships &amp; Balance</h2>
+<ul>
+<li>Observer, Spotter, Tempest (Carrier's), Corruptor (Guardian's), Brood Lord (Guardian's) are now considered to be <code>Summoned</code> units.<blockquote>
+<p>This is done for better classification - which current &amp; future abilities/buffs may affect these units.</p>
+</blockquote>
+</li>
+<li>Towers can now detect cloaked units in range of 9.3. (There's still a significant gap between them). Range of detection will be shown when selecting a tower, in addition to the weapon range.</li>
+<li>Tweaked heal ray of the base:<ul>
+<li>Amount of HP being restored will now vary, relatively to how signficiant hull damage the ship has taken.<blockquote>
+<p>The formula is rougly:<br /><code>hull_restored = clamp(x * heal_ratio, min, max) * base_value</code></p>
+<ul>
+<li><code>x</code> = hull dmg factor of the ship (as in <code>current_hull</code> divided by <code>max_hull</code>)</li>
+<li><code>base_value</code> = 160</li>
+<li><code>heal_ratio</code> = 2.0</li>
+<li><code>min</code> = 0.5</li>
+<li><code>max</code> = 1.1</li>
+</ul>
+<hr />
+<p>For reference:</p>
+<ul>
+<li><code>SB zedu</code>: range 5.0 - 150 per second - x1 beam.</li>
+<li><code>SB v3.1</code>: range 5.5 - 175 per second - x1 beam.</li>
+<li><code>SBO/SBX</code>: range 8.0 - 150 per second - x2 beam.</li>
+</ul>
+</blockquote>
+</li>
+<li>Amount of HP being restored can be seen in the tooltip.<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/healray1.png" alt="" /></li>
+<li>Added second ray:<ul>
+<li>1st ray will always prioritize most damaged ships - no change.</li>
+<li>2nd ray will ignore the damage aspect, and prioritize targets with lowest amount of <strong>maximum</strong> hull (not current). Additionally, it can re-target at any time. In situations where some other ship with lower total hull gets in its range, even though initial target hasn't been fully healed.</li>
+<li>Both rays restore the HP using same formula.<blockquote>
+<p>This approach should add a little more dynamic to the game, while still having balance at a competitve level in mind - ships that overextend will be punished, without blocking entire team.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="unit-management"><a class="anchor" aria-hidden="true" tabindex="-1" href="#unit-management"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Unit management</h3>
+<ul>
+<li>Added second control group for spawned units. Second control group is already in use by Guardian. Spawned Corruptors go to the first group, spawned Brood Lords to the second group.</li>
+<li>Added formation movement - aimed at minion ships (currently Guardian specifically). It's enabled as default - it doesn't conflict with anything (such as OBF), and can potentially help when controlling multiple capital ships under the same selection. This feature <a href="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/options-formation-movement.png" rel="noopener noreferrer">can be disabled in options</a>.<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/formation1.png" alt="" /></li>
+</ul>
+<h3 id="arbiter"><a class="anchor" aria-hidden="true" tabindex="-1" href="#arbiter"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Arbiter</h3>
+<ul>
+<li>Added minimap icon for Observer.</li>
+<li>Boost:<ul>
+<li>Can no longer be used on any allied unit. It's now limited to: <code>Massive</code>, <code>Summoned</code>.<blockquote>
+<p>Ability to use boost on structures was introduced mainly with intention of boosting heal ray on the base - to speedup regeneration of the ships. However, that wasn't working at all. In regards to towers - the use case here was limited to DPS or regen. Yet, regen ratios on towers are so low, that it likely wasn't worth it any situation - boosting ships to increase their life, shield, energy, cooldown regen is just always better, as ships strength scales better than towers as game progresses.</p>
+<p>Additionally after quick re-evaluation of the concept of support abilities synergizing not only with capital ships, but also with static defense, we've concluded that's not something worth exploring right now. Thus we take a step back, before it's gone too far. (It's already enough that Arbiter can cloak the towers).</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="battlecruiser"><a class="anchor" aria-hidden="true" tabindex="-1" href="#battlecruiser"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Battlecruiser</h3>
+<ul>
+<li>Adjusted mover of the nuke:<ul>
+<li>During first ~4s its move speed will be slightly higher, 2.1 instead of 1.9 as previously (1st motion phase).</li>
+<li>After that it'll slow down to 1.8 (2nd motion phase).</li>
+<li>If it gets in close proximity of the target, it'll be able to accelerate to 2.0 (3rd motion phase).</li>
+</ul>
+</li>
+</ul>
+<h3 id="frigate"><a class="anchor" aria-hidden="true" tabindex="-1" href="#frigate"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Frigate</h3>
+<ul>
+<li>Ripwave Warheads: changed model to visually differentiate them from Backlash Rockets.</li>
+<li>Afterburner: visual effect will scale in relation to level of Frigate engines.</li>
+</ul>
+<h3 id="raven"><a class="anchor" aria-hidden="true" tabindex="-1" href="#raven"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Raven</h3>
+<ul>
+<li><p>Analyze Weakness <strong>[new active ability]</strong>:</p>
+<ul>
+<li>Allows Raven to lock on the enemy target to reveal its weakness - rendering it more vulnerable to ranged weapons and targeted abilities of its allies</li>
+<li>Additionally target remains revealed, regardless of the line of sight.</li>
+<li>Effect lasts as long as Raven remains locked onto the target.</li>
+<li>Maintaining the lock drains energy from Raven.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/raven-analyze.png" alt="" /></p>
+</li>
+</ul>
+<h3 id="guardian"><a class="anchor" aria-hidden="true" tabindex="-1" href="#guardian"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Guardian</h3>
+<ul>
+<li>Corruptors:<ul>
+<li>Energy cost of spawning decreased from 50 to 40.</li>
+<li>Time life increased from 45s to 60s.</li>
+<li>Turn speed increased from 180°/s to 720°/s.</li>
+<li>Acceleration tripled (full speed will be reached less than 2s instead of 7s+).</li>
+<li>Increased separation radius of corruptors and their cocoons by 50%.</li>
+<li>Improved automatic target acquisition:<ul>
+<li>Won't priotize enemy OBF in favor of anything else.</li>
+<li>Will prioritize targets that are close, or closer to their previous target.</li>
+<li>Will actively scan for targets past their weapon range.</li>
+<li>Less likely to acquire the same target, and shot multiple times at a target that can die from one shot.<blockquote>
+<p>Although it'll keep happening in some degree - especially when all corruptors are clumped and ready to shot. However spreading them just a tiny bit will help in the long run, once weapon cooldowns will desync between corruptors. As in such case they will attempt to acquire a target, which isn't currently acquired by another corruptor, if that fails they'll favor distance from position to where their initial target was acquired for the first time (not where it has died).</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Upgrade:<ul>
+<li>Armor reduced from 1 to 0.5 per level.</li>
+<li>Life amount increased from 5 to 10 per level.</li>
+<li>Life regeneration ratio increased from 0.3 to 0.8 per level.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Added ability to rally cocoons of Brood Lords and Corruptors while they morph.</li>
+<li>Wild Mutation:<ul>
+<li>In addition to the increased movespeed, the effect will also multiply acceleration ratios, increasing it by:<ul>
+<li>+20% on Guardian</li>
+<li>+100% on Guardian's minions</li>
+</ul>
+</li>
+<li>It'll now also apply to allied minions - spawned by another Guardian.</li>
+</ul>
+</li>
+<li>Corrosive Acid:<ul>
+<li>Can no longer be used on any enemy unit. It's now limited to: <code>Massive</code>, <code>Structure</code>, <code>Summoned</code></li>
+</ul>
+</li>
+<li>Decay:<ul>
+<li>Percentage damage reduction from each stack is now additive rather than multiplicative (minor buff).</li>
+<li>Added visual effect to indicate the stack count.</li>
+<li>Clarified description and locked it behind a Corrosive Acid requirements.</li>
+</ul>
+</li>
+<li>Fixed <strong>visual animation</strong> of Guardian's movement. Where its body would wiggle to the sides, what was especially apparent during moonwalking.</li>
+</ul>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li>Default game result screen will no longer appear. However, game will be flagged as concluded as soon as rating points are granted. What ensures its result will be reported to Battle.net, and appear correctly in player's match history.</li>
+<li>Fixed another bunch of ability tooltips with wrong/outdated informations. (Hopefully one more patch, and it'll all be correct).</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+</html>

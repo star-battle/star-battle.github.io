@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 2.3 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 2.3 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">Aug 28, 2021</span>
+    <span class="status-badge status-live">Live on Battle.net</span>
+    <span class="tag tag-new-content">new-content</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-23---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-23---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 2.3 - Patch Notes</h1>
+<h2 id="general"><a class="anchor" aria-hidden="true" tabindex="-1" href="#general"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>General</h2>
+<ul>
+<li>Introduced minimap icons of capital ships known from Omega (credits to Graveyard and Suge!). However, these icons will only be visible to team, unlike in the Omega. Enemy ships will remain to be shown as unidentifiable squares.</li>
+<li>Enlarged message area for notifications - primarily for kill announcments. Also improved the way announcments are presented - in addition to player's names, the icon of their capital ships will also be shown.<br /><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/notification-kill.png" alt="" /></li>
+<li><code>Install</code> menu on capital ships will now be <em>sticky</em> - meaning it won't close automatically after ability is acquired. And will be consistent with the way <code>Upgrade</code> menu operates.<blockquote>
+<p>This change <em>may</em> require some time to get used to, and wasn't exactly planned. However that inconsitency has shown to be a problem during implementation of ability callouts, and had to be either worked-around, or changed.</p>
+</blockquote>
+</li>
+<li><strong>[Experimental]</strong> Increased <code>Air Formation Diameter</code> from 8 to 13 - units are now more likely to maintain formation.<blockquote>
+<p>How likely, mostly depends on whether all selected units are within defined diameter. As well as on distance from the <em>central</em> position of selected units, in relation to the new order. Basically moving over <em>long</em> distance maintains formation, moving <em>short</em> distance not so much, but that's desired to provide a way of clumping units.</p>
+<p>This change was initially aimed at Broodlord + Corruptors combo - to make them easier to micro.
+However, <strong>it effects all units</strong> - regardless of who controlls them, and how (that includes OBF). It also affects AI fighters, and everything that moves as a group - specifically, when the same order is issued to a group of units, thus Carrier's Tempests are unaffected for instance.</p>
+<p>As noted, this is experimental change due to the fact it also affects AI fighters. Further testing is required to determine whether it'll factor positively, or negatively. In case of the latter, we'll use another method, that will work on per-player basis.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="callouts"><a class="anchor" aria-hidden="true" tabindex="-1" href="#callouts"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Callouts</h2>
+<p>Introduced callouts feature, which allows to <em>ping</em> certain UI elements, as a way of reporting various events to the team - hence "callouts". It's inspired by Heroes of the Storm.</p>
+<p>Currently supported UI elements:</p>
+<ul>
+<li>Buttons of Abilities, on the Command Panel<ul>
+<li>To inform about acquired abilitities, and whether they're available to use at a given time.</li>
+<li>To inform about cooldowns, and their progress.</li>
+<li>To inform about current target of an ability, or the intentions to use it (when ability is casted while being out of range).</li>
+</ul>
+</li>
+<li>Mineral label/icon, on the Resources Panel<ul>
+<li>To report amount of unspent/available money.</li>
+</ul>
+</li>
+<li>Unit's wireframe / vital labels, on the Info Panel:<ul>
+<li>To call for help when heavily/critically damaged/injured.</li>
+<li>To report status of vitals (life, shields, energy), before or during the engagement.</li>
+</ul>
+</li>
+</ul>
+<p>etc.</p>
+<h3 id="how-it-works"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-works"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it works</h3>
+<p>To trigger a ping, use <code>MiddleMouseButton</code> on any of the above elements, and everything relevant that's represented by the UI element, will be reported in team's chat.</p>
+<p><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/ping-abil1.png" alt="" />
+<img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/ping-abil2.png" alt="" /></p>
+<p><strong>Notice</strong>: <code>MiddleMouseButton</code> can be changed in the Hotkeys menu in SC2 options to suit player's preferences.</p>
+<blockquote>
+<p>Why not <code>Alt+LeftMouseButton</code>?</p>
+<p><em>Technical limitations</em>.. it's <em>likely possible</em> to make it work with <code>Alt+LMB</code>, but it migt have some unwanted side effects. Furthermore that specific combinations of keys (involving <code>Alt</code> as a left click modifier) is simply difficult to "catch", and for now it was deemed as something not worth the time needed for experimenting. It'll likely be revisited in the future, though.</p>
+</blockquote>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li>Variant <code>Balanced</code>:<ul>
+<li>Fixed computer players from <code>Team 2</code> aka <code>Optional slots</code> being taken as game participants (they'd get the capital ship), if there was less than 12 human players in the lobby, and <code>TrustGate</code> was disabled.</li>
+</ul>
+</li>
+<li>Variant <code>Premade / IH</code>:<ul>
+<li>Fixed inability to add more than one observer - number of player slots has been reduced from 15 to 12, what leaves room for 4 observers once again.</li>
+<li>Fixed <code>FFA</code> team setup, to include all players and force autobalance as it was previously.</li>
+</ul>
+</li>
+<li>Fixed minimap icons not respecting <code>Elite Colors</code>.</li>
+<li>Fixed custom console skins to be properly supressed.<blockquote>
+<p>This required introducing custom race definition - only for the purpose of maintaining consistent UI interface, that's immune to built-in races, or player selected console skins.</p>
+<p>Thus these changes also carry a bit further - to SC2 Menus, or Observer interface. If something has been changed for worse, please report it.</p>
+</blockquote>
+</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+</html>

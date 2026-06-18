@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 2.0 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 2.0 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">Aug 15, 2021</span>
+    <span class="status-badge status-live">Live on Battle.net</span>
+    <span class="tag tag-new-content">new-content</span> <span class="tag tag-ui">ui</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-20---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-20---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 2.0 - Patch Notes</h1>
+<p>This update focuses on improving adoption of the game on NA region. It doesn't feature any balance changes.</p>
+<blockquote>
+<p><strong>Notice:</strong> Due to possibility of bugs this version hasn't been published on EU region yet - it's currently only available on NA. It'll be deployed on EU in a follow up release, likely the next one - 2.1.</p>
+</blockquote>
+<h2 id="general"><a class="anchor" aria-hidden="true" tabindex="-1" href="#general"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>General</h2>
+<ul>
+<li>Extended lobby to 15 players slots - as an extra tool for hosts to mitigate smurf/trolling issue. </li>
+<li>Introduced option allowing to load different Gameplay Data from the same map - <a href="#1-gameplay-data-variants">learn more</a>.</li>
+<li>Introduced Omega-like variant of the game, called <code>Omega-SBR</code> - <a href="#2-variant-omega">learn more</a>.</li>
+<li>Introduced TrustGate system to keep smurfs in check - <a href="#3-trustgate">learn more</a>.</li>
+<li>Slightly improved various FX effects, such as:<ul>
+<li>Torpedo marker - greatly reduced its intesivity.</li>
+<li>Needle spines on Gauardian - will now use projectiles colored in green, to make them easier to notice.</li>
+<li>Protoss towers and its projectiles.</li>
+<li>(.. and some other minor things that aren't worth mentioning).</li>
+</ul>
+</li>
+<li>Ported tournaments rewards from latest Omega version, which should reflect all past community tournaments.</li>
+</ul>
+<h2 id="ui"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ui"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>UI</h2>
+<ul>
+<li>This patch sets a first step towards revamping various UI panels - such as ship selection, console panel, score boards etc. In this iteration we've avoided changing positions of UI elements, and only improved clarity by changing fonts and color palette.</li>
+<li>Removed useless elements such as army hotkey and hero panel.</li>
+</ul>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li>Fixed upgrade counter - where it'd start from 100 and count down for every acquired level. It'll now count up beginning from 0.</li>
+<li>Updated a lot of descriptions of ship's upgrades to ensure they reflect the reality - if values have changed on tooltips, it means these were out of date (again, no balance changes in this patch). <br />Furthermore improved formatting of tooltips, so they're easier to grasp.<br />Notice: This is an ongoing task - not all descriptions have been verified yet.</li>
+</ul>
+<hr />
+<h2 id="details"><a class="anchor" aria-hidden="true" tabindex="-1" href="#details"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Details</h2>
+<h3 id="1-gameplay-data-variants"><a class="anchor" aria-hidden="true" tabindex="-1" href="#1-gameplay-data-variants"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. Gameplay Data Variants</h3>
+<p><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.0/GameplayData.png" alt="" /></p>
+<p>This feature was inspired by the ongoing issue - where since deparartue of zedu, each region had its own SB version.</p>
+<p>We've based SBR on a version that was closest to the original, with better balance around competitive scene. Which is SB by EtaC - known as <code>SB3.1</code> on EU, and <code>SB3.5</code> on NA.</p>
+<p>However, that version never took off on NA. Which had it's own equivalents - first SBX, then Omega which was based on SBX. Unfortunately these equivalents have devolved significantly from the original.</p>
+<p>Due to that reason we've decided to introduce a feature called Gameplay Data Variant, that allows us to load different gameplay modes, within the same map. Currently this feature is limited to:</p>
+<ul>
+<li>Classic - based on SB3.1/SB3.5 (nothing new).</li>
+<li>Omega-SBR - inspired by some of the changes introduced in SBX/Omega.</li>
+</ul>
+<p>In the future we'll likely use this option in other ways, either to conduct some experimental balance testing (like beta testing of new ships) or anything else, that might be made purely for fun - TBD.</p>
+<h3 id="2-variant-omega"><a class="anchor" aria-hidden="true" tabindex="-1" href="#2-variant-omega"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. Variant: Omega</h3>
+<h4 id="balance--gameplay"><a class="anchor" aria-hidden="true" tabindex="-1" href="#balance--gameplay"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Balance / Gameplay</h4>
+<p>We've identified the key differences between SB3.1 and Omega that affect the pace of the gameplay, and have incorporated them to our <code>Omega-SBR</code> variant. These include:</p>
+<ul>
+<li>Mineral gain from killing AI fighters (creep)</li>
+<li>Starting speed of the ships</li>
+<li>Additional starting energy points, that encourge spell openings.</li>
+<li>Starting hull armor on towers, life &amp; armor regeneration speed, detection.</li>
+<li>Double heal ray on the bases with extended range.</li>
+<li>Minimap icons of the ships. With extra improvement - we've made them compatible with Arbiter's Phantoms.</li>
+</ul>
+<p>In terms of abilities, differences still remain - but we believe these differences will factor positively.</p>
+<p>However as the match progresses - the game will evolve more towards gameplay known from 3.1/3.5. Due to the fact that we've only changed the starting values. Most importantly, with every upgrade of the base, towers will gain on strength (armor + shields), and money gained from killing AI fighters will keep raising. See below for exact values.</p>
+<h4 id="gameplay-differences"><a class="anchor" aria-hidden="true" tabindex="-1" href="#gameplay-differences"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Gameplay differences</h4>
+<h5 id="major-differences-between-31-and-omega-in-relation-to-original"><a class="anchor" aria-hidden="true" tabindex="-1" href="#major-differences-between-31-and-omega-in-relation-to-original"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Major differences between 3.1 and Omega, in relation to original</h5>
+<p>Omega:</p>
+<ul>
+<li>Capital ships are faster by +0.1 <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Capital ships start with +25 energy or +75 in case of tanks <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Light fighters are faster by 5% (not only you arrive faster to the creep, but creep arrives faster to you) <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Light fighters (Phoenix/Viking) = 6 minerals <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Siege fighters (Tempest/SkyFury) = 15 minerals <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Base has two heal rays with range increased from 5 to 8 <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Upgrade of the base does not affect the mineral gain from killing creep.</li>
+</ul>
+<p>SB3.1/SB3.5:</p>
+<ul>
+<li>Capital ships start with the same speed as in the original</li>
+<li>Capital ships start with the same energy pool as in the original, except tanks which start at 200.</li>
+<li>Light fighters have them same speed as in the original</li>
+<li>Light fighters (Phoenix/Viking) = 5 minerals (same as in the original)</li>
+<li>Siege fighters (Tempest/SkyFury) = 10 minerals (same as in the original)</li>
+<li>Base has one heal ray with range increased from 5 to 5.5, and it restores 175 life/shield per in-game second (10% more than in the original).</li>
+<li>Each upgrade of the base grants: +1 mineral for light fighters, +3 for heavy fighters, +4 for siege fighters - the further you're in the game, the more money you get (exclusive to 3.1, not present in the original). <strong>(incorporated into Omega-SBR)</strong></li>
+<li>Towers: initial hull &amp; shield armor is slightly higher, additionally towers regain life and shields faster when out of combat.</li>
+<li>Towers: each upgrade of the base increases the armor further. Additionally towers also gain extra shield points. <strong>(incorporated into Omega-SBR)</strong></li>
+</ul>
+<h5 id="differences-between-31-and-omega-sbr-in-terms-of-ships-abilities"><a class="anchor" aria-hidden="true" tabindex="-1" href="#differences-between-31-and-omega-sbr-in-terms-of-ships-abilities"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Differences between 3.1 and Omega-SBR in terms of ship's abilities</h5>
+<p>Rough overview:</p>
+<ul>
+<li>General: Abilities damages do not scale with energy upgrades.</li>
+<li>Battlecruiser: Nuke applies lockdown instead of blackout</li>
+<li>Frigate: Ripwave warheads doesn't bypass FF/PDDs</li>
+<li>Dreadnought: Gatlings scale better</li>
+<li>Raven: Blackout range reduced, enhanced systems increase EMP radius, not energy drain</li>
+<li>Carrier: Scouts are viable</li>
+<li>Voidray: Nova buid (bruiser/leech) viable, purify removes defensive effects</li>
+<li>Colossus: Hardened shields and shield recharge improved</li>
+<li>Leviathan: adaptative plating→animosity, up to 40% armor and attack speed</li>
+<li>Guardian: Darkswarm no longer heals (for now), battleguardian has a new passive</li>
+<li>Overlord: contaminate improved</li>
+</ul>
+<h4 id="visuals"><a class="anchor" aria-hidden="true" tabindex="-1" href="#visuals"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Visuals</h4>
+<p>Omega/SBX has not only changed gameplay - it also changed a variety of visual effects, leading into direction that doesn't align with our vision for this project.</p>
+<p>SB was once known as a battle between warfleets of Terran (red) and Protoss (blue). Yet SBX/Omega have almost completely ditched this part of the game. Instead there's the "red team" - as it is now called, with the base building being a Taldarim Mothership.. that happens to send out Terran fighters into the battle? Furthermore towers protecting base have been turned into some advanced protoss units, throwing fireballs at the enemies? That's neither Terran nor Protoss weaponry.</p>
+<p>The "blue team" has similar story, instead of Protoss Mothership there's some weird construct (<a href="https://starcraft.fandom.com/wiki/Cybros" rel="noopener noreferrer">in SC2 lore known as home warship of the Purifiers</a>), with glitched animations. Same could be said about towers that accompany it - some ancient structures, which look like they don't belong to the space..</p>
+<p>In a game like this lore isn't particularly important, but as it stands that version of SB not only ditched lore, but also degradated aesthetics and by that clarity of what's actually going in game. Every visual change has been exeggerated, to the point where Frigate and BC instead of missiles use red lasers/energy balls as its ammo. This makes no sense regardless of the criterium - both lore &amp; visual clarity have been impacted negatively.</p>
+<p>We've called game Reloaded because it's something we're devoted to follow - loading back to original, and building on top of well established foundations.</p>
+<p>Regardless, we'd like to acknowledge authors of SBX and Omega for their efforts. And despite of our vision of the game not aligning, we did find some inspirations and features that may have find its way into SBR.</p>
+<p>First addition are minimap icons of the ships. Thanks to Graveyard and Suge for making it!</p>
+<h3 id="3-trustgate"><a class="anchor" aria-hidden="true" tabindex="-1" href="#3-trustgate"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. TrustGate</h3>
+<p><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.0/TrustGate.jpg" alt="" /></p>
+<p>TrustGate is autonomous anti-smurf system. That will attempt to keep obvious and semi-obvious players hiding behind newly created game profiles out of the game. Unfortunately, due to technical limitations this cannot be used to protect lobbies - that's why there are 15 slots to accompany it, even though the game won't allow more than 12 players to participate.</p>
+<p>It can be activated by the player hosting the lobby. There are 3 choices:</p>
+<ul>
+<li><code>Auto</code> (default)</li>
+<li><code>Enabled</code></li>
+<li><code>Disabled</code></li>
+</ul>
+<p>As default (<code>Auto</code>) it'll be enabled for games hosted on NA region (unless lobby is started with less than 10 players), and disabled on EU.</p>
+<h4 id="how-does-it-work"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-does-it-work"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How does it work</h4>
+<p>System will be launched right after loading screen, and will verify all connected players - determine their trust factor, by taking into consideration:</p>
+<ul>
+<li>Any purchases made on the account / access to campaigns (currently limited only to campaigns, in future it'll also check for <em>any</em> purchase made on the account - coop commander, voice pack, anything).</li>
+<li>Game profile age - when account was registered).</li>
+<li>SC2 profile score - achievements / terran level / coop level etc. - anything that takes actual play-time to acquire.</li>
+<li>Participations in past SB tournaments.</li>
+</ul>
+<p>Using above data system will determine trust factor of a player. If it'll be below certain threshold, such player will be stopped from entering the game - it won't get the ship, nor will be assigned to any of the teams.</p>
+<p>However, we're aware that even with 15 slots in lobby, half of the connected players may be the same person or a group. Thus this still requires some work from the host. Basically the better job the host will do at ensuring the number of smurfs in lobby is low, the more players will get to play. 15 players lobby with 5 smurfs will end as 5v5.</p>
+<h4 id="its-not-bulletproof---at-least-not-yet"><a class="anchor" aria-hidden="true" tabindex="-1" href="#its-not-bulletproof---at-least-not-yet"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>It's not bulletproof - at least not yet</h4>
+<p>It's more than likely that system will require some tweaking, and testing for possible weak points. Also, it has also small potential of hurting legitimate players with new accounts. So depending on the course of actions, we're considering following improvement:</p>
+<ul>
+<li>In case where trust factor of a certain player will be slightly above the threshold, then system will announce that player is not eligible to join the match, unless a player with high trust factor chooses to vouch for them. Basically, it'd be opposite of votekick. And it'd take place before ships are spawned. Because when you have to votekick when game is already going, then whole game experience is ruined.</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 1.0 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 1.0 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">Aug 1, 2021</span>
+    <span class="status-badge status-live">Live on Battle.net</span>
+    <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-10---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-10---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 1.0 - Patch Notes</h1>
+<blockquote>
+<p><strong>Developer comment:</strong> This patch aims at fixing major known bugs, aswell as adjusting potency of ships and builds that should dominate in specific domains.</p>
+</blockquote>
+<h2 id="general"><a class="anchor" aria-hidden="true" tabindex="-1" href="#general"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>General</h2>
+<ul>
+<li>Fixed a visual issue affecting Viking animations.</li>
+<li>Fixed minor hotkey conflicts on Colossus and Gaurdian.</li>
+<li>Restored missing graphics in profile/achievements menus - where it'd display purple backgrounds instead.</li>
+<li>Introduced advanced ping panel. (Available action set will be tailored better in future patches).</li>
+<li>Changed default game variant to "Balanced", which is essentially what was previously known as FFA. The difference is only on the lobby side, where list of players is now more compact - everyone is grouped under Team 1. (This also fixes annoying issue, where chat would default to <code>all</code> instead of <code>allies</code> in FFA setup).</li>
+<li>Restored some advanced lobby attributes to the "Custom" game variant, such as ability to choose map (loading custom map from bank file might now work again, but hasn't been tested).</li>
+<li>It's now possible to access upgrade &amp; installation command cards while not at base.</li>
+</ul>
+<h2 id="balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Balance</h2>
+<h3 id="battlecruiser"><a class="anchor" aria-hidden="true" tabindex="-1" href="#battlecruiser"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Battlecruiser</h3>
+<ul>
+<li>Fixed lockdown to no longer cause its targets to stop abruptly, if connected with a ship that attempted to cast an ability.</li>
+<li>Nuke will now consistently lockdown ships in the area, regardless of whether it has connected with initial target.</li>
+<li>Yamato: reduction of cast time granted by upgrade reduced from 0.667s to 0.5s per each level.</li>
+<li>Fixed visual effect of defensive shield, that would <em>sometimes</em> persist throughout entire game.</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Battlecruiser is an early game ship, it got non-scaling abilities that by their mechanics are already working great whether it be 10 minutes or 100 minutes into the game.</p>
+<p>In sb3.1, defensive shield was buffed to enhance shields and hull regeneration while active, and yamato was also considerably buffed. In lategame situation still, it is a bit overwhelming.</p>
+<p>We're going to keep this unique defensive asset since, they are compensated by the fact that terran shields regardless of regen scale poorly as game goes on.</p>
+</blockquote>
+<h3 id="frigate"><a class="anchor" aria-hidden="true" tabindex="-1" href="#frigate"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Frigate</h3>
+<ul>
+<li>Mines:<ul>
+<li>Increased placement separation by <em>roughly</em> 50%.</li>
+<li>Increased explosion radius from 1.75 to 2.20</li>
+<li>Increased bonus damage vs. Massive from 400 to 500</li>
+<li>Increased auto cast range from 1.5 to 1.85</li>
+<li>Increased sight range from 3.0 to 3.5</li>
+<li>Upgrade: Increased bonus damage vs. Massive from 30 to 35 per level.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Frigate's mines are too easily counterable. No matter how much you spend on this upgrade path, it takes one insightful player or one lucky detection to figure mines out, and then mines become virtually useless.</p>
+<p>This change roughly keeps the same amount of damage dealt for a ship that would take a mined path, except one detection may not detect the entire minefield. A new detection feature should make them more viable aswell.</p>
+</blockquote>
+<h3 id="dreadnought"><a class="anchor" aria-hidden="true" tabindex="-1" href="#dreadnought"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dreadnought</h3>
+<ul>
+<li>Cover will no longer interact with Torpedo in mysterious ways - where it wouldn't connect with the target every other time.</li>
+<li>Increased upgrade cost of Protective Field from 150 to 175.</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Dreadnought is the early game tank, and it has a slightly too easy time transitionning towards mid/lategame where it still has a good impact on the game. This change should help softening it a little.</p>
+</blockquote>
+<h3 id="raven"><a class="anchor" aria-hidden="true" tabindex="-1" href="#raven"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Raven</h3>
+<ul>
+<li>Fixed blackout to no longer cause its targets to stop abruptly, if connected with a ship that attempted to cast an ability.</li>
+<li>EMP:<ul>
+<li>Increased cooldown from 10s to 15s.</li>
+<li>Enhanced systems upgrade will now reduce the cooldown by 5s.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Raven , despite it being the most early game of the two supports, EMP is a little too forgiving and too rewarding when it comes to big team fights. This change should give a little larger window for enemies to play around.</p>
+</blockquote>
+<h3 id="carrier"><a class="anchor" aria-hidden="true" tabindex="-1" href="#carrier"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Carrier</h3>
+<ul>
+<li>Hull armor reduced from 2 to 1.</li>
+<li>Shield armor reduced from 3 to 2.</li>
+<li>Particle disruptors attack speed increased by 10% (period changed from 0.22 to 0.2).</li>
+<li>Scouts:<ul>
+<li>Shield armor increased from 0 to 1.</li>
+<li>Shield armor upgrade scaling reduced from 0.7 to 0.6.</li>
+</ul>
+</li>
+<li>Tempests:<ul>
+<li>Weapon range increased from 13 to 14.</li>
+<li>Weapon damage reduced from 40 (+40 massive) to 30 (+30 massive).</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Carrier, like most ships targetted by base armor reductions, could tank a little too thoughtlessly for its interceptors. It should now be more cautious as to when to protect its interceptors and when to keep its integrity.</p>
+<p>The scout change is aimed at making them a viable opening, coming along with a small nerf when it comes to situation where enemies have little answers to them.
+Tempests are a little underwhelming compared to other carrier's assets. Giving them +1 range should give them a longer lifespan to dish out some more damage.</p>
+</blockquote>
+<h3 id="colossus"><a class="anchor" aria-hidden="true" tabindex="-1" href="#colossus"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Colossus</h3>
+<ul>
+<li>Shield armor reduced from from 5 to 4.</li>
+<li>Shield Recharge: reduced restoration ratio of shields from 18% to 16%.</li>
+<li>Guardian Shield: reduced damage reduction from 40% to 33%.</li>
+</ul>
+<h3 id="voidray"><a class="anchor" aria-hidden="true" tabindex="-1" href="#voidray"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Voidray</h3>
+<ul>
+<li>Lockdown and Vortex will now properly shutdown personal cloaking field.</li>
+<li>Shield armor reduced from from 4 to 3.</li>
+<li>Shield regeneration ratio reduced from 7 to 6 per second.</li>
+<li>Energy nova:<ul>
+<li>Damage reduced from 30 (+210 massive) to 30 (+180 massive).</li>
+<li>Phase Disruptors upgrade: Increased damage of Energy Nova from 4 (+7 massive) to 4 (+10 massive) per level.</li>
+</ul>
+</li>
+<li>Purify:<ul>
+<li>Removed bonus to shield armor provided to the VR.</li>
+<li>Reduction of target's weapon range reduced from 3 to 2.</li>
+<li>Fixed an issue where the buff granting a chance to evade enemy abilities would always last 15s, miss-matching the duration of Purify (10s or 12.5s after the upgrade).</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Voidray's basic stats were a little too high for a glass cannon, compared to other ships. On top of that, nova has always been a threat regardless of how much money players invested in this build.</p>
+<p>This change aims at making it less threatening when it is not its primary damage source, and also helps it on the long run if it commits to this build, especially against all the possible energy denial threats.</p>
+<p>Purify was giving an unnecessary amount of buffs to voidray, so we removed some of them.</p>
+</blockquote>
+<h3 id="arbiter"><a class="anchor" aria-hidden="true" tabindex="-1" href="#arbiter"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Arbiter</h3>
+<ul>
+<li>Shield armor reduced from 4 to 3.</li>
+<li>Khaydarin Core:<ul>
+<li>Removed bonus damage provided to Feedback.</li>
+<li>[Tooltip] Removed incorrect info mentioning energy cost reduction granted to activation of Cloaking Field - it has never been the case.</li>
+<li>[Tooltip] Added missing info about bonus damage provided to Electromagnetic Storm.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Arbiter's weakness is earlygame, or at least should be. Yet it counters early game compositions on its own fairly easily and its abilities are also too polyvalent. We're starting by nerfing feedback damage so that when one uses feedback, it is actually more for the energy denial rather than the damage.</p>
+</blockquote>
+<h3 id="leviathan"><a class="anchor" aria-hidden="true" tabindex="-1" href="#leviathan"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Leviathan</h3>
+<ul>
+<li>Hull armor reduced from 6 to 5.</li>
+<li>Frenzy: Reduction of incoming damage reduced from 33% to 25%.</li>
+<li>Aniomosity:<ul>
+<li>Maximum bonus to armor increased from 40% to 60%.</li>
+<li>Maximum bonus to attack speed reduced from 40% to 20%.</li>
+<li>Removed reduction of incoming damage. Tooltip incorrectly stated that reduction can go up to 10%, while effect provided mere 2.5% as soon as levi went below 80% HP, and it didn't scale at all.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Leviathan is probably the strongest ship in v3.1 and Reloaded. We are not going to touch too much its early game and base stats since it could easily make it underwhelming. Still, once it has everything it needs, it is a hard task to shut it down. </p>
+<p>These changes will hopefully make fights less volatile and counterplays possible not only after frenzy, but during it.</p>
+</blockquote>
+<h3 id="guardian"><a class="anchor" aria-hidden="true" tabindex="-1" href="#guardian"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Guardian</h3>
+<ul>
+<li>Parasite: cast range increased from 9 to 10.</li>
+<li>Decay:<ul>
+<li>[Tooltip] Updated description of the Decay upgrade, and its buff to reflect all effects provided by this ability.</li>
+<li>[Tooltip] Updated description of the Carapace Armor, mentioning that it also increases bonus armor gained from Decay.</li>
+<li>Damage reduction from incoming attacks reduced 4% to 3% per each stack.</li>
+<li>Carapace Armor: bonus armor provided to each stack of Decay reduced from 0.08 to 0.07 per level.</li>
+</ul>
+</li>
+<li>Broodlings:<ul>
+<li>[UI] Broodlings weapon will now be displayed in the equipment panel of Guardian, to ease access to informations.</li>
+<li>[Tooltip] Updated description of Evolve Broodlings, to display correct number in regards to upgrade of Broodlings claws - it was stated to be 3, but it was actually 1.8.</li>
+<li>Bonus damage to claws increased from 1.8 to 2.2 per each level of Broodlings upgrade.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Developer comment:</strong> Guardian's bruiser path is actually a bit overwhelming compared to the minions path. We understand some of the changes made during 3.1 aimed at both making it viable and giving possible plays around infestation (purify also helps in that regard), but it has definitely stepped in the "top tier" side of the game.</p>
+<p>So we're nerfing its tankiness so that it actually takes more damage from ships that are supposed to counter it, while leaving its strength against things it is supposed to counter anyways.</p>
+<p>Broodlings damage were scaling at a rate of 1.8 damage per upgrade. Back in the days it would be 3 damage per upgrade. We're raising it to 2.2 (to be raised further), since guardian also spawns corruptors along with broodlords. </p>
+<p>Since this might not be enough, and new ship might be a new counter to these, broodlords will probably get buffed further.</p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+</html>

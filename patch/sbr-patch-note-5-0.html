@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 5.0 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 5.0 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">TBD</span>
+    <span class="status-badge status-dev">In development</span>
+    <span class="tag tag-new-content">new-content</span> <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-bugfixes">bugfixes</span> <span class="tag tag-ui">ui</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-50---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-50---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 5.0 - Patch Notes</h1>
+<ul>
+<li>[<strong>TODO</strong>] Tourney rewards</li>
+<li>[<strong>TODO</strong>] Look into adding some of the recent maps</li>
+</ul>
+<h2 id="map-editor"><a class="anchor" aria-hidden="true" tabindex="-1" href="#map-editor"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Map editor</h2>
+<ul>
+<li>Reintroduced basic starmap editor - allowing to edit and expand the pool of existing battle maps.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=wO1D8iv6iFw" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/5.0/map-editor-s1.png" alt="" /></a>
+<a href="https://www.youtube.com/watch?v=wO1D8iv6iFw" rel="noopener noreferrer">See more on YT</a></p>
+<blockquote>
+<p>More features will be added in the future..</p>
+</blockquote>
+<h2 id="ships--balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ships--balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Ships &amp; Balance</h2>
+<ul>
+<li>Queen reintroduced.</li>
+</ul>
+<blockquote>
+<p>Queen still requires more thought, not just testing. Abilities such as:</p>
+<ul>
+<li>Symbiote </li>
+<li>Infestation</li>
+</ul>
+<p>Aren't considered to be complete - likely still flawed on both angles. But hopefully good enough to postpone</p>
+<p>Other avenues are "done" on the design aspect, but the exact way of implementation leaves a lot of room for improvements/changes.</p>
+<p>"Done" means I hope it's good enough for now, but I bet this is not a final iteration and I expect it might require a lot of revisions before things are in place.</p>
+</blockquote>
+<h3 id="queen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#queen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Queen</h3>
+<ul>
+<li>Added missing blood FX when ship is crit/heavy/light damaged.</li>
+<li>Added first set of achievements for playing Queen ("Casual Play" category).</li>
+<li>Neural Parasite:<ul>
+<li>It's now a projectile driven ability - it needs time to arrive at the impact point.</li>
+<li>Affected ships now require extra 2s for effect to complete, and fight for the Queen.</li>
+<li>Affected ships can no longer use the shield.<blockquote>
+<p>This is mostly aimed at upgraded Carrier's interceptors</p>
+</blockquote>
+</li>
+<li>Duration increased from 20s to 25s.</li>
+<li>Improved interactions with following units:<ul>
+<li>Interceptors can be box-selected.</li>
+<li>Scourges will no longer suicide, instead they'll turn back, attacking nearest capital ship they'll see unfriendly.</li>
+<li>Siege fighters &amp; Broodlords will initially waypoint back to the other base.</li>
+<li>Observer &amp; spotter will initially follow the Queen.</li>
+<li>Other units will initially a-move to the Queen.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Infestation:<ul>
+<li>Can now be casted on non mechanical units - all zerg capital ships, including Queen itself.</li>
+<li>Infestation cooldown ultimate 30s -&gt; 45s</li>
+<li>Fixed an issue where Queen's Infestation tentacle would remain floating in the space whenever it failed to connect with the target.</li>
+</ul>
+</li>
+<li>Blinding Cloud:<ul>
+<li>It's now larger, and no longer a perfect circle, but an oval, that stretches to the sides in relation to the direction it was thrown.</li>
+<li>It no longer limits the vision of the ships that are inside, but also blocks the line of sight of the approaching ships, similarly as Gas Clouds do.</li>
+<li>[<strong>TODO</strong>] Add cast time</li>
+<li>[<strong>TODO</strong>] Nerf radius</li>
+<li>[<strong>TODO</strong>] Rotate 180</li>
+</ul>
+</li>
+<li>Parasitic Bomb:<ul>
+<li>Reduced damage vs. Massive from 1350 to 1200</li>
+<li>Removed target acquisition in response to the Parasitic Bomb damage, that would draw aggression to the Queen, from affected units and the ones which were nearby (in response to <code>CallForHelp</code>).</li>
+</ul>
+</li>
+<li>Ensnare:<ul>
+<li>Upon impact effect stays on the battlefield for 1s before expiring (akin to Arbiter's storm), instead of one-time hit-scan like behavior.</li>
+</ul>
+</li>
+<li>Fixed an issue where Blinding Cloud effect would persist, if player's ship was killed while cloud's effect was still active.</li>
+<li>Fixed an issue where Blinding Cloud wouldn't de-buff Overlord's Antennae.</li>
+<li>Fixed an issue where Infestation would not be immune to Dreadnought's Cover.</li>
+<li>Fixed an issue where Infestation wouldn't correctly mark player's ship as killed, by a result game couldn't be won until enemy base has been destroyed.</li>
+<li>Fixed an issue where Infested ship wouldn't have its minimap icon.</li>
+</ul>
+<h3 id="battlecruiser"><a class="anchor" aria-hidden="true" tabindex="-1" href="#battlecruiser"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Battlecruiser</h3>
+<ul>
+<li>Fixed Lockdown to no longer disable ability to launch &amp; retarget OBF and Escort Fighters (Carrier's Scouts).</li>
+</ul>
+<h3 id="dreadnought"><a class="anchor" aria-hidden="true" tabindex="-1" href="#dreadnought"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dreadnought</h3>
+<ul>
+<li>Fixed an issue where Cover could repeatedly attempting to redirect the same projectile. Combined with the slow down of speed for first ~0.5 second upon redirect, it could cause weird glitches, especially noticeable with chasing projectiles (i.e. Raven's Seeker, BC's Nuke).</li>
+<li>Fixed an issue where Cover would remain active when trapped in Arbiter's Stasis Field.</li>
+</ul>
+<h3 id="frigate"><a class="anchor" aria-hidden="true" tabindex="-1" href="#frigate"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Frigate</h3>
+<ul>
+<li>Fixed range upgrade to actually increase launch/retarget of wraiths per 1.25 per level (instead of 1), as it was intended and written in the tooltip.</li>
+<li>Fixed inaccurate tooltip on Wraith upgrade mentioning increased damage by +0.5 to massive, where it was actually +1.</li>
+</ul>
+<h3 id="voidray"><a class="anchor" aria-hidden="true" tabindex="-1" href="#voidray"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>VoidRay</h3>
+<ul>
+<li>Remove phase shift scaling from shield upgrades-</li>
+<li>Remove damage reduction from armor.-</li>
+<li>Energy Nova:<ul>
+<li>Increase its damage to 125(+1275 vs massive)</li>
+<li>Remove shield and energy leech.</li>
+<li>Remove scaling from lasers.</li>
+<li>Reduce nova radius to 4.</li>
+<li>Increase nova animation (after changing blasts from 3 to 1) by 50%.</li>
+<li>Nova does its full damage in 1 blast (instead of 3).</li>
+<li>Revert nova energy cost to 100. Reset its cooldown to 10s.</li>
+</ul>
+</li>
+</ul>
+<h3 id="misc-balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#misc-balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Misc balance</h3>
+<ul>
+<li>Reduced AI leash radius (21 → 18) and movement limit (21 → 18) — units return to their post sooner when chased.</li>
+<li>Increased leash reset radius (5 → 7) — units re-anchor further from their origin before giving chase again.</li>
+<li>Increased call-for-help radius (2 → 4) and period (2 → 4) — nearby units now respond to allies under attack from further away, more often.<blockquote>
+<p>Above adjustments were made in response to the introduction of the Queen.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li>Fixed lack of spacing between teams on the leader board.</li>
+<li>Fixed an issue where if match completed prematurely ("You won the game." message at the end - without any points), it would count as a loss for the victorious team.</li>
+<li>Fixed an issue where changed settings (UI config, ship skins etc.) wouldn't be immediately saved into bank file (it required completing rated game, or changing settings prior to picking a ship).</li>
+<li>Fixed an issue where <code>Team Side</code> option in lobby settings wouldn't apply. (Or rather, it was only being considered in games where teams were automatically balanced - so completely opposite from how it was intended).</li>
+<li>Fixed na issue where <code>Map</code> chosen in lobby settings wouldn't align with what the game actually used. <blockquote>
+<p>The list presented in lobby was off by 1 element, so when you were picking <code>C</code>, the game was loading <code>B</code> etc. - in that order, with the exception of "Ulnar" - it was the only one that did align.</p>
+</blockquote>
+</li>
+<li>Fixed a rare issue related to "Squads" - in some scenarios (reaching 15 players within the lobby at least once during its lifetime + some other edge case criteria) the game would fail to initialize completely - no bases, no ships.</li>
+<li>Fixed an issue where rating of the teams wasn't calculated in games that used <code>Premade / IH</code> mode, and had teams preset in lobby (no FFA). Resulting in <code>+16 / -16</code>. (It was working correctly only when teams were balanced automatically by in-game systems).<blockquote>
+<p>Really surprised we caught it just now. Also, please double check if it was indeed fixed, as it was kind of a blind fix.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="ui"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ui"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>UI</h2>
+<h3 id="team-overview"><a class="anchor" aria-hidden="true" tabindex="-1" href="#team-overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Team overview</h3>
+<ul>
+<li><input disabled type="checkbox" /> WIP</li>
+</ul>
+<h3 id="battlecruiser-1"><a class="anchor" aria-hidden="true" tabindex="-1" href="#battlecruiser-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Battlecruiser</h3>
+<ul>
+<li>Mini Yamato Gun:<ul>
+<li>Reduced damage from 1200 to 900</li>
+<li>Reduced price from 200 to 175</li>
+<li>Changed weapon target acquisition mechanic to allow manual manual targeting.</li>
+</ul>
+</li>
+<li>Defensive Shield:<ul>
+<li>Removed bonus to hull regenaration from the upgrade (was +5 for each level).</li>
+<li>Doubled bonus to shields regenaration from 25 to 50 per upgrade level.</li>
+</ul>
+</li>
+</ul>
+<h3 id="dreadnought-1"><a class="anchor" aria-hidden="true" tabindex="-1" href="#dreadnought-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dreadnought</h3>
+<ul>
+<li>Increase base armor to 15.</li>
+<li>Reduce armor per upgrade to +4.</li>
+<li>Decrease sieging/unsieging time to 4 seconds.</li>
+<li>Increase siege speed to 25%.</li>
+<li>Enable gatlings while sieged.</li>
+<li>Decrease siege damage to 100 (+300 vs massive) + 10 (+30 vs massive) per upgrade.</li>
+<li>Reduce Reinforced Hull damage reduction to 30%.</li>
+<li>Lockdown now should turn off cover and disable it.</li>
+<li>Add a new upgrade – Gauss Cannon – increases siege damage. Gatling upgrades no longer increase siege damage or attack speed.</li>
+<li>Gatlings upgrades no longer increase Gatlings attack speed.</li>
+</ul>
+<h3 id="frigate-1"><a class="anchor" aria-hidden="true" tabindex="-1" href="#frigate-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Frigate</h3>
+<ul>
+<li>Adjust magnetic mines damage to 550 (+55 per upgrade).</li>
+</ul>
+<h3 id="raven"><a class="anchor" aria-hidden="true" tabindex="-1" href="#raven"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Raven</h3>
+<ul>
+<li>Enhanced systems:<ul>
+<li>Reduced EMP bonus range from 1.0 to 0.5.</li>
+<li>Removed EMP bonus damage to shields.</li>
+<li>Reduced bonus regeneration granted by enhanced systems.</li>
+</ul>
+</li>
+</ul>
+<h3 id="colossus"><a class="anchor" aria-hidden="true" tabindex="-1" href="#colossus"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Colossus</h3>
+<ul>
+<li>Increase field disruptor radius from 4 to 4.5.</li>
+<li>Increased base shield regeneration to 80.</li>
+<li>Reduce shield regeneration per upgrade from 10 to 8.</li>
+</ul>
+<h3 id="arbiter"><a class="anchor" aria-hidden="true" tabindex="-1" href="#arbiter"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Arbiter</h3>
+<ul>
+<li>Force Field: Reduced cast range from 9 to 7</li>
+</ul>
+<h3 id="carrier"><a class="anchor" aria-hidden="true" tabindex="-1" href="#carrier"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Carrier</h3>
+<ul>
+<li>Interceptors:<ul>
+<li>Increased move speed from 2.6 to 2.75</li>
+<li>Removed shield regeneration delay reduction from capacity upgrades.</li>
+</ul>
+</li>
+<li>Scouts:<ul>
+<li>Increased base damage from 40 to 50.</li>
+<li>Reduced base hull and shield amount from 125 to 105.</li>
+</ul>
+</li>
+<li>Tempests:<ul>
+<li>Increased amount of tempests Carrier can warp in from 4 to 6.</li>
+</ul>
+</li>
+<li>Plasma Barrage:<ul>
+<li>Added a 1.5s casting time. Reduced period between individual barrage from 0.4s to 0.25s - making it to 2.5s.<blockquote>
+<p>Combined "cast time" remained effectively the same.</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Fixed an issue where it was possible to cast Vortex further than the intended 10 range, pushing it to a maximum of ~15.</li>
+<li>Fixed an issue where Warp In ability would be able to cooldown white under effect of BC' Lockdown.</li>
+</ul>
+<h3 id="leviathan"><a class="anchor" aria-hidden="true" tabindex="-1" href="#leviathan"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Leviathan</h3>
+<ul>
+<li>Reduced the extra damage from corruption from to 33% to 25%.</li>
+</ul>
+<h3 id="guardian"><a class="anchor" aria-hidden="true" tabindex="-1" href="#guardian"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Guardian</h3>
+<ul>
+<li>Increased Guardian starting speed from 1.3007 to 1.3507 (+0.05).</li>
+<li>Reduced Corruptor Acquire Leash Reset Radius (radius within which new targets may be acquired after chasing) from 9 to 4.</li>
+<li>Increased Acid Spore base damage from 160 to 180.</li>
+<li>Increased Broodlord acceleration from 0.1875 to 1.5.</li>
+<li>Increased Corruptor acceleration from 0.9375 to 1.5.</li>
+<li>Reduced Corruptor Acquire Leash Radius (maximum chase distance before returning to original position) from 19 to 6.</li>
+<li>Reduced Corruptor Acquire Leash Reset Radius (radius within which new targets may be acquired after chasing) from 9 to 4.</li>
+<li>Wild Mutations now grants detection in a 5-unit radius (for Guardian), +20% attack speed, and +10 sight range (to all affected units).</li>
+</ul>
+
+    </div>
+  </div>
+</body>
+</html>
