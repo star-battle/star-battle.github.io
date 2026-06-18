@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T02:39:16.598Z",
+  "generated": "2026-06-18T02:48:51.833Z",
   "patches": [
     {
       "version": "5.0",
@@ -13,9 +13,9 @@
         "bugfixes",
         "ui"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-5-0.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-5-0.md",
       "assets": {
-        "assets/5.0/map-editor-s1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/5.0/map-editor-s1.png"
+        "assets/5.0/map-editor-s1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/5.0/map-editor-s1.png"
       }
     },
     {
@@ -28,7 +28,7 @@
         "new-content",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-8.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-8.md",
       "assets": {}
     },
     {
@@ -40,7 +40,7 @@
       "tags": [
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-7.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-7.md",
       "assets": {}
     },
     {
@@ -54,10 +54,10 @@
         "new-content",
         "ui"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-6.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-6.md",
       "assets": {
-        "assets/4.6/shields-off.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.6/shields-off.png",
-        "assets/4.6/shields-on.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.6/shields-on.png"
+        "assets/4.6/shields-off.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.6/shields-off.png",
+        "assets/4.6/shields-on.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.6/shields-on.png"
       }
     },
     {
@@ -70,7 +70,7 @@
         "game-balance",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-5.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-5.md",
       "assets": {}
     },
     {
@@ -84,11 +84,11 @@
         "ui",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-4.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-4.md",
       "assets": {
-        "assets/4.4/ls-tips.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.4/ls-tips.png",
-        "assets/4.4/mini-yamato-gun.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.4/mini-yamato-gun.png",
-        "assets/4.4/sandbox-ship-perks.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.4/sandbox-ship-perks.png"
+        "assets/4.4/ls-tips.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.4/ls-tips.png",
+        "assets/4.4/mini-yamato-gun.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.4/mini-yamato-gun.png",
+        "assets/4.4/sandbox-ship-perks.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.4/sandbox-ship-perks.png"
       }
     },
     {
@@ -103,12 +103,12 @@
         "ui",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-3.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-3.md",
       "assets": {
-        "assets/4.3/slim-ui-active.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.3/slim-ui-active.png",
-        "assets/4.3/slim-ui-before.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.3/slim-ui-before.png",
-        "assets/4.3/slim-ui-after.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.3/slim-ui-after.png",
-        "assets/4.3/sandbox1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.3/sandbox1.png"
+        "assets/4.3/slim-ui-active.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.3/slim-ui-active.png",
+        "assets/4.3/slim-ui-before.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.3/slim-ui-before.png",
+        "assets/4.3/slim-ui-after.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.3/slim-ui-after.png",
+        "assets/4.3/sandbox1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.3/sandbox1.png"
       }
     },
     {
@@ -121,9 +121,9 @@
         "game-balance",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-2.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-2.md",
       "assets": {
-        "assets/4.2/lobby-squad.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.2/lobby-squad.png"
+        "assets/4.2/lobby-squad.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.2/lobby-squad.png"
       }
     },
     {
@@ -135,7 +135,7 @@
       "tags": [
         "game-balance"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-1.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-1.md",
       "assets": {}
     },
     {
@@ -150,15 +150,15 @@
         "ui",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-4-0.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-4-0.md",
       "assets": {
-        "assets/4.0/infopanel1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel1.png",
-        "assets/4.0/infopanel2.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel2.png",
-        "assets/4.0/infopanel3.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/infopanel3.png",
-        "assets/4.0/healray1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/healray1.png",
-        "assets/4.0/options-formation-movement.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/options-formation-movement.png",
-        "assets/4.0/formation1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/formation1.png",
-        "assets/4.0/raven-analyze.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/4.0/raven-analyze.png"
+        "assets/4.0/infopanel1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/infopanel1.png",
+        "assets/4.0/infopanel2.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/infopanel2.png",
+        "assets/4.0/infopanel3.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/infopanel3.png",
+        "assets/4.0/healray1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/healray1.png",
+        "assets/4.0/options-formation-movement.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/options-formation-movement.png",
+        "assets/4.0/formation1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/formation1.png",
+        "assets/4.0/raven-analyze.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/4.0/raven-analyze.png"
       }
     },
     {
@@ -172,9 +172,9 @@
         "game-balance",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-3-0.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-3-0.md",
       "assets": {
-        "assets/3.0/sandbox.jpg": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/3.0/sandbox.jpg"
+        "assets/3.0/sandbox.jpg": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/3.0/sandbox.jpg"
       }
     },
     {
@@ -186,9 +186,9 @@
       "tags": [
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-2-4.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-2-4.md",
       "assets": {
-        "assets/2.4/hotkeys.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.4/hotkeys.png"
+        "assets/2.4/hotkeys.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.4/hotkeys.png"
       }
     },
     {
@@ -201,11 +201,11 @@
         "new-content",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-2-3.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-2-3.md",
       "assets": {
-        "assets/2.3/notification-kill.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/notification-kill.png",
-        "assets/2.3/ping-abil1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/ping-abil1.png",
-        "assets/2.3/ping-abil2.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.3/ping-abil2.png"
+        "assets/2.3/notification-kill.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.3/notification-kill.png",
+        "assets/2.3/ping-abil1.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.3/ping-abil1.png",
+        "assets/2.3/ping-abil2.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.3/ping-abil2.png"
       }
     },
     {
@@ -217,9 +217,9 @@
       "tags": [
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-2-2.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-2-2.md",
       "assets": {
-        "assets/2.2/trust-fail-msg.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.2/trust-fail-msg.png"
+        "assets/2.2/trust-fail-msg.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.2/trust-fail-msg.png"
       }
     },
     {
@@ -232,9 +232,9 @@
         "ui",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-2-1.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-2-1.md",
       "assets": {
-        "assets/2.1/sbr-version.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.1/sbr-version.png"
+        "assets/2.1/sbr-version.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.1/sbr-version.png"
       }
     },
     {
@@ -248,10 +248,10 @@
         "ui",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-2-0.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-2-0.md",
       "assets": {
-        "assets/2.0/GameplayData.png": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.0/GameplayData.png",
-        "assets/2.0/TrustGate.jpg": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/assets/2.0/TrustGate.jpg"
+        "assets/2.0/GameplayData.png": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.0/GameplayData.png",
+        "assets/2.0/TrustGate.jpg": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/assets/2.0/TrustGate.jpg"
       }
     },
     {
@@ -264,7 +264,7 @@
         "game-balance",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-1-1.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-1-1.md",
       "assets": {}
     },
     {
@@ -277,7 +277,7 @@
         "game-balance",
         "bugfixes"
       ],
-      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/ecea0fff5643ba4d19aa40535fbe3732aa1b6d5c/patch/sbr-patch-note-1-0.md",
+      "file": "https://raw.githubusercontent.com/star-battle/patch-notes/c7a3a09ed081cde1415fd5ebaf81fcc3a26b4c18/patch/sbr-patch-note-1-0.md",
       "assets": {}
     }
   ]
