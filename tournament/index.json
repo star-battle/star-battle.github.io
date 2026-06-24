@@ -1,10 +1,11 @@
 {
-  "generated": "2026-06-18T08:04:35.392Z",
+  "generated": "2026-06-24T03:23:55.532Z",
   "tournaments": [
     {
       "id": "starbattle2025",
       "date": "2025-04-01",
-      "file": "tournament-2025-04-01.yml"
+      "file": "tournament-2025-04-01.json"
     }
-  ]
+  ],
+  "rewards": "player-rewards.json"
 }

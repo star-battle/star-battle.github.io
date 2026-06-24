@@ -1,0 +1,497 @@
+{
+  "id": "starbattle2025",
+  "url": "https://sites.google.com/view/starbattle2025/home",
+  "date": "2025-04-01",
+  "teams": [
+    {
+      "name": "PUSH",
+      "tag": "[PU5H]",
+      "placement": 1,
+      "players": [
+        {
+          "handle": "2-S2-1-2376319",
+          "battletag": "Rosta#2881",
+          "name": "Rosta",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-9472293",
+          "battletag": "BabinHood#21731",
+          "name": "BabinHood",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-2358400",
+          "battletag": "Madkn1ght#2662",
+          "name": "Madknight",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-7350608",
+          "battletag": "ThePunisher#21659",
+          "name": "ThePunisher",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1941699",
+          "battletag": "Damgood#2823",
+          "name": "Damgood",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-3786347",
+          "battletag": "MåntisShrimp#2725",
+          "name": "TairyHesticl",
+          "rewards": [
+            "TF22"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1045021",
+          "battletag": "Pringl#2495",
+          "name": "Pringl",
+          "rewards": [
+            "TF22"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uprise",
+      "tag": "[Uprise]",
+      "placement": 2,
+      "players": [
+        {
+          "handle": "2-S2-1-1517277",
+          "battletag": "OGKush#2823",
+          "name": "LionInCage",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2909599",
+          "battletag": "KraKen#2755",
+          "name": "KraKen",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2381777",
+          "battletag": "Nox#12796",
+          "name": "Nox",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1674601",
+          "battletag": "Seb#2685",
+          "name": "Seb",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10949121",
+          "battletag": "DesktopPanda#1675",
+          "name": "DesktopPanda",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10094627",
+          "battletag": "GKR#21288",
+          "name": "GKR",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-2502119",
+          "battletag": "Muse#21907",
+          "name": "Muse",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2789082",
+          "battletag": "RSS82#2637",
+          "name": "Redstar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8279175",
+          "battletag": "schlachtvieh#21374",
+          "name": "unox",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Aces Retadred",
+      "tag": "[AcesHi]",
+      "placement": 3,
+      "players": [
+        {
+          "handle": "2-S2-1-3743847",
+          "battletag": "Abra#1318",
+          "name": "Abra",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5958028",
+          "battletag": "PraetorAlex#1650",
+          "name": "PraetorAlex",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-717000",
+          "battletag": "IcE#2802",
+          "name": "BeggiIcE",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6343384",
+          "battletag": "Ray#12678",
+          "name": "Hacker",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3556586",
+          "battletag": "tripleQ#1596",
+          "name": "QQQ",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4750064",
+          "battletag": "GeneralX#1606",
+          "name": "GeneralX",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5753237",
+          "battletag": "RedDog#1655",
+          "name": "RedDog",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3267338",
+          "battletag": "TheMaster1#2375",
+          "name": "TheMaster",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10376219",
+          "battletag": "Jih4dJoe#1140",
+          "name": "JihadJoe",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3746957",
+          "battletag": "Delta9#1134",
+          "name": "DeltaNine",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "RedAlert",
+      "tag": "[RA]",
+      "placement": 4,
+      "players": [
+        {
+          "handle": "2-S2-2-2253572",
+          "battletag": "Severfl#2297",
+          "name": "BattleStar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-320919",
+          "battletag": "sanek#1598",
+          "name": "sanek",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-939019",
+          "battletag": "Animosus#2960",
+          "name": "Animosus",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-40115",
+          "battletag": "Ivanopala#2657",
+          "name": "Ivanopala",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-1837026",
+          "battletag": "Bionicle#21267",
+          "name": "Bio",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-222566",
+          "battletag": "Kidnaper#21369",
+          "name": "Kidnaper",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-662565",
+          "battletag": "SanyaWhite#2159",
+          "name": "SanyaWhite",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-830839",
+          "battletag": "VeoRod#21101",
+          "name": "Veo",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "NicE2U",
+      "tag": "[NIcE2U]",
+      "placement": 5,
+      "players": [
+        {
+          "handle": "2-S2-1-7812664",
+          "battletag": "Koda#22382",
+          "name": "YangWenli",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5931619",
+          "battletag": "NewHorizon#21110",
+          "name": "PlanetNine",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2769478",
+          "battletag": "PlasticOcean#2222",
+          "name": "ccktuss",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4369013",
+          "battletag": "Darkbut#2580",
+          "name": "Dar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10894900",
+          "battletag": "Archon#12874",
+          "name": "Archon",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6479072",
+          "battletag": "DarkGuardian#2184",
+          "name": "Coutinior",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-2339369",
+          "battletag": "Palpatine#2735",
+          "name": "Palpatine",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-378251",
+          "battletag": "CoolBreeze#2337",
+          "name": "CoolBreeze",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8831629",
+          "battletag": "mikey#15997",
+          "name": "CoFFee",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Intruder",
+      "tag": "[5ints]",
+      "placement": 6,
+      "players": [
+        {
+          "handle": "2-S2-1-10897145",
+          "battletag": "流苏苏苏#3617",
+          "name": "LIUSUSU",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2739641",
+          "battletag": "yzc#4598",
+          "name": "yzc",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8336483",
+          "battletag": "loong#11765",
+          "name": "loong",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10128640",
+          "battletag": "shenzhu9#3169",
+          "name": "Kneecap",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4936606",
+          "battletag": "Diaoyudao#3588",
+          "name": "Diaoyudao",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10953319",
+          "battletag": "艾乐无忧#3950",
+          "name": "Orz",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10897073",
+          "battletag": "绫波#3962",
+          "name": "Ayanami",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Star Ally",
+      "tag": "[CNEF]",
+      "placement": 7,
+      "players": [
+        {
+          "handle": "2-S2-1-8375395",
+          "battletag": "StarryNight#11431",
+          "name": "starrynight",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3449608",
+          "battletag": "kevin721#3465",
+          "name": "kevin",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8226133",
+          "battletag": "FXGF#11912",
+          "name": "FXGFri",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10882272",
+          "battletag": "iyOgnGAc#3868",
+          "name": "EFLAG",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10408889",
+          "battletag": "nebula#13966",
+          "name": "nebula",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6927832",
+          "battletag": "Starbattle#1532",
+          "name": "Roar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3830841",
+          "battletag": "Rukawa#1621",
+          "name": "aslan",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10900319",
+          "battletag": "Yuguolol#1469",
+          "name": "flongcslol",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-11047493",
+          "battletag": "冰天绯翼#1543",
+          "name": "FreezeHeaven",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "FRLNC",
+      "tag": "[FRLNC]",
+      "placement": 8,
+      "players": [
+        {
+          "handle": "2-S2-1-5805572",
+          "battletag": "jjbeast#1885",
+          "name": "jjbeast",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4985610",
+          "battletag": "RAW#11969",
+          "name": "RAW",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4296643",
+          "battletag": "SHAORAN#21182",
+          "name": "AlmirantGrau",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-3810660",
+          "battletag": "jimber#1609",
+          "name": "jimber",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1492462",
+          "battletag": "thirteen#2724",
+          "name": "Thirteen",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4577526",
+          "battletag": "DratuDomine#1355",
+          "name": "DeadlyKiller",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2086135",
+          "battletag": "AdmiralNova#2466",
+          "name": "AdmiralNova",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6963862",
+          "battletag": "Pornexus#11848",
+          "name": "LOLz",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1306501",
+          "battletag": "DarkCommand#2120",
+          "name": "DarkCommand",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4922980",
+          "battletag": "Locuaz#11952",
+          "name": "Jan",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-371637",
+          "battletag": "Gyges#2711",
+          "name": "Gyges",
+          "rewards": []
+        }
+      ]
+    }
+  ]
+}
