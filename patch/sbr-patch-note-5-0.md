@@ -15,8 +15,9 @@ tags: [new-content, game-balance, bugfixes]
 
 - Reintroduced basic starmap editor - allowing to edit and expand the pool of existing battle maps.
 
-[![](./assets/5.0/map-editor-s1.png)](https://www.youtube.com/watch?v=wO1D8iv6iFw)
-[See more on YT](https://www.youtube.com/watch?v=wO1D8iv6iFw)
+[![Map Editor](./assets/5.0/map-editor-s1.png)](./assets/5.0/map-editor-s1.png)
+
+[See more on YouTube](https://www.youtube.com/watch?v=wO1D8iv6iFw)
 
 > More features will be added in the future..
 
