@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-28T19:02:40.630Z",
+  "generated": "2026-06-28T19:14:14.780Z",
   "patches": [
     {
       "version": "5.0",
@@ -15,11 +15,9 @@
       "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-0.md",
       "assets": {
         "assets/5.0/map-editor-s1.png": "https://star-battle.talv.space/patch/assets/5.0/map-editor-s1.png",
+        "assets/5.0/tf23-remastered-bc.png": "https://star-battle.talv.space/patch/assets/5.0/tf23-remastered-bc.png",
         "assets/5.0/starbattle-pro-home.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-home.png",
-        "assets/5.0/starbattle-pro-stats.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-stats.png",
-        "assets/5.0/starbattle-pro-player.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-player.png",
-        "assets/5.0/starbattle-pro-game.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-game.png",
-        "assets/5.0/starbattle-pro-uploader.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-uploader.png"
+        "assets/5.0/starbattle-uploader-settings.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-uploader-settings.png"
       }
     },
     {

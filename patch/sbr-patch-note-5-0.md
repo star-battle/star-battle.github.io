@@ -202,7 +202,7 @@ PUSH won the Finals 3–1 against Uprise. Aces Retadred took 3rd place, winning 
 
 ### Rewards
 
-- **TF23 — "Battlecruiser Remastered"** (Battlecruiser skin) — exclusive cosmetic awarded to members of the winning team (PUSH).
+- **TF23 — "Battlecruiser Remastered"** ([preview](./assets/5.0/tf23-remastered-bc.png)) (Battlecruiser skin) — exclusive cosmetic awarded to members of the winning team (PUSH).
 - **RT1–RT3** — Tournament placement stars, awarded to top-3 teams. Counts toward the Champion chain (Elite Battlecruiser skin at 1 top placement, High Executor rank at 2).
 - **RT4** — Tournament participation star, awarded to all remaining participants (4th place and below). Counts toward the Tournament Participant chain (Hero Void Ray skin, then Mentor / Master / Executor ranks at 2 / 3 / 5 participations).
 
@@ -249,39 +249,23 @@ The raw reward data (JSON) is publicly available:
 
 Nox has built [starbattle.pro](https://starbattle.pro) — a community-driven inhouse league tracker for Star Battle Reloaded. Upload a replay, and the site handles everything else: ELO ratings, player profiles, match history, and detailed stats.
 
-**[StarBattle.pro — Homepage](https://starbattle.pro)**
-
 [![StarBattle.pro — Homepage](./assets/5.0/starbattle-pro-home.png)](./assets/5.0/starbattle-pro-home.png)
 
 **What you get:**
 
-- **Leaderboard** — ELO-ranked player standings (30+ rated games to qualify).
-- **Player Profiles** — career stats, head-to-head records, ship performance, ELO history, name history.
-- **Match History** — browse all games (IH, Pub, Tournament) with team rosters, ELO deltas, and downloadable replays.
-- **Global Stats** — ship popularity, win rates, team compositions, activity trends.
+- **[Leaderboard](https://starbattle.pro/leaderboard)** — ELO-ranked player standings (30+ rated games to qualify).
+- **[Player Profiles](https://starbattle.pro/leaderboard)** — career stats, head-to-head records, ship performance, ELO history, name history.
+- **[Match History](https://starbattle.pro/games)** — browse all games (IH, Pub, Tournament) with team rosters, ELO deltas, and downloadable replays.
+- **[Global Stats](https://starbattle.pro/stats)** — ship popularity, win rates, team compositions, activity trends.
 - **Tools** — replay viewer, bank recovery, and bulk replay upload.
 
 No account needed — just drop a `.SC2Replay` file on the site to submit a game.
-
-**[Stats Dashboard](https://starbattle.pro/stats)**
-
-[![Stats Dashboard](./assets/5.0/starbattle-pro-stats.png)](./assets/5.0/starbattle-pro-stats.png)
-
-**[Player Profile](https://starbattle.pro/leaderboard)**
-
-[![Player Profile](./assets/5.0/starbattle-pro-player.png)](./assets/5.0/starbattle-pro-player.png)
-
-**[Game Detail](https://starbattle.pro/games)**
-
-[![Game Detail](./assets/5.0/starbattle-pro-game.png)](./assets/5.0/starbattle-pro-game.png)
 
 ### Auto Uploader
 
 Don't want to upload replays manually? The [StarBattle Auto Uploader](https://starbattle.pro/uploader) is a Windows desktop app that monitors your SC2 replay folder and automatically submits new Star Battle games to the site. Install it, and it runs quietly in the system tray — no setup, no API keys, auto-updates itself.
 
-**[StarBattle Auto Uploader](https://starbattle.pro/uploader)**
-
-[![StarBattle Auto Uploader](./assets/5.0/starbattle-pro-uploader.png)](./assets/5.0/starbattle-pro-uploader.png)
+![StarBattle Uploader — Settings](./assets/5.0/starbattle-uploader-settings.png)
 
 ### Feedback & Suggestions
 
