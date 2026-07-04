@@ -1,19 +1,25 @@
 {
-  "generated": "2026-07-04T19:20:14.059Z",
+  "generated": "2026-07-04T21:22:13.435Z",
   "patches": [
     {
       "version": "5.0",
-      "published": null,
+      "published": "2026-07-04T00:00Z",
       "updated": null,
-      "buildId": null,
-      "status": "dev",
+      "buildId": "v5.0-124-g071f12b",
+      "status": "live",
       "tags": [
         "new-content",
         "game-balance",
+        "ui",
         "bugfixes"
       ],
       "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-0.md",
       "assets": {
+        "assets/5.0/maps/ulnar-ii.png": "https://star-battle.talv.space/patch/assets/5.0/maps/ulnar-ii.png",
+        "assets/5.0/maps/gaia-ii.png": "https://star-battle.talv.space/patch/assets/5.0/maps/gaia-ii.png",
+        "assets/5.0/maps/tollana.png": "https://star-battle.talv.space/patch/assets/5.0/maps/tollana.png",
+        "assets/5.0/maps/epicenter-i.png": "https://star-battle.talv.space/patch/assets/5.0/maps/epicenter-i.png",
+        "assets/5.0/maps/carpet.png": "https://star-battle.talv.space/patch/assets/5.0/maps/carpet.png",
         "assets/5.0/map-editor-s1.png": "https://star-battle.talv.space/patch/assets/5.0/map-editor-s1.png",
         "assets/5.0/tf23-remastered-bc.png": "https://star-battle.talv.space/patch/assets/5.0/tf23-remastered-bc.png",
         "assets/5.0/starbattle-pro-home.png": "https://star-battle.talv.space/patch/assets/5.0/starbattle-pro-home.png",

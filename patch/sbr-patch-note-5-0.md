@@ -1,15 +1,48 @@
 ---
 version: "5.0"
-published: null
+published: "2026-07-04T00:00Z"
 updated: null
-buildId: null
-status: dev
-tags: [new-content, game-balance, bugfixes]
+buildId: "v5.0-124-g071f12b"
+status: live
+tags: [new-content, game-balance, ui, bugfixes]
 ---
 
 # Star Battle Reloaded 5.0 - Patch Notes
 
-- [__TODO__] Look into adding some of the recent maps
+## Maps
+
+Added 10 community-made battle maps, selectable from the lobby map list:
+
+- **By Nox** — Ulnar II, Gaia II, Tollana.
+- **By OG** — Epicenter I, Big Brawl I, Carpet I / II / III, Four Lanes I / II.
+
+We also reworked the lobby map picker. Alongside picking a specific map, you can now randomize from the full pool (**Random [All]**), the classic maps only (**Random [Standard]**), or the new community maps only (**Random [Misc]**).
+
+### A few previews
+
+**Ulnar II** — an alternative take on Ulnar, with the gas clouds in front of each team's towers removed and replaced by a single central cloud, so hard contains are less likely.
+
+[![Ulnar II](./assets/5.0/maps/ulnar-ii.png)](./assets/5.0/maps/ulnar-ii.png)
+
+**Gaia II** — a non-mirrored layout that adds a new dimension to laning, where side-lane ships have to read the map before ever seeing the enemy. Gaia II is a recolour of Gaia with a more traditional background and cloud colour (preview shows the shared layout).
+
+[![Gaia II](./assets/5.0/maps/gaia-ii.png)](./assets/5.0/maps/gaia-ii.png)
+
+**Tollana** — its defining features sit along the outskirts rather than the center, making side navigation both easier and trickier to defend; includes three clusters of Metal Scrap.
+
+[![Tollana](./assets/5.0/maps/tollana.png)](./assets/5.0/maps/tollana.png)
+
+**Epicenter I** — a large central cloud surrounded by six smaller clouds to contest, with blocked-off corners that deny an easy go-around for most ships.
+
+[![Epicenter I](./assets/5.0/maps/epicenter-i.png)](./assets/5.0/maps/epicenter-i.png)
+
+**Carpet I / II / III** — a long cloud corridor stretching from base to base that widens toward the center, with small bottlenecks throughout and a narrow choke in the middle.
+
+[![Carpet](./assets/5.0/maps/carpet.png)](./assets/5.0/maps/carpet.png)
+
+More details on each map — including full in-game screenshots — are posted in the `#maps` channel on our [Discord](https://starbattle.pro/resources).
+
+Want to see your own map in the game? Design one with the in-game Map editor (below), then submit your bank file (or an `.SC2Replay`) on our [Discord](https://starbattle.pro/resources) and ping Talv.
 
 ## Map editor
 
@@ -104,16 +137,15 @@ tags: [new-content, game-balance, bugfixes]
 
 ### VoidRay
 
-- Remove phase shift scaling from shield upgrades-
-- Remove damage reduction from armor.-
-- Energy Nova:
-  - Increase its damage to 125(+1275 vs massive)
-  - Remove shield and energy leech.
-  - Remove scaling from lasers.
-  - Reduce nova radius to 4.
-  - Increase nova animation (after changing blasts from 3 to 1) by 50%.
-  - Nova does its full damage in 1 blast (instead of 3).
-  - Revert nova energy cost to 100. Reset its cooldown to 10s.
+- Removed Phase Shift dodge-chance scaling from shield upgrades — Phase Shift is now a flat value.
+- Energy Nova — reworked from a self-sustaining, upgrade-scaling, multi-pulse nuke into a lean point-blank burst:
+  - Now **instant** — detonates the moment it's cast, with no wind-up or telegraph.
+  - Now **ignores armor** — deals its full damage regardless of the target's armor.
+  - Damage is **125 (+1275 vs. Massive)** — roughly 1400 to enemy capital ships. It no longer scales with any upgrade.
+  - Delivered in a **single blast** (was 3), and its radius now factors in ship sizes, giving it slightly wider reach.
+  - Removed its shield and energy leech — it no longer heals or refuels the Void Ray on hit.
+  - Now also **destroys enemy projectiles** caught in the blast — except ultimate abilities and Raven's Seeker Missile.
+  - Energy cost restored to 100, cooldown to 10s.
 
 ### Raven
 
@@ -169,9 +201,15 @@ tags: [new-content, game-balance, bugfixes]
 - Increased leash reset radius (5 → 7) — units re-anchor further from their origin before giving chase again.
 - Increased call-for-help radius (2 → 4) and period (2 → 4) — nearby units now respond to allies under attack from further away, more often.
   > Above adjustments were made in response to the introduction of the Queen.
+- Lowered the win count that qualifies a player as a veteran from 70 to 50 — the ship restrictions that kick in once a lobby is stacked with experienced players now apply a bit sooner.
+
+## Rewards
+
+- **Umojan Dreadnought** — a new Dreadnought skin, now available as a Tier 3 donator reward (granted for supporting the project). It was previously slated as an unreleased tournament reward.
 
 ## Bugfixes
 
+- Fixed an issue where some game sounds (such as creep sounds) would go missing when the camera was zoomed to 50%.
 - Fixed lack of spacing between teams on the leader board.
 - Fixed an issue where if match completed prematurely ("You won the game." message at the end - without any points), it would count as a loss for the victorious team.
 - Fixed an issue where changed settings (UI config, ship skins etc.) wouldn't be immediately saved into bank file (it required completing rated game, or changing settings prior to picking a ship).
@@ -251,6 +289,8 @@ The raw reward data (JSON) is publicly available:
 Nox has built [starbattle.pro](https://starbattle.pro) — a community-driven inhouse league tracker for Star Battle Reloaded. Upload a replay, and the site handles everything else: ELO ratings, player profiles, match history, and detailed stats.
 
 [![StarBattle.pro — Homepage](./assets/5.0/starbattle-pro-home.png)](./assets/5.0/starbattle-pro-home.png)
+
+The in-game loading screen now links straight out to it — a new StarBattle.pro button sits alongside Discord, and the old Fandom wiki button has been replaced with a Community Resources link.
 
 **What you get:**
 
