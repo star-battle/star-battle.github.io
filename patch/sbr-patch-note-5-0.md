@@ -209,7 +209,7 @@ PUSH won the Finals 3–1 against Uprise. Aces Retadred took 3rd place, winning 
 
 ### Organizers & Casters
 
-- **Organizers:** Terry (MantisShrimp) and Abra
+- **Organizers:** Abra and Terry
 - **Map Creator & Trophy Award:** Talv
 - **Casters:** [Abra](https://www.youtube.com/channel/UCxwU9kyuTiVg05PBxOSejSQ) (YouTube), [LuckyDevil](https://www.twitch.tv/lucky777devil) (Twitch), [Nox](https://www.twitch.tv/noxrts) (Twitch), Ice, Delta, Master, Terry
 
