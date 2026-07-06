@@ -66,3 +66,9 @@ Follow-up tuning to the Energy Nova rework from 5.0. As a reminder, Energy Nova 
 ### Queen
 
 - **Blinding Cloud** sight floor raised from **2 to 8** — blinded units retain more vision.
+
+## Bugfixes
+
+- **Player profile** — the **Close** button is no longer hidden behind the summary panel; it's visible and clickable again.
+- **Slim UI** — the command-card layout no longer scatters after loading a custom map from the lobby map picker.
+- **Replay playback** — reviewing a replay no longer re-pops the end-game result screen each time you rewind past the game's end, and the console (minimap + command card) now restores correctly once that end screen is dismissed.
