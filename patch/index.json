@@ -1,6 +1,25 @@
 {
-  "generated": "2026-07-04T21:22:13.435Z",
+  "generated": "2026-07-06T06:53:38.955Z",
   "patches": [
+    {
+      "version": "5.1",
+      "published": null,
+      "updated": null,
+      "buildId": "v5.1",
+      "status": "dev",
+      "tags": [
+        "new-content",
+        "game-balance",
+        "bugfixes",
+        "ui"
+      ],
+      "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-1.md",
+      "assets": {
+        "assets/5.1/maps/arena.png": "https://star-battle.talv.space/patch/assets/5.1/maps/arena.png",
+        "assets/5.1/maps/wide-west.png": "https://star-battle.talv.space/patch/assets/5.1/maps/wide-west.png",
+        "assets/5.1/maps/wide-west-spawning.png": "https://star-battle.talv.space/patch/assets/5.1/maps/wide-west-spawning.png"
+      }
+    },
     {
       "version": "5.0",
       "published": "2026-07-04T00:00Z",
