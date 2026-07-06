@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-06T13:46:45.840Z",
+  "generated": "2026-07-06T17:45:50.703Z",
   "patches": [
     {
       "version": "5.1",
-      "published": null,
+      "published": "2026-07-06T00:00Z",
       "updated": null,
-      "buildId": "v5.1",
-      "status": "dev",
+      "buildId": "v5.1-17-gd3c6a3b",
+      "status": "live",
       "tags": [
         "new-content",
         "game-balance",

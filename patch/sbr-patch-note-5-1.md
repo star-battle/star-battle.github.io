@@ -1,9 +1,9 @@
 ---
 version: "5.1"
-published: null
+published: "2026-07-06T00:00Z"
 updated: null
-buildId: "v5.1"
-status: dev
+buildId: "v5.1-17-gd3c6a3b"
+status: live
 tags: [new-content, game-balance, bugfixes, ui]
 ---
 
@@ -25,6 +25,8 @@ Two more community battle maps by **OG**, selectable directly from the lobby map
 *Wide West's spawn settings — doubled fighter limit and a near-full-width spawn path (author's editor view; the shipped light-fighter interval is 1.2s).*
 
 The **map picker is now available in the Balanced variant** as well (previously Premade-only) — the host can choose the battlefield, defaulting to **Random [All]** when left unchanged.
+
+At the start of each match the chosen battlefield is now announced in the objective feed — e.g. `Map: Ulnar [Standard Maps]`, or `Map: Custom Map "<name>"` for imported SC2Bank maps — so everyone can see which map (and pool) is in play.
 
 ## Ships & Balance
 
@@ -69,6 +71,7 @@ Follow-up tuning to the Energy Nova rework from 5.0. As a reminder, Energy Nova 
 
 ## Bugfixes
 
+- **Onboard fighters (simple control mode)** — fixed a regression where onboard fighters (Wraiths, Interceptors, Locusts, Griffons, Escorts, Tac Fighters) stopped responding to control once their retarget range had been upgraded.
 - **Player profile** — the **Close** button is no longer hidden behind the summary panel; it's visible and clickable again.
 - **Slim UI** — the command-card layout no longer scatters after loading a custom map from the lobby map picker.
 - **Replay playback** — reviewing a replay no longer re-pops the end-game result screen each time you rewind past the game's end, and the console (minimap + command card) now restores correctly once that end screen is dismissed.
