@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-28T19:02:38.883Z",
-  "playerCount": 1674,
+  "generated": "2026-07-07T13:25:14.417Z",
+  "playerCount": 1673,
   "players": [
     {
       "name": "1-S2-1-103850",
@@ -7013,23 +7013,6 @@
       "rewards": [
         "TF7"
       ]
-    },
-    {
-      "name": "DesktopPanda",
-      "handle": "2-S2-1-10949121",
-      "battletag": "DesktopPanda#1675",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 1,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "destroyer",
@@ -15096,20 +15079,23 @@
     {
       "name": "LaptopPanda",
       "handle": "2-S2-1-2739766",
+      "battletag": "LaptopPanda#1176",
       "placements": {
         "T1": 0,
-        "T2": 0,
+        "T2": 1,
         "T3": 1,
         "T4": 2,
         "T5": 10,
         "RT1": 0,
-        "RT2": 0,
+        "RT2": 1,
         "RT3": 0,
         "RT4": 0
       },
       "rewards": [
+        "TF0",
         "TF12",
         "TF3",
+        "TF6",
         "TF7",
         "TF8",
         "TF9"
