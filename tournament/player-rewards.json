@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-07T13:25:14.417Z",
-  "playerCount": 1673,
+  "generated": "2026-08-10T14:18:54.347Z",
+  "playerCount": 1646,
   "players": [
     {
       "name": "1-S2-1-103850",
@@ -1067,7 +1067,10 @@
     },
     {
       "name": "aitenlabs",
-      "handle": "2-S2-1-2658878",
+      "handle": [
+        "2-S2-1-2658878",
+        "1-S2-1-4970313"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -1327,7 +1330,11 @@
     },
     {
       "name": "AlmirantGrau",
-      "handle": "2-S2-1-4296643",
+      "handle": [
+        "1-S2-1-20473178",
+        "1-S2-1-5052509",
+        "2-S2-1-4296643"
+      ],
       "battletag": "SHAORAN#21182",
       "placements": {
         "T1": 1,
@@ -1430,7 +1437,10 @@
     },
     {
       "name": "AlphaGC",
-      "handle": "2-S2-1-9756613",
+      "handle": [
+        "2-S2-1-9756613",
+        "1-S2-1-6363469"
+      ],
       "battletag": "AlphaGC#1622",
       "placements": {
         "T1": 0,
@@ -1520,30 +1530,10 @@
     },
     {
       "name": "AmigoDeer",
-      "handle": "1-S2-1-4713448",
-      "placements": {
-        "T1": 1,
-        "T2": 0,
-        "T3": 1,
-        "T4": 0,
-        "T5": 3,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF0",
-        "TF13",
-        "TF20",
-        "TF3",
-        "TF6",
-        "TF7"
-      ]
-    },
-    {
-      "name": "AmigoDeer",
-      "handle": "2-S2-2-148581",
+      "handle": [
+        "1-S2-1-4713448",
+        "2-S2-2-148581"
+      ],
       "placements": {
         "T1": 1,
         "T2": 0,
@@ -1560,6 +1550,9 @@
         "TF12",
         "TF13",
         "TF20",
+        "TF3",
+        "TF6",
+        "TF7",
         "TF8"
       ]
     },
@@ -1614,7 +1607,10 @@
     },
     {
       "name": "Anderl",
-      "handle": "2-S2-1-802862",
+      "handle": [
+        "2-S2-1-802862",
+        "1-S2-1-4213188"
+      ],
       "placements": {
         "T1": 0,
         "T2": 1,
@@ -1719,7 +1715,10 @@
     },
     {
       "name": "Angelo",
-      "handle": "1-S2-1-3252666",
+      "handle": [
+        "1-S2-1-3252666",
+        "2-S2-1-4440236"
+      ],
       "battletag": "Angelo#1856",
       "placements": {
         "T1": 0,
@@ -1969,7 +1968,10 @@
     },
     {
       "name": "Argon",
-      "handle": "1-S2-1-1243381",
+      "handle": [
+        "1-S2-1-1243381",
+        "2-S2-1-2738710"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -2173,20 +2175,26 @@
     },
     {
       "name": "aslan",
-      "handle": "2-S2-1-3830841",
+      "handle": [
+        "1-S2-1-4186124",
+        "2-S2-1-3830841"
+      ],
       "battletag": "Rukawa#1621",
       "placements": {
         "T1": 0,
-        "T2": 0,
-        "T3": 0,
+        "T2": 1,
+        "T3": 1,
         "T4": 0,
-        "T5": 0,
+        "T5": 3,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
         "RT4": 1
       },
-      "rewards": []
+      "rewards": [
+        "TF7",
+        "TF8"
+      ]
     },
     {
       "name": "Assamita",
@@ -2278,7 +2286,10 @@
     },
     {
       "name": "Atheos",
-      "handle": "1-S2-1-4685407",
+      "handle": [
+        "1-S2-1-4685407",
+        "2-S2-1-2076160"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -2510,7 +2521,10 @@
     },
     {
       "name": "BabinHood",
-      "handle": "2-S2-1-9472293",
+      "handle": [
+        "2-S2-1-9472293",
+        "1-S2-1-11755431"
+      ],
       "battletag": "BabinHood#21731",
       "placements": {
         "T1": 0,
@@ -2530,7 +2544,10 @@
     },
     {
       "name": "BacktoLobby",
-      "handle": "1-S2-1-1147239",
+      "handle": [
+        "1-S2-1-1147239",
+        "2-S2-1-4645248"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -2546,7 +2563,10 @@
     },
     {
       "name": "Badwolf",
-      "handle": "1-S2-1-289518",
+      "handle": [
+        "1-S2-1-289518",
+        "2-S2-1-3622343"
+      ],
       "battletag": "Badwolf#1795",
       "placements": {
         "T1": 0,
@@ -3115,7 +3135,10 @@
     },
     {
       "name": "BlackAura",
-      "handle": "1-S2-1-1353809",
+      "handle": [
+        "1-S2-1-1353809",
+        "2-S2-1-4183796"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -3217,7 +3240,10 @@
     },
     {
       "name": "bled",
-      "handle": "1-S2-1-2814374",
+      "handle": [
+        "1-S2-1-2814374",
+        "2-S2-1-3839529"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -3232,22 +3258,6 @@
       "rewards": [
         "TF7"
       ]
-    },
-    {
-      "name": "bled",
-      "handle": "2-S2-1-3839529",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 2,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "bleuw",
@@ -3267,7 +3277,10 @@
     },
     {
       "name": "BlindSide",
-      "handle": "2-S2-1-353070",
+      "handle": [
+        "2-S2-1-353070",
+        "1-S2-1-4459663"
+      ],
       "battletag": "BlindSide#21817",
       "placements": {
         "T1": 0,
@@ -3286,7 +3299,10 @@
     },
     {
       "name": "BloodEagle",
-      "handle": "1-S2-1-735740",
+      "handle": [
+        "1-S2-1-735740",
+        "2-S2-1-4718783"
+      ],
       "battletag": "BloodEagle#1550",
       "placements": {
         "T1": 0,
@@ -3523,7 +3539,10 @@
     },
     {
       "name": "BMWSUX",
-      "handle": "1-S2-1-1184912",
+      "handle": [
+        "1-S2-1-1184912",
+        "2-S2-1-3552701"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -3817,7 +3836,10 @@
     },
     {
       "name": "Brebux",
-      "handle": "1-S2-1-4310806",
+      "handle": [
+        "1-S2-1-4310806",
+        "2-S2-2-347594"
+      ],
       "battletag": "Brebux#2355",
       "placements": {
         "T1": 0,
@@ -3825,27 +3847,6 @@
         "T3": 0,
         "T4": 0,
         "T5": 4,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF0",
-        "TF7",
-        "TF8"
-      ]
-    },
-    {
-      "name": "Brebux",
-      "handle": "2-S2-2-347594",
-      "battletag": "Brebux#2355",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 1,
-        "T4": 0,
-        "T5": 3,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
@@ -3984,7 +3985,10 @@
     },
     {
       "name": "BullDozeR",
-      "handle": "1-S2-1-1988969",
+      "handle": [
+        "1-S2-1-1988969",
+        "2-S2-1-4169596"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -4450,7 +4454,10 @@
     },
     {
       "name": "CAPTSTABBIN",
-      "handle": "1-S2-1-1828988",
+      "handle": [
+        "1-S2-1-1828988",
+        "2-S2-1-3837071"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -4971,7 +4978,10 @@
     },
     {
       "name": "Chewbacca",
-      "handle": "2-S2-1-3211988",
+      "handle": [
+        "2-S2-1-3211988",
+        "1-S2-1-4676303"
+      ],
       "battletag": "Chewbacca#2826",
       "placements": {
         "T1": 1,
@@ -5218,7 +5228,10 @@
     },
     {
       "name": "clo",
-      "handle": "1-S2-1-1645209",
+      "handle": [
+        "1-S2-1-1645209",
+        "2-S2-1-3258100"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -5752,7 +5765,10 @@
     },
     {
       "name": "Creep",
-      "handle": "2-S2-1-4756262",
+      "handle": [
+        "2-S2-1-4756262",
+        "1-S2-1-492247"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -5819,7 +5835,10 @@
     },
     {
       "name": "CriscoCube",
-      "handle": "1-S2-1-856062",
+      "handle": [
+        "1-S2-1-856062",
+        "1-S2-1-20823084"
+      ],
       "placements": {
         "T1": 0,
         "T2": 1,
@@ -6743,14 +6762,17 @@
     },
     {
       "name": "DeadlyKiller",
-      "handle": "2-S2-1-4577526",
+      "handle": [
+        "1-S2-1-2662400",
+        "2-S2-1-4577526"
+      ],
       "battletag": "DratuDomine#1355",
       "placements": {
         "T1": 0,
         "T2": 0,
         "T3": 0,
         "T4": 0,
-        "T5": 0,
+        "T5": 1,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
@@ -7048,7 +7070,10 @@
     },
     {
       "name": "devilhand",
-      "handle": "1-S2-1-2742873",
+      "handle": [
+        "1-S2-1-2742873",
+        "2-S2-1-4303537"
+      ],
       "battletag": "devilhand#1858",
       "placements": {
         "T1": 0,
@@ -7170,7 +7195,10 @@
     },
     {
       "name": "Didaddy",
-      "handle": "2-S2-1-419812",
+      "handle": [
+        "2-S2-1-419812",
+        "1-S2-1-7982672"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -7439,7 +7467,10 @@
     },
     {
       "name": "Dolophine",
-      "handle": "2-S2-1-9955637",
+      "handle": [
+        "2-S2-1-9955637",
+        "1-S2-1-3738372"
+      ],
       "battletag": "Dolophine#1758",
       "placements": {
         "T1": 0,
@@ -7627,23 +7658,6 @@
         "T3": 1,
         "T4": 0,
         "T5": 5,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
-      "name": "DratuDomine",
-      "handle": "1-S2-1-2662400",
-      "battletag": "DratuDomine#1355",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
@@ -8157,7 +8171,10 @@
     },
     {
       "name": "Eflag",
-      "handle": "1-S2-1-4930852",
+      "handle": [
+        "1-S2-1-4930852",
+        "2-S2-1-8392822"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -8483,7 +8500,10 @@
     },
     {
       "name": "EpicInjury",
-      "handle": "1-S2-1-2432235",
+      "handle": [
+        "1-S2-1-2432235",
+        "2-S2-1-2739660"
+      ],
       "battletag": "EpicInjury#1607",
       "placements": {
         "T1": 0,
@@ -8927,25 +8947,6 @@
       ]
     },
     {
-      "name": "EXTERMINADOR",
-      "handle": "1-S2-1-20473178",
-      "placements": {
-        "T1": 1,
-        "T2": -1,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF7"
-      ]
-    },
-    {
       "name": "exVivO",
       "handle": "2-S2-1-626817",
       "battletag": "exVivO#1397",
@@ -9125,7 +9126,10 @@
     },
     {
       "name": "fastforward",
-      "handle": "1-S2-1-4534619",
+      "handle": [
+        "1-S2-1-4534619",
+        "2-S2-1-1253268"
+      ],
       "placements": {
         "T1": 0,
         "T2": 1,
@@ -9140,27 +9144,10 @@
       "rewards": [
         "TF0",
         "TF2",
+        "TF20",
         "TF3",
         "TF6",
         "TF7"
-      ]
-    },
-    {
-      "name": "fastforward",
-      "handle": "2-S2-1-1253268",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF20"
       ]
     },
     {
@@ -9197,7 +9184,10 @@
     },
     {
       "name": "Fees",
-      "handle": "2-S2-1-520229",
+      "handle": [
+        "2-S2-1-520229",
+        "1-S2-1-4777951"
+      ],
       "battletag": "Fees#2742",
       "placements": {
         "T1": 0,
@@ -9318,7 +9308,10 @@
     },
     {
       "name": "FIGJAM",
-      "handle": "1-S2-1-3492848",
+      "handle": [
+        "1-S2-1-3492848",
+        "1-S2-1-20024915"
+      ],
       "placements": {
         "T1": 2,
         "T2": -2,
@@ -9606,7 +9599,10 @@
     },
     {
       "name": "Flowers",
-      "handle": "1-S2-1-6792288",
+      "handle": [
+        "1-S2-1-6792288",
+        "2-S2-1-5958711"
+      ],
       "placements": {
         "T1": 2,
         "T2": -2,
@@ -10069,7 +10065,10 @@
     },
     {
       "name": "GeneralX",
-      "handle": "1-S2-1-807640",
+      "handle": [
+        "1-S2-1-807640",
+        "2-S2-1-4750064"
+      ],
       "battletag": "GeneralX#1606",
       "placements": {
         "T1": 1,
@@ -10079,30 +10078,13 @@
         "T5": 4,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 0
       },
       "rewards": [
         "TF1",
         "TF12"
       ]
-    },
-    {
-      "name": "GeneralX",
-      "handle": "2-S2-1-4750064",
-      "battletag": "GeneralX#1606",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 1,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "Genie",
@@ -10230,7 +10212,10 @@
     },
     {
       "name": "Ghengis",
-      "handle": "1-S2-1-1341841",
+      "handle": [
+        "1-S2-1-1341841",
+        "2-S2-1-3936322"
+      ],
       "battletag": "Ghengis#1608",
       "placements": {
         "T1": 0,
@@ -10249,7 +10234,10 @@
     },
     {
       "name": "ghost",
-      "handle": "1-S2-1-2079474",
+      "handle": [
+        "1-S2-1-2079474",
+        "2-S2-1-4749970"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -10264,22 +10252,6 @@
       "rewards": [
         "TF7"
       ]
-    },
-    {
-      "name": "ghost",
-      "handle": "2-S2-1-4749970",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "Ghost",
@@ -10406,7 +10378,10 @@
     },
     {
       "name": "GKar",
-      "handle": "1-S2-1-1542914",
+      "handle": [
+        "1-S2-1-1542914",
+        "2-S2-1-4220937"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -10603,7 +10578,10 @@
     },
     {
       "name": "gorki",
-      "handle": "2-S2-1-264178",
+      "handle": [
+        "2-S2-1-264178",
+        "1-S2-1-4164013"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -10674,7 +10652,10 @@
     },
     {
       "name": "GreaterNinja",
-      "handle": "1-S2-1-3464526",
+      "handle": [
+        "1-S2-1-3464526",
+        "2-S2-1-4346152"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -10748,7 +10729,10 @@
     },
     {
       "name": "GreenEyes",
-      "handle": "2-S2-1-5266087",
+      "handle": [
+        "2-S2-1-5266087",
+        "1-S2-1-20700809"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -11077,7 +11061,10 @@
     },
     {
       "name": "Haggard",
-      "handle": "2-S2-1-1628741",
+      "handle": [
+        "2-S2-1-1628741",
+        "1-S2-1-20299331"
+      ],
       "battletag": "Haggard#2183",
       "placements": {
         "T1": 0,
@@ -11568,29 +11555,16 @@
     },
     {
       "name": "HeiShou",
-      "handle": "1-S2-1-4236063",
+      "handle": [
+        "1-S2-1-4236063",
+        "3-S2-2-1132161"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
         "T3": 0,
         "T4": 1,
         "T5": 2,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
-      "name": "HeiShou",
-      "handle": "3-S2-2-1132161",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
@@ -11640,7 +11614,10 @@
     },
     {
       "name": "Helveticano",
-      "handle": "1-S2-1-3540180",
+      "handle": [
+        "1-S2-1-3540180",
+        "2-S2-1-5771866"
+      ],
       "battletag": "Helveticano#1623",
       "placements": {
         "T1": 0,
@@ -11666,7 +11643,10 @@
     },
     {
       "name": "HempMode",
-      "handle": "2-S2-1-713548",
+      "handle": [
+        "2-S2-1-713548",
+        "1-S2-1-4235165"
+      ],
       "battletag": "HempMode#2293",
       "placements": {
         "T1": 0,
@@ -12138,24 +12118,10 @@
     },
     {
       "name": "HungSoLo",
-      "handle": "1-S2-1-1113951",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 2,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
-      "name": "Hunter",
-      "handle": "1-S2-1-328049",
-      "battletag": "Hunter#11642",
+      "handle": [
+        "1-S2-1-1113951",
+        "2-S2-1-5111141"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -12187,7 +12153,10 @@
     },
     {
       "name": "Hunter",
-      "handle": "2-S2-1-3829195",
+      "handle": [
+        "1-S2-1-328049",
+        "2-S2-1-3829195"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -12224,7 +12193,10 @@
     },
     {
       "name": "Hwaldar",
-      "handle": "2-S2-1-9826624",
+      "handle": [
+        "2-S2-1-9826624",
+        "1-S2-1-12141618"
+      ],
       "battletag": "Hwaldar#21482",
       "placements": {
         "T1": 0,
@@ -12278,7 +12250,10 @@
     },
     {
       "name": "Hypno",
-      "handle": "1-S2-1-4336123",
+      "handle": [
+        "1-S2-1-4336123",
+        "2-S2-1-569832"
+      ],
       "battletag": "Hypno#2695",
       "placements": {
         "T1": 0,
@@ -12396,7 +12371,10 @@
     },
     {
       "name": "iceman",
-      "handle": "1-S2-1-525550",
+      "handle": [
+        "1-S2-1-525550",
+        "1-S2-1-20381484"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -12783,7 +12761,10 @@
     },
     {
       "name": "Ivan",
-      "handle": "2-S2-1-4725214",
+      "handle": [
+        "2-S2-1-4725214",
+        "1-S2-1-669377"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -12900,7 +12881,10 @@
     },
     {
       "name": "j2jbeast",
-      "handle": "1-S2-1-8585028",
+      "handle": [
+        "1-S2-1-8585028",
+        "2-S2-1-8288290"
+      ],
       "battletag": "j2jbeast#1230",
       "placements": {
         "T1": 0,
@@ -12937,24 +12921,10 @@
     },
     {
       "name": "JACK",
-      "handle": "1-S2-1-2382906",
-      "battletag": "JACK#23977",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
-      "name": "JACK",
-      "handle": "2-S2-1-1471975",
+      "handle": [
+        "1-S2-1-2382906",
+        "2-S2-1-1471975"
+      ],
       "battletag": "JACK#23977",
       "placements": {
         "T1": 0,
@@ -13077,20 +13047,35 @@
     },
     {
       "name": "Jan",
-      "handle": "2-S2-1-4922980",
+      "handle": [
+        "1-S2-1-2701070",
+        "2-S2-1-4922980",
+        "1-S2-1-20816510"
+      ],
       "battletag": "Locuaz#11952",
       "placements": {
         "T1": 0,
         "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
+        "T3": 1,
+        "T4": -1,
+        "T5": 5,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
         "RT4": 1
       },
-      "rewards": []
+      "rewards": [
+        "TF0",
+        "TF1",
+        "TF11",
+        "TF12",
+        "TF2",
+        "TF4",
+        "TF6",
+        "TF7",
+        "TF8",
+        "TF9"
+      ]
     },
     {
       "name": "Jaska",
@@ -13197,7 +13182,10 @@
     },
     {
       "name": "Jeebs",
-      "handle": "1-S2-1-1242157",
+      "handle": [
+        "1-S2-1-1242157",
+        "2-S2-1-3785666"
+      ],
       "battletag": "Jeebs#12530",
       "placements": {
         "T1": 0,
@@ -13315,7 +13303,10 @@
     },
     {
       "name": "jimber",
-      "handle": "1-S2-1-304094",
+      "handle": [
+        "1-S2-1-304094",
+        "2-S2-1-3810660"
+      ],
       "battletag": "jimber#1609",
       "placements": {
         "T1": 0,
@@ -13323,26 +13314,6 @@
         "T3": 0,
         "T4": 0,
         "T5": 7,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF7"
-      ]
-    },
-    {
-      "name": "jimber",
-      "handle": "2-S2-1-3810660",
-      "battletag": "jimber#1609",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 4,
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
@@ -13387,7 +13358,11 @@
     },
     {
       "name": "jjbeast",
-      "handle": "1-S2-1-1741789",
+      "handle": [
+        "1-S2-1-1741789",
+        "2-S2-1-5805572"
+      ],
+      "battletag": "jjbeast#1885",
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -13397,28 +13372,11 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF7"
       ]
-    },
-    {
-      "name": "jjbeast",
-      "handle": "2-S2-1-5805572",
-      "battletag": "jjbeast#1885",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 1
-      },
-      "rewards": []
     },
     {
       "name": "JJChris",
@@ -13572,7 +13530,10 @@
     },
     {
       "name": "JQUEST",
-      "handle": "1-S2-1-2103075",
+      "handle": [
+        "1-S2-1-2103075",
+        "2-S2-1-5789968"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -14428,7 +14389,10 @@
     },
     {
       "name": "KingTut",
-      "handle": "2-S2-1-2117207",
+      "handle": [
+        "2-S2-1-2117207",
+        "1-S2-1-5703476"
+      ],
       "battletag": "KingTut#1610",
       "placements": {
         "T1": 0,
@@ -14447,7 +14411,10 @@
     },
     {
       "name": "kinrob",
-      "handle": "2-S2-1-7285119",
+      "handle": [
+        "2-S2-1-7285119",
+        "1-S2-1-12138451"
+      ],
       "battletag": "kinrob#2539",
       "placements": {
         "T1": 0,
@@ -14482,7 +14449,10 @@
     },
     {
       "name": "Kira",
-      "handle": "1-S2-1-2095853",
+      "handle": [
+        "1-S2-1-2095853",
+        "2-S2-1-2738518"
+      ],
       "battletag": "Kira#1401",
       "placements": {
         "T1": 0,
@@ -14518,7 +14488,10 @@
     },
     {
       "name": "Kiteman",
-      "handle": "1-S2-1-3180134",
+      "handle": [
+        "1-S2-1-3180134",
+        "2-S2-1-4358817"
+      ],
       "battletag": "Kiteman#1502",
       "placements": {
         "T1": 0,
@@ -14539,23 +14512,6 @@
         "TF7",
         "TF9"
       ]
-    },
-    {
-      "name": "Kiteman",
-      "handle": "2-S2-1-4358817",
-      "battletag": "Kiteman#1502",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "Kito",
@@ -14683,7 +14639,10 @@
     },
     {
       "name": "Konravc",
-      "handle": "1-S2-1-3861672",
+      "handle": [
+        "1-S2-1-3861672",
+        "2-S2-1-9063263"
+      ],
       "battletag": "Konravc#1959",
       "placements": {
         "T1": 0,
@@ -14802,7 +14761,11 @@
     },
     {
       "name": "KraKen",
-      "handle": "1-S2-1-4863901",
+      "handle": [
+        "1-S2-1-4863901",
+        "2-S2-1-2909599"
+      ],
+      "battletag": "KraKen#2755",
       "placements": {
         "T1": 2,
         "T2": -2,
@@ -14810,7 +14773,7 @@
         "T4": -1,
         "T5": 5,
         "RT1": 0,
-        "RT2": 0,
+        "RT2": 1,
         "RT3": 0,
         "RT4": 0
       },
@@ -14820,30 +14783,11 @@
         "TF11",
         "TF12",
         "TF2",
+        "TF20",
         "TF6",
         "TF7",
         "TF8",
         "TF9"
-      ]
-    },
-    {
-      "name": "KraKen",
-      "handle": "2-S2-1-2909599",
-      "battletag": "KraKen#2755",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 2,
-        "RT1": 0,
-        "RT2": 1,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF20"
       ]
     },
     {
@@ -14954,7 +14898,10 @@
     },
     {
       "name": "Kurtis",
-      "handle": "1-S2-1-4092246",
+      "handle": [
+        "1-S2-1-4092246",
+        "2-S2-1-4154828"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -15056,29 +15003,10 @@
     },
     {
       "name": "LaptopPanda",
-      "handle": "1-S2-1-2258367",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 1,
-        "T4": 2,
-        "T5": 10,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF3",
-        "TF7",
-        "TF8",
-        "TF9"
-      ]
-    },
-    {
-      "name": "LaptopPanda",
-      "handle": "2-S2-1-2739766",
+      "handle": [
+        "1-S2-1-2258367",
+        "2-S2-1-2739766"
+      ],
       "battletag": "LaptopPanda#1176",
       "placements": {
         "T1": 0,
@@ -15257,7 +15185,10 @@
     },
     {
       "name": "LeopardJack",
-      "handle": "2-S2-1-528576",
+      "handle": [
+        "2-S2-1-528576",
+        "1-S2-1-4700976"
+      ],
       "battletag": "LeopardJack#2838",
       "placements": {
         "T1": 0,
@@ -15584,7 +15515,10 @@
     },
     {
       "name": "Linolot",
-      "handle": "2-S2-1-510373",
+      "handle": [
+        "2-S2-1-510373",
+        "1-S2-1-4916454"
+      ],
       "battletag": "Linolot#2304",
       "placements": {
         "T1": 0,
@@ -15699,34 +15633,6 @@
       ]
     },
     {
-      "name": "Locuaz",
-      "handle": "1-S2-1-2701070",
-      "battletag": "Locuaz#11952",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 1,
-        "T4": -1,
-        "T5": 5,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF0",
-        "TF1",
-        "TF11",
-        "TF12",
-        "TF2",
-        "TF4",
-        "TF6",
-        "TF7",
-        "TF8",
-        "TF9"
-      ]
-    },
-    {
       "name": "Locus",
       "handle": "1-S2-1-1548059",
       "placements": {
@@ -15760,7 +15666,10 @@
     },
     {
       "name": "Loki",
-      "handle": "2-S2-1-1466593",
+      "handle": [
+        "2-S2-1-1466593",
+        "1-S2-1-4051058"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -15843,7 +15752,10 @@
     },
     {
       "name": "LOLz",
-      "handle": "2-S2-1-6963862",
+      "handle": [
+        "2-S2-1-6963862",
+        "1-S2-1-7713874"
+      ],
       "battletag": "Pornexus#11848",
       "placements": {
         "T1": 0,
@@ -16207,7 +16119,10 @@
     },
     {
       "name": "Maciek",
-      "handle": "2-S2-1-887355",
+      "handle": [
+        "2-S2-1-887355",
+        "1-S2-1-20477095"
+      ],
       "battletag": "Maciek#1593",
       "placements": {
         "T1": 0,
@@ -16505,7 +16420,10 @@
     },
     {
       "name": "Marazule",
-      "handle": "1-S2-1-2446031",
+      "handle": [
+        "1-S2-1-2446031",
+        "2-S2-1-2738181"
+      ],
       "battletag": "Marazule#1624",
       "placements": {
         "T1": 0,
@@ -16628,7 +16546,10 @@
     },
     {
       "name": "matterhorn",
-      "handle": "2-S2-1-2711795",
+      "handle": [
+        "2-S2-1-2711795",
+        "1-S2-1-4659099"
+      ],
       "battletag": "matterhorn#2946",
       "placements": {
         "T1": 0,
@@ -16891,7 +16812,10 @@
     },
     {
       "name": "MentalMp",
-      "handle": "1-S2-1-1677488",
+      "handle": [
+        "1-S2-1-1677488",
+        "2-S2-1-5847265"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -16907,7 +16831,10 @@
     },
     {
       "name": "MerKabA",
-      "handle": "1-S2-1-2171431",
+      "handle": [
+        "1-S2-1-2171431",
+        "2-S2-1-2869290"
+      ],
       "battletag": "MerKabA#1930",
       "placements": {
         "T1": 0,
@@ -17115,7 +17042,10 @@
     },
     {
       "name": "Milchbubby",
-      "handle": "1-S2-1-4986715",
+      "handle": [
+        "1-S2-1-4986715",
+        "2-S2-1-1108788"
+      ],
       "battletag": "Milchbubby#2680",
       "placements": {
         "T1": 0,
@@ -17288,7 +17218,10 @@
     },
     {
       "name": "MoneyScan",
-      "handle": "1-S2-1-2073711",
+      "handle": [
+        "1-S2-1-2073711",
+        "2-S2-1-3829318"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -17325,7 +17258,10 @@
     },
     {
       "name": "Monza",
-      "handle": "1-S2-1-903661",
+      "handle": [
+        "1-S2-1-903661",
+        "2-S2-1-5478513"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -17856,7 +17792,10 @@
     },
     {
       "name": "MuRsE",
-      "handle": "1-S2-1-2851211",
+      "handle": [
+        "1-S2-1-2851211",
+        "2-S2-1-5953737"
+      ],
       "battletag": "MuRsE#1982",
       "placements": {
         "T1": 0,
@@ -17875,7 +17814,10 @@
     },
     {
       "name": "Muse",
-      "handle": "2-S2-2-2502119",
+      "handle": [
+        "2-S2-2-2502119",
+        "1-S2-2-1599683"
+      ],
       "battletag": "Muse#21907",
       "placements": {
         "T1": 0,
@@ -18902,7 +18844,10 @@
     },
     {
       "name": "obiwan",
-      "handle": "1-S2-1-421006",
+      "handle": [
+        "1-S2-1-421006",
+        "2-S2-1-2869405"
+      ],
       "placements": {
         "T1": 0,
         "T2": 1,
@@ -18922,25 +18867,6 @@
         "TF2",
         "TF6",
         "TF7",
-        "TF8"
-      ]
-    },
-    {
-      "name": "obiwan",
-      "handle": "2-S2-1-2869405",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 9,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
         "TF8"
       ]
     },
@@ -19038,7 +18964,10 @@
     },
     {
       "name": "OdysseusVL",
-      "handle": "2-S2-1-486860",
+      "handle": [
+        "2-S2-1-486860",
+        "1-S2-1-4840350"
+      ],
       "battletag": "OdysseusVL#1323",
       "placements": {
         "T1": 0,
@@ -19373,7 +19302,10 @@
     },
     {
       "name": "orrb",
-      "handle": "2-S2-1-1057584",
+      "handle": [
+        "2-S2-1-1057584",
+        "1-S2-1-4693561"
+      ],
       "battletag": "orrb#1442",
       "placements": {
         "T1": 0,
@@ -19912,7 +19844,10 @@
     },
     {
       "name": "Pinnacle",
-      "handle": "3-S2-2-752557",
+      "handle": [
+        "3-S2-2-752557",
+        "2-S2-1-3501239"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -20000,7 +19935,10 @@
     },
     {
       "name": "PlutarchXHL",
-      "handle": "1-S2-1-2071477",
+      "handle": [
+        "1-S2-1-2071477",
+        "2-S2-1-7681628"
+      ],
       "battletag": "PlutarchXHL#1528",
       "placements": {
         "T1": 0,
@@ -20173,7 +20111,10 @@
     },
     {
       "name": "PraetorAlex",
-      "handle": "1-S2-1-895465",
+      "handle": [
+        "1-S2-1-895465",
+        "2-S2-1-5958028"
+      ],
       "battletag": "PraetorAlex#1650",
       "placements": {
         "T1": 2,
@@ -20183,7 +20124,7 @@
         "T5": 3,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 0
       },
       "rewards": [
@@ -20192,25 +20133,11 @@
       ]
     },
     {
-      "name": "PraetorAlex",
-      "handle": "2-S2-1-5958028",
-      "battletag": "PraetorAlex#1650",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 1,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
       "name": "Predator",
-      "handle": "1-S2-1-2584088",
+      "handle": [
+        "1-S2-1-2584088",
+        "2-S2-1-5245619"
+      ],
       "battletag": "Predator#1492",
       "placements": {
         "T1": 0,
@@ -20707,7 +20634,10 @@
     },
     {
       "name": "pxvxl",
-      "handle": "2-S2-1-2586720",
+      "handle": [
+        "2-S2-1-2586720",
+        "1-S2-1-20311876"
+      ],
       "battletag": "pxvxl#2858",
       "placements": {
         "T1": 0,
@@ -20909,7 +20839,10 @@
     },
     {
       "name": "Rach",
-      "handle": "1-S2-1-5491503",
+      "handle": [
+        "1-S2-1-5491503",
+        "2-S2-1-1627414"
+      ],
       "battletag": "Rach#2678",
       "placements": {
         "T1": 0,
@@ -21066,7 +20999,10 @@
     },
     {
       "name": "Raphael",
-      "handle": "1-S2-1-4182066",
+      "handle": [
+        "1-S2-1-4182066",
+        "2-S2-1-3456930"
+      ],
       "battletag": "Raphael#3598",
       "placements": {
         "T1": 0,
@@ -21320,7 +21256,10 @@
     },
     {
       "name": "Rayman",
-      "handle": "2-S2-1-627578",
+      "handle": [
+        "2-S2-1-627578",
+        "1-S2-1-4455753"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -21477,7 +21416,11 @@
     },
     {
       "name": "RedDog",
-      "handle": "1-S2-1-2758038",
+      "handle": [
+        "1-S2-1-2758038",
+        "2-S2-1-5753237"
+      ],
+      "battletag": "RedDog#1655",
       "placements": {
         "T1": 2,
         "T2": -2,
@@ -21486,7 +21429,7 @@
         "T5": 3,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 0
       },
       "rewards": [
@@ -21497,23 +21440,6 @@
         "TF7",
         "TF8"
       ]
-    },
-    {
-      "name": "RedDog",
-      "handle": "2-S2-1-5753237",
-      "battletag": "RedDog#1655",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 1,
-        "RT4": 0
-      },
-      "rewards": []
     },
     {
       "name": "RedPig",
@@ -22121,7 +22047,10 @@
     },
     {
       "name": "Rosaline",
-      "handle": "1-S2-1-1478341",
+      "handle": [
+        "1-S2-1-1478341",
+        "2-S2-1-5897782"
+      ],
       "placements": {
         "T1": 1,
         "T2": -1,
@@ -22137,7 +22066,10 @@
     },
     {
       "name": "Rosta",
-      "handle": "2-S2-1-2376319",
+      "handle": [
+        "2-S2-1-2376319",
+        "1-S2-1-20644230"
+      ],
       "battletag": "Rosta#2881",
       "placements": {
         "T1": 0,
@@ -22207,26 +22139,6 @@
       "rewards": []
     },
     {
-      "name": "Rukawa",
-      "handle": "1-S2-1-4186124",
-      "battletag": "Rukawa#1621",
-      "placements": {
-        "T1": 0,
-        "T2": 1,
-        "T3": 1,
-        "T4": 0,
-        "T5": 3,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF7",
-        "TF8"
-      ]
-    },
-    {
       "name": "Ruppert",
       "handle": "1-S2-1-3935771",
       "placements": {
@@ -22280,7 +22192,10 @@
     },
     {
       "name": "Sacarathe",
-      "handle": "2-S2-1-688888",
+      "handle": [
+        "2-S2-1-688888",
+        "1-S2-1-5025559"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -22967,24 +22882,6 @@
     },
     {
       "name": "Schloss",
-      "handle": "2-S2-1-4346152",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 2,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12"
-      ]
-    },
-    {
-      "name": "Schloss",
       "handle": "2-S2-1-572506",
       "placements": {
         "T1": 0,
@@ -23287,7 +23184,10 @@
     },
     {
       "name": "Severf",
-      "handle": "1-S2-1-4422335",
+      "handle": [
+        "1-S2-1-4422335",
+        "2-S2-2-24424"
+      ],
       "placements": {
         "T1": 2,
         "T2": 2,
@@ -23301,30 +23201,12 @@
       },
       "rewards": [
         "TF0",
+        "TF11",
+        "TF12",
         "TF13",
         "TF4",
         "TF5",
         "TF8"
-      ]
-    },
-    {
-      "name": "Severf",
-      "handle": "2-S2-2-24424",
-      "placements": {
-        "T1": 0,
-        "T2": 1,
-        "T3": 1,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF11",
-        "TF12",
-        "TF13"
       ]
     },
     {
@@ -23553,26 +23435,6 @@
         "RT4": 0
       },
       "rewards": []
-    },
-    {
-      "name": "SHAORAN",
-      "handle": "1-S2-1-5052509",
-      "placements": {
-        "T1": 1,
-        "T2": -1,
-        "T3": 0,
-        "T4": 0,
-        "T5": 1,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF20",
-        "TF7"
-      ]
     },
     {
       "name": "SHAPIG",
@@ -23939,7 +23801,10 @@
     },
     {
       "name": "Silence",
-      "handle": "2-S2-1-1112132",
+      "handle": [
+        "2-S2-1-1112132",
+        "1-S2-1-5148759"
+      ],
       "battletag": "Silence#2794",
       "placements": {
         "T1": 0,
@@ -24120,7 +23985,10 @@
     },
     {
       "name": "Singularity",
-      "handle": "1-S2-1-1903261",
+      "handle": [
+        "1-S2-1-1903261",
+        "2-S2-1-3972288"
+      ],
       "battletag": "Singularity#1541",
       "placements": {
         "T1": 0,
@@ -24561,7 +24429,11 @@
     },
     {
       "name": "Slowrope",
-      "handle": "2-S2-1-553238",
+      "handle": [
+        "2-S2-1-553238",
+        "1-S2-1-20496450",
+        "1-S2-1-4179662"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -25815,7 +25687,10 @@
     },
     {
       "name": "SwankyPants",
-      "handle": "2-S2-1-9886685",
+      "handle": [
+        "2-S2-1-9886685",
+        "1-S2-1-12221999"
+      ],
       "battletag": "SwankyPants#1260874",
       "placements": {
         "T1": 0,
@@ -26033,14 +25908,18 @@
     },
     {
       "name": "TairyHesticl",
-      "handle": "1-S2-1-4540211",
+      "handle": [
+        "1-S2-1-4540211",
+        "2-S2-1-3786347"
+      ],
+      "battletag": "MåntisShrimp#2725",
       "placements": {
         "T1": 1,
         "T2": -1,
         "T3": 1,
         "T4": -1,
         "T5": 2,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
@@ -26051,30 +25930,12 @@
         "TF11",
         "TF12",
         "TF2",
+        "TF20",
+        "TF23",
         "TF6",
         "TF7",
         "TF8",
         "TF9"
-      ]
-    },
-    {
-      "name": "TairyHesticl",
-      "handle": "2-S2-1-3786347",
-      "battletag": "MåntisShrimp#2725",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 1,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF20",
-        "TF23"
       ]
     },
     {
@@ -26387,7 +26248,10 @@
     },
     {
       "name": "THCxSpank",
-      "handle": "2-S2-1-1838340",
+      "handle": [
+        "2-S2-1-1838340",
+        "1-S2-1-20766784"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -26524,24 +26388,11 @@
     },
     {
       "name": "TheMaster",
-      "handle": "2-S2-1-3267338",
-      "battletag": "TheMaster1#2375",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 1,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
-      "name": "TheMaster1",
-      "handle": "1-S2-1-5628257",
+      "handle": [
+        "1-S2-1-5628257",
+        "2-S2-1-3267338",
+        "1-S2-1-20244288"
+      ],
       "battletag": "TheMaster1#2375",
       "placements": {
         "T1": 0,
@@ -26551,7 +26402,7 @@
         "T5": 1,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 0
       },
       "rewards": [
@@ -26613,7 +26464,10 @@
     },
     {
       "name": "ThePunisher",
-      "handle": "2-S2-1-7350608",
+      "handle": [
+        "2-S2-1-7350608",
+        "1-S2-1-8476500"
+      ],
       "battletag": "ThePunisher#21659",
       "placements": {
         "T1": 0,
@@ -26719,7 +26573,10 @@
     },
     {
       "name": "Thomas",
-      "handle": "1-S2-1-1391313",
+      "handle": [
+        "1-S2-1-1391313",
+        "2-S2-1-6768665"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -26755,7 +26612,10 @@
     },
     {
       "name": "Thunder",
-      "handle": "1-S2-2-97012",
+      "handle": [
+        "1-S2-2-97012",
+        "2-S2-1-3497754"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -26781,7 +26641,10 @@
     },
     {
       "name": "Thundron",
-      "handle": "2-S2-1-2402240",
+      "handle": [
+        "2-S2-1-2402240",
+        "1-S2-1-12015681"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -27138,7 +27001,10 @@
     },
     {
       "name": "Trigger",
-      "handle": "1-S2-1-1761657",
+      "handle": [
+        "1-S2-1-1761657",
+        "2-S2-1-4184690"
+      ],
       "battletag": "Trigger#1193",
       "placements": {
         "T1": 0,
@@ -27218,7 +27084,11 @@
     },
     {
       "name": "TriZe",
-      "handle": "1-S2-1-720675",
+      "handle": [
+        "1-S2-1-720675",
+        "2-S2-1-5959585",
+        "1-S2-1-20862341"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -28148,7 +28018,10 @@
     },
     {
       "name": "vicgunns",
-      "handle": "1-S2-1-2078776",
+      "handle": [
+        "1-S2-1-2078776",
+        "2-S2-1-4646803"
+      ],
       "battletag": "vicgunns#1737",
       "placements": {
         "T1": 0,
@@ -28375,7 +28248,10 @@
     },
     {
       "name": "WarAlaster",
-      "handle": "1-S2-1-2453465",
+      "handle": [
+        "1-S2-1-2453465",
+        "2-S2-1-2744359"
+      ],
       "battletag": "WarAlaster#1829",
       "placements": {
         "T1": 7,
@@ -28539,7 +28415,10 @@
     },
     {
       "name": "Warsoul",
-      "handle": "1-S2-1-697486",
+      "handle": [
+        "1-S2-1-697486",
+        "2-S2-1-2736820"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -28629,7 +28508,10 @@
     },
     {
       "name": "Weking",
-      "handle": "2-S2-1-1267669",
+      "handle": [
+        "2-S2-1-1267669",
+        "1-S2-1-4252398"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -29190,7 +29072,10 @@
     },
     {
       "name": "Xeen",
-      "handle": "1-S2-1-523682",
+      "handle": [
+        "1-S2-1-523682",
+        "2-S2-1-4613881"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -29450,7 +29335,10 @@
     },
     {
       "name": "XtremeJPR",
-      "handle": "1-S2-1-403727",
+      "handle": [
+        "1-S2-1-403727",
+        "2-S2-1-4740230"
+      ],
       "battletag": "XtremeJPR#1756",
       "placements": {
         "T1": 0,
@@ -29696,7 +29584,10 @@
     },
     {
       "name": "Yoda",
-      "handle": "1-S2-1-1660480",
+      "handle": [
+        "1-S2-1-1660480",
+        "2-S2-1-4361805"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -29841,7 +29732,11 @@
     },
     {
       "name": "yzc",
-      "handle": "1-S2-1-3417798",
+      "handle": [
+        "1-S2-1-3417798",
+        "2-S2-1-2739641"
+      ],
+      "battletag": "yzc#4598",
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -29851,29 +29746,12 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF7",
         "TF8"
       ]
-    },
-    {
-      "name": "yzc",
-      "handle": "2-S2-1-2739641",
-      "battletag": "yzc#4598",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 1
-      },
-      "rewards": []
     },
     {
       "name": "Zacharee",
@@ -30056,7 +29934,10 @@
     },
     {
       "name": "zergrez",
-      "handle": "2-S2-1-4721445",
+      "handle": [
+        "2-S2-1-4721445",
+        "1-S2-1-695026"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -30213,7 +30094,10 @@
     },
     {
       "name": "ZOrb",
-      "handle": "1-S2-1-3212242",
+      "handle": [
+        "1-S2-1-3212242",
+        "2-S2-1-5954864"
+      ],
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -30264,7 +30148,10 @@
     },
     {
       "name": "ZZTOP99",
-      "handle": "1-S2-1-1881252",
+      "handle": [
+        "1-S2-1-1881252",
+        "2-S2-1-6323191"
+      ],
       "battletag": "ZZTOP99#1106",
       "placements": {
         "T1": 0,
