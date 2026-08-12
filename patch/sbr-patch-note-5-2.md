@@ -22,9 +22,13 @@ tags: [game-balance, bugfixes]
 - **Vortex** now telegraphs its cast — a charge-up effect on the Carrier plus an always-visible danger marker at the target point for the duration of the 2s cast. Previously it gave no warning at all.
 - **Plasma Barrage** now telegraphs its **1.5s** wind-up with a cast bar and a charge-up effect on the hull, instead of firing out of a silent pause.
 
+> A lot of words to simply say "Tempests no longer rely on the Carrier having Warp Technology to be usable". Smoothening numbers (5 to 1, base damage to upgrade damage ratio), making it more efficient for the Carrier to start using Tempests, making Tempests a little less overwhelming as the game goes on.
+
 ### Colossus
 
 - **Quantum Reactor** in-combat shield regeneration reverted **50% → 33%**. As before, the share stays flat across every shield upgrade level — the per-level term moved alongside the base so the ratio holds at 33% from level 0 to 20.
+
+> Quantum Reactor easily gives much value, for little play around — or even compensates for mistakes.
 
 ### Dreadnought
 
@@ -33,10 +37,18 @@ tags: [game-balance, bugfixes]
 - **Siege Mode** energy cost **150 → 125**.
 - **Siege Mode** movement speed raised to **33%** of normal (was 25%). The slow builds up in stacks across the 4s wind-up, so the whole transition is a little less punishing, not just the end state.
 
+> Bombard is very present in the meta. While I don't think it is that strong, its state compared to other versions is stronger on many aspects. This one change might just be enough to play more efficiently against it, without changing too much of its functioning.
+>
+> Follow-up changes to siege, still in the same spirit of trying to render its use more tactical and less of a "we already won" or "we need to finish the game". Base damage raise and energy cost redux are here to ease its use, knowing going siege is an expensive build, including upgrades that are completely different from what it otherwise would buy/has bought.
+
 ### Guardian
 
 - **Brood Lord** acceleration **1.5 → 1.25**.
 - **Corruptor** health regeneration per upgrade level **0.6 → 0.5**.
+
+> From my perspective, Brood Lords are a little too easy to manoeuvre for players that kite consistently with them. Brood Lords should be a little less relentless in our hands.
+>
+> While we haven't seen many Corruptors used, these minions scale pretty well, even against ships that are supposed to clear them more easily (F, C, L).
 
 ### Overlord
 
@@ -44,18 +56,26 @@ tags: [game-balance, bugfixes]
 - **Psi Blast** now deals **+200 damage vs. Biological** on top of its 800 base.
 - **Contaminate** base damage **100 → 125** over its full duration — it now reads **125 (+375 vs. Massive)** where it was **100 (+400)**. Total damage against Massive targets is unchanged; it simply hits the increasingly common non-Massive minions harder.
 
+> Small quality of life changes. Overlord hasn't been played much in organized play lately, even less as a carry ship. I think it sits in a fine spot — maybe this Psi Blast change gives an incentive to play more carry ovies.
+
 ### Queen
 
 - **Healing Symbiote** now heals by target type instead of a flat amount. Over its full 10s channel it restores **1000** to Zerg allies — Queen, Overlord, Leviathan and Guardian — and **400** to everyone else, where it previously gave a flat **600**. Per upgrade level that's **100** on Zerg allies and **40** elsewhere, from a flat 150.
 - **Protective Brood** splits the same way. Capital ships now gain **30** hull armor (was 25), while the fighters and summons caught in the same cast gain **15**. Per upgrade level: **3.0** on capital ships and **1.5** on the smaller units, from a flat 2.5.
 - **Parasitic Bomb** spread no longer restarts the debuff. A ship caught by the spread used to receive a fresh full-duration bomb rather than inheriting whatever was left of the original, so the infection could keep renewing itself. It now expires alongside the primary. Damage is raised to compensate: **90 (+1310 vs. Massive)**, up from **90 (+1200)**.
 
-> The two splits above follow the ship roster exactly: every capital ship counts as Massive, and only the four Zerg hulls count as Biological. So Protective Brood is a straight buff on the ships you actually cast it on, and Healing Symbiote becomes a Zerg-ally heal — noticeably stronger on the four Zerg hulls, weaker on the other eight.
+The two splits above follow the ship roster exactly: every capital ship counts as Massive, and only the four Zerg hulls count as Biological. So Protective Brood is a straight buff on the ships you actually cast it on, and Healing Symbiote becomes a Zerg-ally heal — noticeably stronger on the four Zerg hulls, weaker on the other eight.
+
+> Ship is under refinement. Symbiote will probably need follow-up adjusts. Protective Brood isn't used much, if at all, although for those who have an eye for details, its stats against lasers (which are main attack sources against light units) are pretty strong. Pre-emptive change, that may or may not be enough.
+>
+> Parasitic Bomb changed to make it match other AoE damages, and compensate for the bugfix that is a direct nerf.
 
 ### Void Ray
 
 - **Energy Nova** radius **6 → 5**, bringing its effective reach from **7 → 6** once the ship's own size is counted. The hover ring matches the new radius.
 - **Fusion Torpedo** is no longer destroyed by Energy Nova. The torpedo was already meant to be exempt, but a faulty check let it through anyway.
+
+> Nova is able to deny a lot of farm, and Void Ray has an easy time flying in and out to use Nova on ships. This change shouldn't change much when it comes to blink-nova or nova-blink.
 
 ## Bugfixes
 
