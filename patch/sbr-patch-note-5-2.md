@@ -11,8 +11,6 @@ tags: [game-balance, bugfixes]
 
 ## Ships & Balance
 
-*Quoted notes throughout this section are **OG**'s, giving the reasoning behind each change.*
-
 ### Battlecruiser
 
 - **Defensive Shield** no longer adds shield regeneration. The buff was granting **50/s** on top of the Battlecruiser's own **50/s**, so shields recovered at double rate while it was active — they now regenerate at the ship's normal rate. Hull regeneration is untouched. The Defensive Shield and shield-upgrade tooltips no longer mention shield restoration.
@@ -25,6 +23,8 @@ tags: [game-balance, bugfixes]
 - **Plasma Barrage** now telegraphs its **1.5s** wind-up with a cast bar and a charge-up effect on the hull, instead of firing out of a silent pause.
 
 > A lot of words to simply say "Tempests no longer rely on the Carrier having Warp Technology to be usable". Smoothening numbers (5 to 1, base damage to upgrade damage ratio), making it more efficient for the Carrier to start using Tempests, making Tempests a little less overwhelming as the game goes on.
+>
+> — **OG**, gameplay balance developer
 
 ### Colossus
 
@@ -33,6 +33,8 @@ tags: [game-balance, bugfixes]
 The 50% was never a value anyone set. It's a ratio between two separate numbers — how fast the Colossus regenerates shields, and how much of that combat takes away — and the 5.0 pass raised base shield regeneration and retuned the other side of the ratio in the same edit, which moved the share from 33% to 50% as a side effect. The 5.0 note covered the regeneration change but not the ratio, and the tooltip calculates its percentage live from the game data, so it has been showing 50% in-game to everyone all patch. 33% had been the value since before SBR existed, so this is a revert rather than a new nerf. Concretely, at 8 shield upgrades in-combat regeneration goes **72/s → 48/s**, while out of combat it is unchanged at 144/s.
 
 > Quantum Reactor easily gives much value, for little play around — or even compensates for mistakes.
+>
+> — **OG**
 
 ### Dreadnought
 
@@ -44,6 +46,8 @@ The 50% was never a value anyone set. It's a ratio between two separate numbers 
 > Bombard is very present in the meta. While I don't think it is that strong, its state compared to other versions is stronger on many aspects. This one change might just be enough to play more efficiently against it, without changing too much of its functioning.
 >
 > Follow-up changes to siege, still in the same spirit of trying to render its use more tactical and less of a "we already won" or "we need to finish the game". Base damage raise and energy cost redux are here to ease its use, knowing going siege is an expensive build, including upgrades that are completely different from what it otherwise would buy/has bought.
+>
+> — **OG**
 
 ### Guardian
 
@@ -53,14 +57,18 @@ The 50% was never a value anyone set. It's a ratio between two separate numbers 
 > From my perspective, Brood Lords are a little too easy to manoeuvre for players that kite consistently with them. Brood Lords should be a little less relentless in our hands.
 >
 > While we haven't seen many Corruptors used, these minions scale pretty well, even against ships that are supposed to clear them more easily (F, C, L).
+>
+> — **OG**
 
 ### Overlord
 
-- Base hull armor **2 → 3**.
+- **Hull armor** 2 → 3.
 - **Psi Blast** now deals **+200 damage vs. Biological** on top of its 800 base.
 - **Contaminate** base damage **100 → 125** over its full duration — it now reads **125 (+375 vs. Massive)** where it was **100 (+400)**. Total damage against Massive targets is unchanged; it simply hits the increasingly common non-Massive minions harder.
 
 > Small quality of life changes. Overlord hasn't been played much in organized play lately, even less as a carry ship. I think it sits in a fine spot — maybe this Psi Blast change gives an incentive to play more carry ovies.
+>
+> — **OG**
 
 ### Queen
 
@@ -73,13 +81,17 @@ The two splits above follow the ship roster exactly: every capital ship counts a
 > Ship is under refinement. Symbiote will probably need follow-up adjusts. Protective Brood isn't used much, if at all, although for those who have an eye for details, its stats against lasers (which are main attack sources against light units) are pretty strong. Pre-emptive change, that may or may not be enough.
 >
 > Parasitic Bomb changed to make it match other AoE damages, and compensate for the bugfix that is a direct nerf.
+>
+> — **OG**
 
 ### Void Ray
 
 - **Energy Nova** radius **6 → 5**, bringing its effective reach from **7 → 6** once the ship's own size is counted. The hover ring matches the new radius.
-- **Energy Nova no longer destroys the projectiles it was meant to spare.** The exemption list has been there since 5.0, but the check behind it was written in a form the engine doesn't apply reliably, so protected projectiles were being cleared out of the air anyway — including a Nuclear Missile inbound on the Void Ray itself. All seven are now correctly spared: **Fusion Torpedo, Seeker Missile, Nuclear Missile, EMP, Lockdown, Siphon Energy and Parasite**.
+- **Energy Nova** no longer destroys the projectiles it was meant to spare. The exemption list has been there since 5.0, but the check behind it was written in a form the engine doesn't apply reliably, so protected projectiles were being cleared out of the air anyway — including a Nuclear Missile inbound on the Void Ray itself. All seven are now correctly spared: **Fusion Torpedo, Seeker Missile, Nuclear Missile, EMP, Lockdown, Siphon Energy and Parasite**.
 
 > Nova is able to deny a lot of farm, and Void Ray has an easy time flying in and out to use Nova on ships. This change shouldn't change much when it comes to blink-nova or nova-blink.
+>
+> — **OG**
 
 ## Bugfixes
 
@@ -109,8 +121,8 @@ Separately from the sweep above, the pre-SBR records store cumulative *threshold
 ## Credits
 
 - **DaveTheSpectre** joins the in-game asset contributors list.
+- [TODO] Taldarim Carrier animation pack — new spell animations and matching red Plasma Barrage effects, from the same contributor. Wiring is still in the working tree and has not landed; confirm before publishing, and add `new-content` to `tags` if it ships in 5.2.
 
 <!-- TODO(finalize): fill frontmatter once v5.2 is promoted — published, buildId
      (`git describe --tags --always --match 'v*' <published-commit>`), status: live. -->
 
-- [TODO] Taldarim Carrier animation pack — new spell animations and matching red Plasma Barrage effects. Wiring is still in the working tree and has not landed; confirm before publishing, and add `new-content` to `tags` if it ships in 5.2.
