@@ -46,9 +46,11 @@ tags: [game-balance, bugfixes]
 
 ### Queen
 
+- **Healing Symbiote** now heals by target type instead of a flat amount. Over its full 10s channel it restores **1000** to Zerg allies — Queen, Overlord, Leviathan and Guardian — and **400** to everyone else, where it previously gave a flat **600**. Per upgrade level that's **100** on Zerg allies and **40** elsewhere, from a flat 150.
+- **Protective Brood** splits the same way. Capital ships now gain **30** hull armor (was 25), while the fighters and summons caught in the same cast gain **15**. Per upgrade level: **3.0** on capital ships and **1.5** on the smaller units, from a flat 2.5.
 - **Parasitic Bomb** spread no longer restarts the debuff. A ship caught by the spread used to receive a fresh full-duration bomb rather than inheriting whatever was left of the original, so the infection could keep renewing itself. It now expires alongside the primary. Damage is raised to compensate: **90 (+1310 vs. Massive)**, up from **90 (+1200)**.
 
-> The **Healing Symbiote** and **Protective Brood** changes listed in the patch preview are held back for a later patch — the numbers need another pass before they can ship.
+> The two splits above follow the ship roster exactly: every capital ship counts as Massive, and only the four Zerg hulls count as Biological. So Protective Brood is a straight buff on the ships you actually cast it on, and Healing Symbiote becomes a Zerg-ally heal — noticeably stronger on the four Zerg hulls, weaker on the other eight.
 
 ### Void Ray
 
