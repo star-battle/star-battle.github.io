@@ -1,6 +1,19 @@
 {
-  "generated": "2026-07-06T17:45:50.703Z",
+  "generated": "2026-08-12T22:00:53.549Z",
   "patches": [
+    {
+      "version": "5.2",
+      "published": null,
+      "updated": null,
+      "buildId": null,
+      "status": "dev",
+      "tags": [
+        "game-balance",
+        "bugfixes"
+      ],
+      "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-2.md",
+      "assets": {}
+    },
     {
       "version": "5.1",
       "published": "2026-07-06T00:00Z",

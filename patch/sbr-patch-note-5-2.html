@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 5.2 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Site footer ───────────────────────────────── */
+    .site-footer {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 2rem 0 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .site-footer a {
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      transition: color 0.15s;
+    }
+
+    .site-footer a:hover {
+      color: var(--accent);
+    }
+
+    .site-footer img {
+      opacity: 0.6;
+      transition: opacity 0.15s;
+    }
+
+    .site-footer a:hover img {
+      opacity: 1;
+    }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 5.2 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">TBD</span>
+    <span class="status-badge status-dev">In development</span>
+    <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-52---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-52---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 5.2 - Patch Notes</h1>
+<h2 id="ships--balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ships--balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Ships &amp; Balance</h2>
+<h3 id="battlecruiser"><a class="anchor" aria-hidden="true" tabindex="-1" href="#battlecruiser"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Battlecruiser</h3>
+<ul>
+<li><strong>Defensive Shield</strong> no longer adds shield regeneration. The buff was granting <strong>50/s</strong> on top of the Battlecruiser's own <strong>50/s</strong>, so shields recovered at double rate while it was active — they now regenerate at the ship's normal rate. Hull regeneration is untouched. The Defensive Shield and shield-upgrade tooltips no longer mention shield restoration.</li>
+</ul>
+<h3 id="carrier"><a class="anchor" aria-hidden="true" tabindex="-1" href="#carrier"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Carrier</h3>
+<ul>
+<li><strong>Warp In Tempest</strong> is cheaper and off cooldown for everyone — energy <strong>125 → 100</strong>, cooldown <strong>10 → 0</strong>. Those two discounts used to be locked behind <strong>Warp Technology</strong>; they're now folded into the base ability, and the upgrade keeps its Warp and Warp In cooldown effects.</li>
+<li><strong>Tempest</strong> damage <strong>30 (+30 vs. Massive) → 40 (+40)</strong>, while damage per upgrade level drops <strong>10 → 8</strong>.</li>
+<li><strong>Vortex</strong> now telegraphs its cast — a charge-up effect on the Carrier plus an always-visible danger marker at the target point for the duration of the 2s cast. Previously it gave no warning at all.</li>
+<li><strong>Plasma Barrage</strong> now telegraphs its <strong>1.5s</strong> wind-up with a cast bar and a charge-up effect on the hull, instead of firing out of a silent pause.</li>
+</ul>
+<h3 id="colossus"><a class="anchor" aria-hidden="true" tabindex="-1" href="#colossus"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Colossus</h3>
+<ul>
+<li><strong>Quantum Reactor</strong> in-combat shield regeneration reverted <strong>50% → 33%</strong>. As before, the share stays flat across every shield upgrade level — the per-level term moved alongside the base so the ratio holds at 33% from level 0 to 20.</li>
+</ul>
+<h3 id="dreadnought"><a class="anchor" aria-hidden="true" tabindex="-1" href="#dreadnought"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dreadnought</h3>
+<ul>
+<li><strong>Gauss Cannon</strong> base damage <strong>100 → 150</strong> (+300 vs. Massive and structures, unchanged), and its damage is now reduced by <strong>5</strong> armor instead of <strong>10</strong>.</li>
+<li><strong>Bombardment</strong> range <strong>11 → 10</strong>.</li>
+<li><strong>Siege Mode</strong> energy cost <strong>150 → 125</strong>.</li>
+<li><strong>Siege Mode</strong> movement speed raised to <strong>33%</strong> of normal (was 25%). The slow builds up in stacks across the 4s wind-up, so the whole transition is a little less punishing, not just the end state.</li>
+</ul>
+<h3 id="guardian"><a class="anchor" aria-hidden="true" tabindex="-1" href="#guardian"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Guardian</h3>
+<ul>
+<li><strong>Brood Lord</strong> acceleration <strong>1.5 → 1.25</strong>.</li>
+<li><strong>Corruptor</strong> health regeneration per upgrade level <strong>0.6 → 0.5</strong>.</li>
+</ul>
+<h3 id="overlord"><a class="anchor" aria-hidden="true" tabindex="-1" href="#overlord"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Overlord</h3>
+<ul>
+<li>Base hull armor <strong>2 → 3</strong>.</li>
+<li><strong>Psi Blast</strong> now deals <strong>+200 damage vs. Biological</strong> on top of its 800 base.</li>
+<li><strong>Contaminate</strong> base damage <strong>100 → 125</strong> over its full duration — it now reads <strong>125 (+375 vs. Massive)</strong> where it was <strong>100 (+400)</strong>. Total damage against Massive targets is unchanged; it simply hits the increasingly common non-Massive minions harder.</li>
+</ul>
+<h3 id="queen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#queen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Queen</h3>
+<ul>
+<li><strong>Parasitic Bomb</strong> spread no longer restarts the debuff. A ship caught by the spread used to receive a fresh full-duration bomb rather than inheriting whatever was left of the original, so the infection could keep renewing itself. It now expires alongside the primary. Damage is raised to compensate: <strong>90 (+1310 vs. Massive)</strong>, up from <strong>90 (+1200)</strong>.</li>
+</ul>
+<blockquote>
+<p>The <strong>Healing Symbiote</strong> and <strong>Protective Brood</strong> changes listed in the patch preview are held back for a later patch — the numbers need another pass before they can ship.</p>
+</blockquote>
+<h3 id="void-ray"><a class="anchor" aria-hidden="true" tabindex="-1" href="#void-ray"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Void Ray</h3>
+<ul>
+<li><strong>Energy Nova</strong> radius <strong>6 → 5</strong>, bringing its effective reach from <strong>7 → 6</strong> once the ship's own size is counted. The hover ring matches the new radius.</li>
+<li><strong>Fusion Torpedo</strong> is no longer destroyed by Energy Nova. The torpedo was already meant to be exempt, but a faulty check let it through anyway.</li>
+</ul>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li><strong>Premade teams</strong> — the post-game rating change was applied to the wrong side in games with preset teams, so the winning team could be charged for a loss while the losing team gained. Ratings now follow the team you actually played on.</li>
+<li><strong>Gas clouds</strong> no longer shield their occupants from <strong>Plague</strong>, <strong>Contaminate</strong> and <strong>Neural Parasite</strong>. A target standing in a cloud was being treated the same as an undetected cloaked unit, so those spells whiffed. Genuinely cloaked and undetected units still dodge them, as before.</li>
+<li><strong>Plasma Barrage</strong> no longer leaks impact effects — casting the upgraded, infinite version piled up orphaned effects on the Carrier for the rest of the match.</li>
+<li><strong>Warp In Tempest</strong> tooltip corrected: the Carrier must have fewer than <strong>6</strong> Tempests, not 4. The limit itself was always 6.</li>
+</ul>
+<h2 id="profile--rewards"><a class="anchor" aria-hidden="true" tabindex="-1" href="#profile--rewards"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Profile &amp; Rewards</h2>
+<h3 id="classic-tournament-stars-now-follow-you-across-regions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#classic-tournament-stars-now-follow-you-across-regions"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Classic tournament stars now follow you across regions</h3>
+<p>If you won stars in the old Star Battle tournaments but now play on a different server than the one you won them on, your profile was showing nothing. That's fixed.</p>
+<p>Classic results are filed against a StarCraft II account handle, and a handle belongs to a single region — your NA profile and your EU profile are different handles even though they're the same Battle.net account. The game looks your rewards up using the handle for whichever region the game is running on, so if your results sat under a handle you no longer play, the lookup simply missed and you fell through to an empty record. No error, no warning — just a profile with zero stars on it.</p>
+<p>All <strong>1,634</strong> classic entries were cross-checked against Battle.net account id and BattleTag — never by name, which would never have found these; the two profiles in the case that surfaced it shared neither a name nor a discriminator. That turned up <strong>131</strong> handles filed somewhere the game could never reach, plus <strong>18</strong> players holding two separate classic records that had drifted apart, so they saw different stars and different skins depending on which region they logged in from.</p>
+<ul>
+<li><strong>120 players</strong> get their stars and Tournament Finals skins back — <strong>96</strong> of them were rendering a completely empty profile.</li>
+<li><strong>302 stars</strong> and <strong>212 Tournament Finals skins</strong> restored.</li>
+<li><strong>Nobody lost a star or a skin.</strong> The sweep was verified by regenerating the reward catalog before and after and diffing it handle by handle: no handle stopped resolving, and none lost anything. The change is strictly additive.</li>
+</ul>
+<h3 id="legacy-star-counts-corrected"><a class="anchor" aria-hidden="true" tabindex="-1" href="#legacy-star-counts-corrected"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Legacy star counts corrected</h3>
+<p>Separately from the sweep above, the pre-SBR records store cumulative <em>thresholds</em> rather than plain counts, and a negative entry in them is meaningful — it lowers the running threshold, which is how a legacy row records stars it should not display. Those entries were previously being discarded as import noise, which credited some profiles with stars that were never earned. Read as stored, <strong>61</strong> older profiles come back in line with their original records, and will show fewer legacy stars than they did in 5.1.</p>
+<h2 id="credits"><a class="anchor" aria-hidden="true" tabindex="-1" href="#credits"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Credits</h2>
+<ul>
+<li><strong>DaveTheSpectre</strong> joins the in-game asset contributors list.</li>
+</ul>
+
+
+<ul>
+<li>[TODO] Taldarim Carrier animation pack — new spell animations and matching red Plasma Barrage effects. Wiring is still in the working tree and has not landed; confirm before publishing, and add <code>new-content</code> to <code>tags</code> if it ships in 5.2.</li>
+</ul>
+
+    </div>
+  </div>
+  <footer class="site-footer">
+    <a href="https://discord.gg/8pNrrM6JMF" target="_blank" rel="noopener" aria-label="Discord">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" width="22" height="22" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
+    </a>
+    <a href="https://ko-fi.com/starbattlereloaded" target="_blank" rel="noopener" aria-label="Ko-fi">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+    </a>
+    <a href="https://github.com/star-battle" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+    <a href="https://sc2arcade.com/map/2/235210" target="_blank" rel="noopener" aria-label="SC2 Arcade">
+      <img src="/assets/arcade-icon.png" alt="SC2 Arcade" width="22" height="22" />
+    </a>
+  </footer>
+</body>
+</html>
