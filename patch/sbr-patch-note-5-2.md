@@ -11,6 +11,8 @@ tags: [game-balance, bugfixes]
 
 ## Ships & Balance
 
+*Quoted notes throughout this section are **OG**'s, giving the reasoning behind each change.*
+
 ### Battlecruiser
 
 - **Defensive Shield** no longer adds shield regeneration. The buff was granting **50/s** on top of the Battlecruiser's own **50/s**, so shields recovered at double rate while it was active — they now regenerate at the ship's normal rate. Hull regeneration is untouched. The Defensive Shield and shield-upgrade tooltips no longer mention shield restoration.
