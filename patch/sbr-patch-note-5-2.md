@@ -28,6 +28,8 @@ tags: [game-balance, bugfixes]
 
 - **Quantum Reactor** in-combat shield regeneration reverted **50% → 33%**. As before, the share stays flat across every shield upgrade level — the per-level term moved alongside the base so the ratio holds at 33% from level 0 to 20.
 
+The 50% was never a value anyone set. It's a ratio between two separate numbers — how fast the Colossus regenerates shields, and how much of that combat takes away — and the 5.0 pass raised base shield regeneration and retuned the other side of the ratio in the same edit, which moved the share from 33% to 50% as a side effect. The 5.0 note covered the regeneration change but not the ratio, and the tooltip calculates its percentage live from the game data, so it has been showing 50% in-game to everyone all patch. 33% had been the value since before SBR existed, so this is a revert rather than a new nerf. Concretely, at 8 shield upgrades in-combat regeneration goes **72/s → 48/s**, while out of combat it is unchanged at 144/s.
+
 > Quantum Reactor easily gives much value, for little play around — or even compensates for mistakes.
 
 ### Dreadnought
@@ -73,7 +75,7 @@ The two splits above follow the ship roster exactly: every capital ship counts a
 ### Void Ray
 
 - **Energy Nova** radius **6 → 5**, bringing its effective reach from **7 → 6** once the ship's own size is counted. The hover ring matches the new radius.
-- **Fusion Torpedo** is no longer destroyed by Energy Nova. The torpedo was already meant to be exempt, but a faulty check let it through anyway.
+- **Energy Nova no longer destroys the projectiles it was meant to spare.** The exemption list has been there since 5.0, but the check behind it was written in a form the engine doesn't apply reliably, so protected projectiles were being cleared out of the air anyway — including a Nuclear Missile inbound on the Void Ray itself. All seven are now correctly spared: **Fusion Torpedo, Seeker Missile, Nuclear Missile, EMP, Lockdown, Siphon Energy and Parasite**.
 
 > Nova is able to deny a lot of farm, and Void Ray has an easy time flying in and out to use Nova on ships. This change shouldn't change much when it comes to blink-nova or nova-blink.
 

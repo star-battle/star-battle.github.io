@@ -326,6 +326,7 @@
 <ul>
 <li><strong>Quantum Reactor</strong> in-combat shield regeneration reverted <strong>50% → 33%</strong>. As before, the share stays flat across every shield upgrade level — the per-level term moved alongside the base so the ratio holds at 33% from level 0 to 20.</li>
 </ul>
+<p>The 50% was never a value anyone set. It's a ratio between two separate numbers — how fast the Colossus regenerates shields, and how much of that combat takes away — and the 5.0 pass raised base shield regeneration and retuned the other side of the ratio in the same edit, which moved the share from 33% to 50% as a side effect. The 5.0 note covered the regeneration change but not the ratio, and the tooltip calculates its percentage live from the game data, so it has been showing 50% in-game to everyone all patch. 33% had been the value since before SBR existed, so this is a revert rather than a new nerf. Concretely, at 8 shield upgrades in-combat regeneration goes <strong>72/s → 48/s</strong>, while out of combat it is unchanged at 144/s.</p>
 <blockquote>
 <p>Quantum Reactor easily gives much value, for little play around — or even compensates for mistakes.</p>
 </blockquote>
@@ -372,7 +373,7 @@
 <h3 id="void-ray"><a class="anchor" aria-hidden="true" tabindex="-1" href="#void-ray"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Void Ray</h3>
 <ul>
 <li><strong>Energy Nova</strong> radius <strong>6 → 5</strong>, bringing its effective reach from <strong>7 → 6</strong> once the ship's own size is counted. The hover ring matches the new radius.</li>
-<li><strong>Fusion Torpedo</strong> is no longer destroyed by Energy Nova. The torpedo was already meant to be exempt, but a faulty check let it through anyway.</li>
+<li><strong>Energy Nova no longer destroys the projectiles it was meant to spare.</strong> The exemption list has been there since 5.0, but the check behind it was written in a form the engine doesn't apply reliably, so protected projectiles were being cleared out of the air anyway — including a Nuclear Missile inbound on the Void Ray itself. All seven are now correctly spared: <strong>Fusion Torpedo, Seeker Missile, Nuclear Missile, EMP, Lockdown, Siphon Energy and Parasite</strong>.</li>
 </ul>
 <blockquote>
 <p>Nova is able to deny a lot of farm, and Void Ray has an easy time flying in and out to use Nova on ships. This change shouldn't change much when it comes to blink-nova or nova-blink.</p>
