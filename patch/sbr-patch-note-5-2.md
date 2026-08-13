@@ -98,6 +98,7 @@ The two splits above follow the ship roster exactly: every capital ship counts a
 - **Premade teams** — the post-game rating change was applied to the wrong side in games with preset teams, so the winning team could be charged for a loss while the losing team gained. Ratings now follow the team you actually played on.
 - **Gas clouds** no longer shield their occupants from **Plague**, **Contaminate** and **Neural Parasite**. A target standing in a cloud was being treated the same as an undetected cloaked unit, so those spells whiffed. Genuinely cloaked and undetected units still dodge them, as before.
 - **Plasma Barrage** no longer leaks impact effects — casting the upgraded, infinite version piled up orphaned effects on the Carrier for the rest of the match.
+- **Corruptor** projectiles now grow with the Corruptors upgrade. The upgrade was scaling the wrong actor, so your own Corruptor's missile stayed at its base size no matter how many levels you bought, while the Swarm Command version could grow from two upgrades at once. Visual only — damage and behaviour were never affected.
 - **Warp In Tempest** tooltip corrected: the Carrier must have fewer than **6** Tempests, not 4. The limit itself was always 6.
 
 ## Profile & Rewards
@@ -113,6 +114,15 @@ All **1,634** classic entries were cross-checked against Battle.net account id a
 - **120 players** get their stars and Tournament Finals skins back — **96** of them were rendering a completely empty profile.
 - **302 stars** and **212 Tournament Finals skins** restored.
 - **Nobody lost a star or a skin.** The sweep was verified by regenerating the reward catalog before and after and diffing it handle by handle: no handle stopped resolving, and none lost anything. The change is strictly additive.
+
+### SBR Monthly Championship #1 — rewards granted
+
+The first tournament of the SBR Monthly Championship Series was played on **8 August 2026** and won by **Legacy Reborn**, who went 5–0 through the group stage and 2–0 in the Grand Final.
+
+- The eight Legacy Reborn players who took the field receive the **Green Frigate** skin.
+- Everyone else who played collects their placement and participation stars toward the series rewards.
+
+As the ruleset requires, only players who played **at least two games** are credited. Third and fourth place are still open — that Bo3 could not be scheduled on the day and has been moved to **21 August** — so those two teams collect their credit once it is played. Nothing granted here changes when it does.
 
 ### Legacy star counts corrected
 
