@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-13T00:32:02.849Z",
+  "generated": "2026-08-13T23:12:22.592Z",
   "patches": [
     {
       "version": "5.2",
@@ -9,7 +9,8 @@
       "status": "dev",
       "tags": [
         "game-balance",
-        "bugfixes"
+        "bugfixes",
+        "new-content"
       ],
       "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-2.md",
       "assets": {}

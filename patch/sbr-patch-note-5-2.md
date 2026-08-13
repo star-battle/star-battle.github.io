@@ -4,7 +4,7 @@ published: null
 updated: null
 buildId: null
 status: dev
-tags: [game-balance, bugfixes]
+tags: [game-balance, bugfixes, new-content]
 ---
 
 # Star Battle Reloaded 5.2 - Patch Notes
@@ -19,7 +19,6 @@ tags: [game-balance, bugfixes]
 
 - **Warp In Tempest** is cheaper and off cooldown for everyone — energy **125 → 100**, cooldown **10 → 0**. Those two discounts used to be locked behind **Warp Technology**; they're now folded into the base ability, and the upgrade keeps its Warp and Warp In cooldown effects.
 - **Tempest** damage **30 (+30 vs. Massive) → 40 (+40)**, while damage per upgrade level drops **10 → 8**.
-- **Vortex** now telegraphs its cast — a charge-up effect on the Carrier plus an always-visible danger marker at the target point for the duration of the 2s cast. Previously it gave no warning at all.
 - **Plasma Barrage** now telegraphs its **1.5s** wind-up with a cast bar and a charge-up effect on the hull, instead of firing out of a silent pause.
 
 > A lot of words to simply say "Tempests no longer rely on the Carrier having Warp Technology to be usable". Smoothening numbers (5 to 1, base damage to upgrade damage ratio), making it more efficient for the Carrier to start using Tempests, making Tempests a little less overwhelming as the game goes on.
@@ -130,8 +129,7 @@ Separately from the sweep above, the pre-SBR records store cumulative *threshold
 
 ## Credits
 
-- **DaveTheSpectre** joins the in-game asset contributors list.
-- [TODO] Taldarim Carrier animation pack — new spell animations and matching red Plasma Barrage effects, from the same contributor. Wiring is still in the working tree and has not landed; confirm before publishing, and add `new-content` to `tags` if it ships in 5.2.
+- **DaveTheSpectre** joins the in-game asset contributors list, for a pack of re-animated Carrier models. The **Tal'darim Carrier** skin is the first to use it: it now plays a proper spell animation when casting, where before it fired Plasma Barrage from a completely static pose, and its Plasma Barrage projectiles are tinted to match the skin's red effect set.
 
 <!-- TODO(finalize): fill frontmatter once v5.2 is promoted — published, buildId
      (`git describe --tags --always --match 'v*' <published-commit>`), status: live. -->
