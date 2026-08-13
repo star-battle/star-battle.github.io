@@ -1,0 +1,237 @@
+{
+  "id": "sbr-monthly-2026-08",
+  "url": "https://starbattle.pro/tournaments/monthly-championship",
+  "date": "2026-08-08",
+  "teams": [
+    {
+      "name": "Legacy Reborn",
+      "tag": "[Iegacy]",
+      "placement": 1,
+      "players": [
+        {
+          "handle": "2-S2-1-2381777",
+          "battletag": "Nox#12796",
+          "name": "Nox",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1517277",
+          "battletag": "OGKush#2823",
+          "name": "LionInCage",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1674601",
+          "battletag": "Seb#2685",
+          "name": "Seb",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10045576",
+          "battletag": "Gratiskatze#221136",
+          "name": "Salvation",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-2739766",
+          "battletag": "LaptopPanda#1176",
+          "name": "LaptopPanda",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10376219",
+          "battletag": "Jih4dJoe#1140",
+          "name": "JihadJoe",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-8895147",
+          "battletag": "Simo1223#2697",
+          "name": "Neathraender",
+          "rewards": [
+            "TF13"
+          ]
+        },
+        {
+          "handle": "2-S2-1-839462",
+          "battletag": "mrCAPSLOCK#2350",
+          "name": "mrCAPSLOCK",
+          "rewards": [
+            "TF13"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Big Brawl Club",
+      "tag": "[sBBC]",
+      "placement": 2,
+      "players": [
+        {
+          "handle": "2-S2-1-7812664",
+          "battletag": "Koda#22382",
+          "name": "YangWenli",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-378251",
+          "battletag": "CoolBreeze#2337",
+          "name": "CoolBreeze",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6343384",
+          "battletag": "Ray#12678",
+          "name": "FrigSucks",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2789082",
+          "battletag": "RSS82#2637",
+          "name": "Redstar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5931619",
+          "battletag": "NewHorizon#21110",
+          "name": "PlanetNine",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6963862",
+          "battletag": "Pornexus#11848",
+          "name": "Pornexus",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Lucky Cow",
+      "tag": "[Lucky Cow]",
+      "placement": 5,
+      "players": [
+        {
+          "handle": "2-S2-1-5771866",
+          "battletag": "Helveticano#1623",
+          "name": "Peaceжat",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-320919",
+          "battletag": "sanek#1598",
+          "name": "sanek",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-158371",
+          "battletag": "Student#2768",
+          "name": "Student",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-1235709",
+          "battletag": "zlo#22169",
+          "name": "Zlo",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2191647",
+          "battletag": "ТайныйКраб#24560",
+          "name": "Maestro",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-486860",
+          "battletag": "Odyzz#1269",
+          "name": "OdysseusVL",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5953737",
+          "battletag": "MuRsE#1982",
+          "name": "MuRsE",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Freelancers",
+      "tag": "[FRLNC]",
+      "placement": 6,
+      "players": [
+        {
+          "handle": "2-S2-1-2086135",
+          "battletag": "AdmiralNova#2466",
+          "name": "AdmiralNova",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1906242",
+          "battletag": "Orac#2396",
+          "name": "Orac",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-2169811",
+          "battletag": "IDIM#21913",
+          "name": "IXIO",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2625421",
+          "battletag": "MiBu#2278",
+          "name": "MiBu",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4872671",
+          "battletag": "Zoran#21543",
+          "name": "ZorLord",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-2739660",
+          "battletag": "EpicInjury#1607",
+          "name": "MajorDamage",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6952145",
+          "battletag": "F4CK3RCUNT#2711",
+          "name": "EvilKorean",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10366883",
+          "battletag": "GhostDragon#1391213",
+          "name": "GhostDragon",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-5205625",
+          "battletag": "Soricelul#2310",
+          "name": "Brenner",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-7285119",
+          "battletag": "kinrob#2539",
+          "name": "kinrob",
+          "rewards": []
+        }
+      ]
+    }
+  ]
+}

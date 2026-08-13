@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-10T14:18:54.347Z",
-  "playerCount": 1646,
+  "generated": "2026-08-13T00:28:09.796Z",
+  "playerCount": 1657,
   "players": [
     {
       "name": "1-S2-1-103850",
@@ -988,7 +988,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 1
+        "RT4": 2
       },
       "rewards": [
         "TF0",
@@ -3859,6 +3859,23 @@
       ]
     },
     {
+      "name": "Brenner",
+      "handle": "2-S2-1-5205625",
+      "battletag": "Soricelul#2310",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
+    },
+    {
       "name": "Brimstone",
       "handle": "2-S2-2-399942",
       "placements": {
@@ -5529,7 +5546,7 @@
         "T4": 0,
         "T5": 0,
         "RT1": 0,
-        "RT2": 0,
+        "RT2": 1,
         "RT3": 0,
         "RT4": 1
       },
@@ -8499,28 +8516,6 @@
       ]
     },
     {
-      "name": "EpicInjury",
-      "handle": [
-        "1-S2-1-2432235",
-        "2-S2-1-2739660"
-      ],
-      "battletag": "EpicInjury#1607",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 7,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF7"
-      ]
-    },
-    {
       "name": "EPICǂDarKroB",
       "handle": "2-S2-1-1056461",
       "placements": {
@@ -8819,6 +8814,23 @@
       "rewards": [
         "TF0"
       ]
+    },
+    {
+      "name": "EvilKorean",
+      "handle": "2-S2-1-6952145",
+      "battletag": "F4CK3RCUNT#2711",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
     },
     {
       "name": "EvilSource",
@@ -9785,6 +9797,23 @@
       "rewards": []
     },
     {
+      "name": "FrigSucks",
+      "handle": "2-S2-1-6343384",
+      "battletag": "Ray#12678",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 1,
+        "RT3": 1,
+        "RT4": 0
+      },
+      "rewards": []
+    },
+    {
       "name": "Fringe",
       "handle": "2-S2-1-1924213",
       "placements": {
@@ -10267,6 +10296,23 @@
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
+      },
+      "rewards": []
+    },
+    {
+      "name": "GhostDragon",
+      "handle": "2-S2-1-10366883",
+      "battletag": "GhostDragon#1391213",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
       },
       "rewards": []
     },
@@ -11027,23 +11073,6 @@
       ]
     },
     {
-      "name": "Hacker",
-      "handle": "2-S2-1-6343384",
-      "battletag": "Ray#12678",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 1,
-        "RT4": 0
-      },
-      "rewards": []
-    },
-    {
       "name": "hades",
       "handle": "1-S2-1-4243711",
       "placements": {
@@ -11610,35 +11639,6 @@
       "rewards": [
         "TF12",
         "TF7"
-      ]
-    },
-    {
-      "name": "Helveticano",
-      "handle": [
-        "1-S2-1-3540180",
-        "2-S2-1-5771866"
-      ],
-      "battletag": "Helveticano#1623",
-      "placements": {
-        "T1": 0,
-        "T2": 2,
-        "T3": 1,
-        "T4": -3,
-        "T5": 7,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF0",
-        "TF1",
-        "TF11",
-        "TF12",
-        "TF2",
-        "TF6",
-        "TF7",
-        "TF8"
       ]
     },
     {
@@ -12864,6 +12864,23 @@
       "rewards": []
     },
     {
+      "name": "IXIO",
+      "handle": "2-S2-2-2169811",
+      "battletag": "IDIM#21913",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
+    },
+    {
       "name": "IzikielX",
       "handle": "1-S2-1-1378616",
       "placements": {
@@ -13294,12 +13311,14 @@
         "T3": 0,
         "T4": 0,
         "T5": 0,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 0,
         "RT3": 1,
         "RT4": 0
       },
-      "rewards": []
+      "rewards": [
+        "TF13"
+      ]
     },
     {
       "name": "jimber",
@@ -14425,7 +14444,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF20"
@@ -15014,7 +15033,7 @@
         "T3": 1,
         "T4": 2,
         "T5": 10,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 1,
         "RT3": 0,
         "RT4": 0
@@ -15022,6 +15041,7 @@
       "rewards": [
         "TF0",
         "TF12",
+        "TF13",
         "TF3",
         "TF6",
         "TF7",
@@ -15562,7 +15582,7 @@
         "T3": 2,
         "T4": 0,
         "T5": 2,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 1,
         "RT3": 0,
         "RT4": 0
@@ -15572,6 +15592,7 @@
         "TF1",
         "TF11",
         "TF12",
+        "TF13",
         "TF2",
         "TF6",
         "TF7",
@@ -15748,28 +15769,6 @@
         "TF7",
         "TF8",
         "TF9"
-      ]
-    },
-    {
-      "name": "LOLz",
-      "handle": [
-        "2-S2-1-6963862",
-        "1-S2-1-7713874"
-      ],
-      "battletag": "Pornexus#11848",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 1
-      },
-      "rewards": [
-        "TF20"
       ]
     },
     {
@@ -16193,6 +16192,23 @@
       ]
     },
     {
+      "name": "Maestro",
+      "handle": "2-S2-1-2191647",
+      "battletag": "ТайныйКраб#24560",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
+    },
+    {
       "name": "Magic",
       "handle": "1-S2-1-3677607",
       "placements": {
@@ -16245,6 +16261,28 @@
       },
       "rewards": [
         "TF5"
+      ]
+    },
+    {
+      "name": "MajorDamage",
+      "handle": [
+        "1-S2-1-2432235",
+        "2-S2-1-2739660"
+      ],
+      "battletag": "EpicInjury#1607",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 7,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": [
+        "TF7"
       ]
     },
     {
@@ -16908,6 +16946,7 @@
     {
       "name": "MiBu",
       "handle": "2-S2-1-2625421",
+      "battletag": "MiBu#2278",
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -16917,7 +16956,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF12",
@@ -17505,19 +17544,21 @@
     {
       "name": "mrCAPSLOCK",
       "handle": "2-S2-1-839462",
+      "battletag": "mrCAPSLOCK#2350",
       "placements": {
         "T1": 1,
         "T2": 0,
         "T3": 1,
         "T4": 0,
         "T5": 2,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
       },
       "rewards": [
-        "TF0"
+        "TF0",
+        "TF13"
       ]
     },
     {
@@ -17806,7 +17847,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF0"
@@ -18059,6 +18100,25 @@
       },
       "rewards": [
         "TF5"
+      ]
+    },
+    {
+      "name": "Neathraender",
+      "handle": "2-S2-1-8895147",
+      "battletag": "Simo1223#2697",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 1,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 0
+      },
+      "rewards": [
+        "TF13"
       ]
     },
     {
@@ -18701,7 +18761,7 @@
         "T3": 1,
         "T4": 1,
         "T5": 3,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 1,
         "RT3": 0,
         "RT4": 0
@@ -18712,6 +18772,7 @@
         "TF10",
         "TF11",
         "TF12",
+        "TF13",
         "TF2",
         "TF20",
         "TF6",
@@ -18968,7 +19029,7 @@
         "2-S2-1-486860",
         "1-S2-1-4840350"
       ],
-      "battletag": "OdysseusVL#1323",
+      "battletag": "Odyzz#1269",
       "placements": {
         "T1": 0,
         "T2": 0,
@@ -18978,7 +19039,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": []
     },
@@ -19221,6 +19282,23 @@
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
+      },
+      "rewards": []
+    },
+    {
+      "name": "Orac",
+      "handle": "2-S2-1-1906242",
+      "battletag": "Orac#2396",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
       },
       "rewards": []
     },
@@ -19675,6 +19753,35 @@
       ]
     },
     {
+      "name": "Peaceжat",
+      "handle": [
+        "1-S2-1-3540180",
+        "2-S2-1-5771866"
+      ],
+      "battletag": "Helveticano#1623",
+      "placements": {
+        "T1": 0,
+        "T2": 2,
+        "T3": 1,
+        "T4": -3,
+        "T5": 7,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": [
+        "TF0",
+        "TF1",
+        "TF11",
+        "TF12",
+        "TF2",
+        "TF6",
+        "TF7",
+        "TF8"
+      ]
+    },
+    {
       "name": "PecKor",
       "handle": "1-S2-1-4933973",
       "placements": {
@@ -19907,7 +20014,7 @@
         "T4": 0,
         "T5": 0,
         "RT1": 0,
-        "RT2": 0,
+        "RT2": 1,
         "RT3": 0,
         "RT4": 1
       },
@@ -20090,6 +20197,28 @@
         "RT4": 0
       },
       "rewards": []
+    },
+    {
+      "name": "Pornexus",
+      "handle": [
+        "2-S2-1-6963862",
+        "1-S2-1-7713874"
+      ],
+      "battletag": "Pornexus#11848",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 1,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": [
+        "TF20"
+      ]
     },
     {
       "name": "Potoo",
@@ -21486,7 +21615,7 @@
         "T4": 0,
         "T5": 0,
         "RT1": 0,
-        "RT2": 1,
+        "RT2": 2,
         "RT3": 0,
         "RT4": 0
       },
@@ -22329,6 +22458,25 @@
       ]
     },
     {
+      "name": "Salvation",
+      "handle": "2-S2-1-10045576",
+      "battletag": "Gratiskatze#221136",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 1,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 0
+      },
+      "rewards": [
+        "TF13"
+      ]
+    },
+    {
       "name": "sam",
       "handle": "2-S2-1-1599131",
       "placements": {
@@ -22522,7 +22670,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 1
+        "RT4": 2
       },
       "rewards": [
         "TF0",
@@ -23091,7 +23239,7 @@
         "T3": 0,
         "T4": 0,
         "T5": 4,
-        "RT1": 0,
+        "RT1": 1,
         "RT2": 1,
         "RT3": 0,
         "RT4": 0
@@ -23101,6 +23249,7 @@
         "TF1",
         "TF11",
         "TF12",
+        "TF13",
         "TF16",
         "TF2",
         "TF20",
@@ -25424,6 +25573,23 @@
       "rewards": [
         "TF5"
       ]
+    },
+    {
+      "name": "Student",
+      "handle": "2-S2-2-158371",
+      "battletag": "Student#2768",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
     },
     {
       "name": "STXHwasin",
@@ -29432,7 +29598,7 @@
         "T4": 0,
         "T5": 0,
         "RT1": 0,
-        "RT2": 0,
+        "RT2": 1,
         "RT3": 0,
         "RT4": 1
       },
@@ -30093,6 +30259,23 @@
       ]
     },
     {
+      "name": "Zlo",
+      "handle": "2-S2-2-1235709",
+      "battletag": "zlo#22169",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": []
+    },
+    {
       "name": "ZOrb",
       "handle": [
         "1-S2-1-3212242",
@@ -30108,6 +30291,23 @@
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
+      },
+      "rewards": []
+    },
+    {
+      "name": "ZorLord",
+      "handle": "2-S2-1-4872671",
+      "battletag": "Zoran#21543",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
       },
       "rewards": []
     },
