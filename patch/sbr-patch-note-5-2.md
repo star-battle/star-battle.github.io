@@ -24,7 +24,7 @@ tags: [game-balance, bugfixes]
 
 > A lot of words to simply say "Tempests no longer rely on the Carrier having Warp Technology to be usable". Smoothening numbers (5 to 1, base damage to upgrade damage ratio), making it more efficient for the Carrier to start using Tempests, making Tempests a little less overwhelming as the game goes on.
 >
-> — **OG**, gameplay balance developer
+> — **OG**
 
 ### Colossus
 
