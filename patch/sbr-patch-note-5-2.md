@@ -1,10 +1,10 @@
 ---
 version: "5.2"
-published: null
+published: "2026-08-14T00:00Z"
 updated: null
-buildId: null
-status: dev
-tags: [game-balance, bugfixes, new-content]
+buildId: "v5.2"
+status: live
+tags: [game-balance, bugfixes, new-content, ui]
 ---
 
 # Star Battle Reloaded 5.2 - Patch Notes
@@ -130,7 +130,4 @@ Separately from the sweep above, the pre-SBR records store cumulative *threshold
 ## Credits
 
 - **DaveTheSpectre** joins the in-game asset contributors list, for a pack of re-animated Carrier models. The **Tal'darim Carrier** skin is the first to use it: it now plays a proper spell animation when casting, where before it fired Plasma Barrage from a completely static pose, and its Plasma Barrage projectiles are tinted to match the skin's red effect set.
-
-<!-- TODO(finalize): fill frontmatter once v5.2 is promoted — published, buildId
-     (`git describe --tags --always --match 'v*' <published-commit>`), status: live. -->
 
