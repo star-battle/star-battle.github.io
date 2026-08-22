@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-13T00:28:09.796Z",
-  "playerCount": 1657,
+  "generated": "2026-08-22T16:07:23.455Z",
+  "playerCount": 1659,
   "players": [
     {
       "name": "1-S2-1-103850",
@@ -2778,7 +2778,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 1,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF0",
@@ -4967,7 +4967,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF0",
@@ -5009,7 +5009,7 @@
         "RT1": 0,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF0",
@@ -7205,7 +7205,7 @@
         "T5": 0,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 1
       },
       "rewards": []
@@ -10848,26 +10848,6 @@
       },
       "rewards": [
         "TF7"
-      ]
-    },
-    {
-      "name": "Griskar",
-      "handle": "2-S2-1-1412126",
-      "battletag": "Griskar#2158",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 2,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 0
-      },
-      "rewards": [
-        "TF12",
-        "TF4"
       ]
     },
     {
@@ -14555,23 +14535,6 @@
       ]
     },
     {
-      "name": "Kneecap",
-      "handle": "2-S2-1-10128640",
-      "battletag": "shenzhu9#3169",
-      "placements": {
-        "T1": 0,
-        "T2": 0,
-        "T3": 0,
-        "T4": 0,
-        "T5": 0,
-        "RT1": 0,
-        "RT2": 0,
-        "RT3": 0,
-        "RT4": 1
-      },
-      "rewards": []
-    },
-    {
       "name": "KnightFang",
       "handle": "2-S2-1-1126629",
       "placements": {
@@ -15636,6 +15599,23 @@
       "rewards": []
     },
     {
+      "name": "LIUSUSU",
+      "handle": "2-S2-1-11312716",
+      "battletag": "fastruggle#2152",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 1,
+        "RT4": 0
+      },
+      "rewards": []
+    },
+    {
       "name": "LIVEEVIL",
       "handle": "1-S2-1-3808331",
       "placements": {
@@ -15852,7 +15832,7 @@
         "T5": 0,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 1
       },
       "rewards": []
@@ -18133,7 +18113,7 @@
         "T5": 0,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 1
       },
       "rewards": []
@@ -20353,7 +20333,7 @@
         "RT1": 1,
         "RT2": 0,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": [
         "TF0",
@@ -24975,6 +24955,23 @@
       "rewards": []
     },
     {
+      "name": "Spitfire",
+      "handle": "2-S2-1-10128640",
+      "battletag": "Spitfire#31939",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 1,
+        "RT4": 1
+      },
+      "rewards": []
+    },
+    {
       "name": "SPlayer",
       "handle": "1-S2-1-1804387",
       "placements": {
@@ -26000,6 +25997,23 @@
         "RT2": 0,
         "RT3": 0,
         "RT4": 0
+      },
+      "rewards": []
+    },
+    {
+      "name": "Synaqk",
+      "handle": "2-S2-1-6959690",
+      "battletag": "Synaqk#1436",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 0,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
       },
       "rewards": []
     },
@@ -27231,6 +27245,26 @@
       ]
     },
     {
+      "name": "TripppleG",
+      "handle": "2-S2-1-1412126",
+      "battletag": "Griskar#2158",
+      "placements": {
+        "T1": 0,
+        "T2": 0,
+        "T3": 0,
+        "T4": 0,
+        "T5": 2,
+        "RT1": 0,
+        "RT2": 0,
+        "RT3": 0,
+        "RT4": 1
+      },
+      "rewards": [
+        "TF12",
+        "TF4"
+      ]
+    },
+    {
       "name": "TripSwitch",
       "handle": "2-S2-1-2424641",
       "placements": {
@@ -27914,7 +27948,7 @@
         "RT1": 0,
         "RT2": 1,
         "RT3": 0,
-        "RT4": 0
+        "RT4": 1
       },
       "rewards": []
     },
@@ -29911,7 +29945,7 @@
         "T5": 9,
         "RT1": 0,
         "RT2": 0,
-        "RT3": 0,
+        "RT3": 1,
         "RT4": 1
       },
       "rewards": [

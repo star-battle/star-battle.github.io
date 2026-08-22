@@ -118,6 +118,98 @@
       ]
     },
     {
+      "name": "intruder",
+      "tag": "[5ints]",
+      "placement": 3,
+      "players": [
+        {
+          "handle": "2-S2-1-2739641",
+          "battletag": "yzc#4598",
+          "name": "yzc",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8336483",
+          "battletag": "loong#11765",
+          "name": "loong",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-4936606",
+          "battletag": "Diaoyudao#3588",
+          "name": "Diaoyudao",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10128640",
+          "battletag": "Spitfire#31939",
+          "name": "Spitfire",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-10408889",
+          "battletag": "nebula#13966",
+          "name": "nebula",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-11312716",
+          "battletag": "fastruggle#2152",
+          "name": "LIUSUSU",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Ravagers of Space",
+      "tag": "[rages]",
+      "placement": 4,
+      "players": [
+        {
+          "handle": "2-S2-1-3211988",
+          "battletag": "Chewbacca#2826",
+          "name": "Chewbacca",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-342750",
+          "battletag": "Cherrycoke#2577",
+          "name": "Cherrycoke",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1045021",
+          "battletag": "Pringl#2495",
+          "name": "Pringl",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6959690",
+          "battletag": "Synaqk#1436",
+          "name": "Synaqk",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8279175",
+          "battletag": "schlachtvieh#21374",
+          "name": "unox",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-717000",
+          "battletag": "IcE#2802",
+          "name": "BeggiIcE",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1412126",
+          "battletag": "Griskar#2158",
+          "name": "TripppleG",
+          "rewards": []
+        }
+      ]
+    },
+    {
       "name": "Lucky Cow",
       "tag": "[Lucky Cow]",
       "placement": 5,
