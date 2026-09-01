@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Battle Reloaded 5.3 - Patch Notes</title>
+  <style>
+    /* ── Reset & base ──────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0d1117;
+      --bg-surface:  #161b22;
+      --bg-code:     #1f2937;
+      --border:      #30363d;
+      --text:        #c9d1d9;
+      --text-muted:  #8b949e;
+      --text-head:   #f0f6fc;
+      --accent:      #58a6ff;
+      --accent-dim:  #1f6feb;
+      --tag-balance: #238636;
+      --tag-ui:      #1f6feb;
+      --tag-bugs:    #b91c1c;
+      --tag-content: #9333ea;
+      --status-dev:  #d97706;
+      --status-test: #0ea5e9;
+      --status-live: #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      padding: 2rem 1rem;
+    }
+
+    /* ── Layout ────────────────────────────────────── */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Patch header ──────────────────────────────── */
+    .patch-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .patch-header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text-head);
+      margin-bottom: 0.75rem;
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 0.75rem;
+    }
+
+    .meta-date {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .status-dev  { background: rgba(217, 119, 6, 0.2);  color: var(--status-dev);  border: 1px solid var(--status-dev); }
+    .status-test { background: rgba(14, 165, 233, 0.15); color: var(--status-test); border: 1px solid var(--status-test); }
+    .status-live { background: rgba(22, 163, 74, 0.15);  color: var(--status-live); border: 1px solid var(--status-live); }
+
+    .tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    .tag-game-balance { background: rgba(35, 134, 54, 0.2);  color: #3fb950; border: 1px solid var(--tag-balance); }
+    .tag-ui           { background: rgba(31, 111, 235, 0.2); color: #58a6ff; border: 1px solid var(--accent-dim); }
+    .tag-bugfixes     { background: rgba(185, 28, 28, 0.2);  color: #f87171; border: 1px solid var(--tag-bugs); }
+    .tag-new-content  { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid var(--tag-content); }
+
+    /* ── Markdown content ──────────────────────────── */
+    .markdown-body {
+      color: var(--text);
+    }
+
+    .markdown-body h1,
+    .markdown-body h2,
+    .markdown-body h3,
+    .markdown-body h4,
+    .markdown-body h5 {
+      color: var(--text-head);
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .markdown-body h1 { font-size: 1.5rem;  border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .markdown-body h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+    .markdown-body h3 { font-size: 1.05rem; }
+    .markdown-body h4 { font-size: 0.95rem; color: var(--text-muted); }
+
+    .markdown-body p { margin: 0.6rem 0; }
+
+    .markdown-body ul,
+    .markdown-body ol {
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    .markdown-body li { margin: 0.2rem 0; }
+
+    .markdown-body li > ul,
+    .markdown-body li > ol {
+      margin: 0.1rem 0;
+    }
+
+    .markdown-body a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .markdown-body a:hover { text-decoration: underline; }
+
+    .markdown-body blockquote {
+      border-left: 3px solid var(--border);
+      padding: 0.3rem 0 0.3rem 1rem;
+      margin: 0.75rem 0;
+      color: var(--text-muted);
+    }
+
+    .markdown-body code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      font-size: 0.85em;
+      background: var(--bg-code);
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      color: #e3b341;
+    }
+
+    .markdown-body pre {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body pre code {
+      background: none;
+      padding: 0;
+      color: var(--text);
+      font-size: 0.875rem;
+    }
+
+    .markdown-body img {
+      max-width: 100%;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      margin: 0.5rem 0;
+      display: block;
+    }
+
+    .markdown-body hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 1.5rem 0;
+    }
+
+    .markdown-body table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.75rem 0;
+    }
+
+    .markdown-body th,
+    .markdown-body td {
+      border: 1px solid var(--border);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+
+    .markdown-body th {
+      background: var(--bg-surface);
+      color: var(--text-head);
+      font-weight: 600;
+    }
+
+    .markdown-body tr:nth-child(even) { background: var(--bg-surface); }
+
+    /* Keyboard keys */
+    .markdown-body kbd {
+      display: inline-block;
+      padding: 0.1em 0.4em;
+      font-size: 0.8em;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+    }
+
+    /* Checkboxes */
+    .markdown-body input[type="checkbox"] { margin-right: 0.4em; }
+
+    /* ── Index page specifics ───────────────────────── */
+    .index-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .index-list li {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.6rem;
+      background: var(--bg-surface);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      transition: border-color 0.15s;
+    }
+
+    .index-list li:hover { border-color: var(--accent-dim); }
+
+    .index-list a {
+      color: var(--text-head);
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .index-list a:hover { color: var(--accent); }
+
+    .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    /* ── Site footer ───────────────────────────────── */
+    .site-footer {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      padding: 2rem 0 1rem;
+      margin-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .site-footer a {
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      transition: color 0.15s;
+    }
+
+    .site-footer a:hover {
+      color: var(--accent);
+    }
+
+    .site-footer img {
+      opacity: 0.6;
+      transition: opacity 0.15s;
+    }
+
+    .site-footer a:hover img {
+      opacity: 1;
+    }
+
+    /* ── Responsive ────────────────────────────────── */
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.75rem; }
+      .patch-header h1 { font-size: 1.4rem; }
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="page">
+    <div class="patch-header">
+  <h1>Star Battle Reloaded 5.3 - Patch Notes</h1>
+  <div class="meta-row">
+    <span class="meta-date">TBD</span>
+    <span class="status-badge status-dev">In development</span>
+    <span class="tag tag-new-content">new-content</span> <span class="tag tag-ui">ui</span> <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-bugfixes">bugfixes</span>
+  </div>
+</div>
+    <div class="markdown-body">
+      <h1 id="star-battle-reloaded-53---patch-notes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#star-battle-reloaded-53---patch-notes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Star Battle Reloaded 5.3 - Patch Notes</h1>
+<h2 id="maps"><a class="anchor" aria-hidden="true" tabindex="-1" href="#maps"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Maps</h2>
+<h3 id="experimental--nine-new-maps-by-voivod"><a class="anchor" aria-hidden="true" tabindex="-1" href="#experimental--nine-new-maps-by-voivod"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Experimental — nine new maps by VoivoD</h3>
+<p>Nine community maps join the pool, in a new <strong>Experimental</strong> category for maps that haven't been reviewed or playtested yet. They're pickable by name in the lobby — marked with a leading <code>*</code> so you can see at a glance that they're unproven — and there's a new <strong>Random [Experimental]</strong> entry to roll one at random.</p>
+<p>Experimental maps are deliberately left out of <strong>Random [All]</strong>, the lobby default, so nobody lands on an untested layout without choosing to. A map that plays well graduates into the Community pool and loses its <code>*</code>; one that doesn't gets pulled. The old <strong>Random [Misc]</strong> entry is now <strong>Random [Community]</strong>.</p>
+<p>All nine share the same tuned economy: light fighters spawn about <strong>10% faster</strong> (1.36s vs. the usual 1.5s), heavy fighters <strong>25% faster</strong> (48s vs. 60s), and siege fighters <strong>four times as often</strong> (90s vs. 360s). That's the author's own tuning, carried over from his originals intact.</p>
+<p><strong>Tunnel to Oblivion</strong> · 227 obj</p>
+<p><a href="./assets/5.3/maps/tunnel-to-oblivion.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/tunnel-to-oblivion.png" alt="Tunnel to Oblivion" /></a></p>
+<blockquote>
+<p>The main idea was to make a corridor at the bottom that will connect two bases. As I couldn't place bases on the bottom (SBR map editor only gives you ability to offset them), then I put them in the middle. The tunnel has passages for smaller ships. But bigger ships must go all the way through.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Circle of Death</strong> · 151 obj</p>
+<p><a href="./assets/5.3/maps/circle-of-death.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/circle-of-death.png" alt="Circle of Death" /></a></p>
+<blockquote>
+<p>Basically a circle of obstacles with passages for smaller and bigger ships. There are some other obstacles at the map borders. Once bigger ships enter the circle, they must commit to exit at the other side or go back. Smaller ships have some passages to escape.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Space Anomaly</strong> · 104 obj</p>
+<p>The one map that flips the board: red spawns top-left and blue bottom-right, where every other map in the game runs bottom-left against top-right.</p>
+<p><a href="./assets/5.3/maps/space-anomaly.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/space-anomaly.png" alt="Space Anomaly" /></a></p>
+<blockquote>
+<p>Where every map makes you play <em>up right</em>/<em>down left</em>, this one changes the games direction to <em>up left</em>/<em>down right</em>, effectively disorienting (long time) players. This is the main idea behind the map. To screw everything around, to make things interesting and fresh.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Two Bacons</strong> · 129 obj</p>
+<p><a href="./assets/5.3/maps/two-bacons.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/two-bacons.png" alt="Two Bacons" /></a></p>
+<blockquote>
+<p>A fun map in the vein of fy_iceworld or fy_pool_day in cs 1.6. One of these to give variety to map rotation and be absurd. Similar to Char/Port Zion but the corridor is longer and rotated 100 degrees or so. Effectively splitting the map to 3 fighting areas with the corridor area very dangerous to pass through.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Kessel Run</strong> · 455 authored, ~190 per match</p>
+<p>Every object on this map carries its own spawn chance, so it rebuilds itself every time it loads — 237 of its 455 objects roll at 10%, another 102 at 50%. You never play the same Kessel Run twice.</p>
+<p><a href="./assets/5.3/maps/kessel-run.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/kessel-run.png" alt="Kessel Run" /></a></p>
+<blockquote>
+<p>This map is semi-randomly generated each time it's loaded. Or to be precise - filled with obstacles with fairly low chance to spawn. Large map, so faster farm spawn and limits. This map is different each time.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Most Manly Map</strong> · 181 obj</p>
+<p><a href="./assets/5.3/maps/most-manly-map.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/most-manly-map.png" alt="Most Manly Map" /></a></p>
+<blockquote>
+<p>This is a big heart of obstacles with red clouds all around it. Splits the map into two fighting areas. I added some cloud "horns" to enhance tactical play. Fun and absurd map just like "Two Bacons".</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Maelstrom</strong> · 104 obj</p>
+<p><a href="./assets/5.3/maps/maelstrom.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/maelstrom.png" alt="Maelstrom" /></a></p>
+<blockquote>
+<p>Just played this one, and the map is very good to play. This is one of the top maps, like Space Anomaly. Chaotic. Gameplay was really good.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Ember Gate</strong> · 93 obj</p>
+<p><a href="./assets/5.3/maps/ember-gate.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/ember-gate.png" alt="Ember Gate" /></a></p>
+<blockquote>
+<p>Weird at first (no map like this one), but game was really fun. Bases are heavily fortified by obstacles, which actually makes the game a lot more balanced(!!!). There are some "vertical" obstacles, a lot of clouds, not really sure where is the actual cloud, which is unique and a plus.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<p><strong>Islands</strong> · 88 obj</p>
+<p><a href="./assets/5.3/maps/islands.png" rel="noopener noreferrer"><img src="./assets/5.3/maps/islands.png" alt="Islands" /></a></p>
+<blockquote>
+<p>Basically few blobs of obstacles and some clouds. Solid map. When you try to pass the center obstacles as a bigger ship, you can get targeted by a torp and have a problem to outmaneuver it.</p>
+<p>— <strong>VoivoD</strong></p>
+</blockquote>
+<h3 id="one-lobby-entry-per-battlefield"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-lobby-entry-per-battlefield"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One lobby entry per battlefield</h3>
+<p>The standard map list has been showing you ten names for five battlefields. Every built-in layout shipped under two different skyboxes, and the lobby keyed its entries on the skybox rather than the battlefield — so Avernus and Braxis Alpha, Char and Port Zion, Skygeirr and Ulnar, Castanar and Ulaan, Deep Space and Korhal City were each the same field of play twice over, right down to the object placement.</p>
+<p>Each pair now has a single entry, renamed to say what you're actually picking:</p>
+<table>
+<thead>
+<tr>
+<th>Now reads</th>
+<th>Retired duplicate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Rocks - Braxis Alpha</strong></td>
+<td>Avernus</td>
+</tr>
+<tr>
+<td><strong>Rocks &amp; Cloud - Castanar</strong></td>
+<td>Ulaan</td>
+</tr>
+<tr>
+<td><strong>Tunnels - Port Zion</strong></td>
+<td>Char</td>
+</tr>
+<tr>
+<td><strong>Clouds - Ulnar</strong></td>
+<td>Skygeirr</td>
+</tr>
+<tr>
+<td><strong>Open - Deep Space</strong></td>
+<td>Korhal City</td>
+</tr>
+</tbody></table>
+<p>Nothing about how these maps play has changed, and no layout was lost — the duplicates were identical to the entries that remain. What does go is five skyboxes, and the pick was made on how clearly gameplay objects read against the sky rather than on which looked best standing still. Avernus's planet-and-sunflare is the real casualty there.</p>
+<p>The retired backgrounds are still fully available in the map editor, in sandbox, and to saved custom maps; they're only gone from the lobby list, which drops from 36 rows to 31.</p>
+<h2 id="ships--balance"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ships--balance"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Ships &amp; Balance</h2>
+<h3 id="frigate"><a class="anchor" aria-hidden="true" tabindex="-1" href="#frigate"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Frigate</h3>
+<p><strong>Jamming Systems</strong> has stopped hiding the Frigate and started jamming the enemy instead.</p>
+<ul>
+<li><strong>The Frigate is now a normal ship on radar and scan.</strong> It no longer conceals itself. In exchange, Jamming Systems projects a permanent <strong>30-radius</strong> bubble that shuts down enemy radar inside it — a Raven that has researched Radar stops seeing the map while it's in range, and a Battlecruiser's Scanner Sweep goes dark for as long as it stays there. Allies are never affected.</li>
+<li><strong>Cloak detection is untouched.</strong> A jammed Battlecruiser keeps detecting; it only loses the sweep's map-wide vision. Jamming interferes with what the enemy can <em>see at range</em>, not with what they can <em>reveal</em>.</li>
+<li><strong>The downtime is gone entirely.</strong> Jamming Systems used to switch off for 20 seconds whenever the Frigate used Afterburners, Ion Cannon, Magnetic Mine, Quick Reload, Fusion Torpedo, or fired a Ripwave volley. There is no lockout any more — it is simply always on.</li>
+</ul>
+<p><strong>Shield Booster</strong> picks up the out-of-combat shield regeneration that used to ride on Jamming Systems, at a quarter of its old strength.</p>
+<ul>
+<li><strong>Out of combat</strong>, shields ramp back up to <strong>+100/s</strong> over 60 seconds — down from the <strong>+400/s</strong> the old Jamming Systems ramp reached over the same 60. The bonus is flat rather than per-level, so it matters most to a Frigate that hasn't invested in shields yet and fades as you upgrade.</li>
+<li><strong>In combat</strong>, shield regeneration is <strong>halved</strong>.</li>
+<li><strong>It no longer requires Afterburners.</strong> Shield Booster is a standalone <strong>200</strong> mineral purchase; it used to cost 150 for Afterburners on top of that before you could buy it at all.</li>
+</ul>
+<h3 id="guardian"><a class="anchor" aria-hidden="true" tabindex="-1" href="#guardian"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Guardian</h3>
+<p><strong>Posthumous Mitosis</strong> is now called <strong>Endless Swarm</strong>, and it has been rebuilt into a full upgrade rather than a death trigger. Owning it changes how the swarm lives, not just how it dies.</p>
+<ul>
+<li><strong>Your swarm lasts twice as long, from the moment you buy it.</strong> Corruptors go from <strong>50s to 100s</strong>, Brood Lords from <strong>45s to 90s</strong>. This applies while the Guardian is alive and well — you no longer have to die to get value out of the upgrade. Both Spawn tooltips quote the new numbers.</li>
+<li><strong>On the Guardian's death, everything still alive stops expiring and gets stronger.</strong> Living Corruptors and Brood Lords lose their time limit for good and take a permanent <strong>double armour</strong>. Corruptors also gain <strong>+20 damage</strong> — a second Parasite Spore's worth on top of their own — and that bonus rises with the Corruptors upgrade, so it stays equal to their base attack at every level. Brood Lords fight through their Broodling strikes, which are deliberately left alone, so for them it's the armour and the reprieve.</li>
+<li><strong>Leftover energy hatches into more Corruptors.</strong> A dying Guardian spends whatever energy it had left on cocoons, <strong>one per 50 energy</strong>, uncapped — 200 energy is four more Corruptors. They hatch a few seconds later and join the swarm already freed and empowered.</li>
+<li><strong>The payload no longer gets skipped by unusual deaths.</strong> Endless Swarm used to fire only when the Guardian was killed by ordinary damage, so a kill that arrived any other way — a Queen's Neural Parasite ending its own host, for instance — dropped the whole thing silently. It now fires however the Guardian dies.</li>
+<li>The death spawn itself is unchanged: still <strong>15</strong> Scourges, and <strong>2</strong> Broodlings per Brood Lord kill. Brood Lord strike escorts still expire normally.</li>
+</ul>
+
+
+<h3 id="queen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#queen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Queen</h3>
+<p><strong>Blinding Cloud</strong> has been rebuilt around what it was always supposed to do — blind things — and it now reaches the minions that were ignoring it entirely.</p>
+<ul>
+<li><strong>Minions are blinded and out-ranged.</strong> Previously only capital ships were affected, and every fighter inside the cloud kept firing at full range. Now every Light unit caught in the cloud has its sight cut to <strong>4</strong>, and the ones that fight at range lose reach with it: Siege Fighters, Tempests and Brood Lords <strong>−10</strong> weapon range, onboard fighters (Interceptors, Wraiths, Mutalisks, Locusts and the rest) <strong>−1</strong>.</li>
+<li><strong>Capital ships</strong> have their sight cut to <strong>8</strong> and still lose the benefit of allied vision. That floor now actually holds — the old version was collapsing sight to 1–2 in practice.</li>
+<li><strong>The vision wall is gone.</strong> Blinding Cloud used to stamp a block of sight-blocking terrain on the map, which never worked as intended and didn't conceal the cloud's interior anyway. It also no longer suppresses radar or detection, so a Raven keeps its radar and a Battlecruiser's active Scanner Sweep keeps detecting through the cloud.</li>
+<li>Radius, duration and cast are unchanged, and the tooltip now spells out all four cases.</li>
+</ul>
+
+
+<h2 id="interface"><a class="anchor" aria-hidden="true" tabindex="-1" href="#interface"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Interface</h2>
+<h3 id="upcoming-events-on-the-post-game-screen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#upcoming-events-on-the-post-game-screen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Upcoming events on the post-game screen</h3>
+<p>The end-of-game screen now carries an <strong>UPCOMING EVENTS</strong> card alongside the existing links, listing the next tournament dates with a live countdown against each one — <code>TODAY</code>, <code>TOMORROW</code>, or <code>IN n DAYS</code>, with the nearest date highlighted. Dates drop off the card as they pass, and once they've all gone the card disappears with them. An <strong>ENTER THE ARENA</strong> button goes straight to the tournament page.</p>
+<h3 id="event-takeover-on-the-loading-screen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#event-takeover-on-the-loading-screen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Event takeover on the loading screen</h3>
+<p>The loading screen can now hand itself over to a full-screen tournament promo while an event is running. The loading bar and its percentage stay on top of the takeover, so you can still see how far along the load is. Outside an event window the usual loading screen is untouched.</p>
+<h3 id="lobby"><a class="anchor" aria-hidden="true" tabindex="-1" href="#lobby"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Lobby</h3>
+<p>The <strong>Toggleable Shields</strong> option and the game-data variant selector next to it have both been removed from the lobby. Both were experiments that never graduated.</p>
+<h2 id="ship-restrictions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#ship-restrictions"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Ship restrictions</h2>
+<p>The exemption that lets your recorded match history stand in for wins has been broken for a long time — the tables it reads have shipped empty since <strong>January 2022</strong>, so for most of that time it quietly returned nothing for everybody. On EU it was worse: it consulted a table that had never existed under any name.</p>
+<ul>
+<li><strong>Those tables are rebuilt and now travel inside the map</strong>, refreshed with every release instead of waiting on a separate upload, so the exemption actually resolves again.</li>
+<li><strong>The veteran bypass is back, as a conversion.</strong> From <strong>125</strong> recorded games upward, every <strong>5</strong> recorded games count as <strong>one win</strong> toward unlocking ships, and whichever is higher — that figure or the win count in your bank — is the one that applies. If you've played for years and lost your bank file, your record on the ladder now counts for something again.</li>
+<li>Recorded games only ever unlock ships <em>for you</em>. They can't push a lobby over the threshold that turns restrictions on in the first place.</li>
+<li><strong>Region gating is correct again.</strong> A refactor last December had swapped it: the newbie lock had silently narrowed to EU only, and the veteran lock had begun applying on US, where it was never meant to.</li>
+<li><strong>The restricted-ship tooltip now names the real cause.</strong> It used to blame the experience of other players on your team; a lock is decided by your own record.</li>
+</ul>
+<h2 id="bugfixes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#bugfixes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Bugfixes</h2>
+<ul>
+<li><strong>A leaver's ship no longer locks up when the player who claimed it dies.</strong> Claiming an abandoned ship transfers control to you — but if you were then killed, that control was never handed back, and the ship stayed stuck to a dead player for the rest of the match. Nobody on the team could command or upgrade it, whatever they tried. Control now returns to the team on death, the same way it already did when a claimer left or was declared traitor.</li>
+<li><strong>The weapon range indicator no longer silently fails.</strong> On weapons whose tooltip range isn't a plain number, the indicator simply didn't draw — it now falls back to the computed range.</li>
+<li><strong>Ripwave Warheads tells you what it costs.</strong> The tooltip never mentioned that each volley drains energy; it now states the figure — <strong>15</strong> per volley — and reads it from the ability itself, so it can't go stale again.</li>
+</ul>
+
+
+    </div>
+  </div>
+  <footer class="site-footer">
+    <a href="https://discord.gg/8pNrrM6JMF" target="_blank" rel="noopener" aria-label="Discord">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36" width="22" height="22" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
+    </a>
+    <a href="https://ko-fi.com/starbattlereloaded" target="_blank" rel="noopener" aria-label="Ko-fi">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+    </a>
+    <a href="https://github.com/star-battle" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+    <a href="https://sc2arcade.com/map/2/235210" target="_blank" rel="noopener" aria-label="SC2 Arcade">
+      <img src="/assets/arcade-icon.png" alt="SC2 Arcade" width="22" height="22" />
+    </a>
+  </footer>
+</body>
+</html>

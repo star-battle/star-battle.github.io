@@ -1,11 +1,36 @@
 {
-  "generated": "2026-08-13T23:40:24.124Z",
+  "generated": "2026-09-01T09:26:36.332Z",
   "patches": [
+    {
+      "version": "5.3",
+      "published": null,
+      "updated": null,
+      "buildId": null,
+      "status": "dev",
+      "tags": [
+        "new-content",
+        "ui",
+        "game-balance",
+        "bugfixes"
+      ],
+      "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-3.md",
+      "assets": {
+        "assets/5.3/maps/tunnel-to-oblivion.png": "https://star-battle.talv.space/patch/assets/5.3/maps/tunnel-to-oblivion.png",
+        "assets/5.3/maps/circle-of-death.png": "https://star-battle.talv.space/patch/assets/5.3/maps/circle-of-death.png",
+        "assets/5.3/maps/space-anomaly.png": "https://star-battle.talv.space/patch/assets/5.3/maps/space-anomaly.png",
+        "assets/5.3/maps/two-bacons.png": "https://star-battle.talv.space/patch/assets/5.3/maps/two-bacons.png",
+        "assets/5.3/maps/kessel-run.png": "https://star-battle.talv.space/patch/assets/5.3/maps/kessel-run.png",
+        "assets/5.3/maps/most-manly-map.png": "https://star-battle.talv.space/patch/assets/5.3/maps/most-manly-map.png",
+        "assets/5.3/maps/maelstrom.png": "https://star-battle.talv.space/patch/assets/5.3/maps/maelstrom.png",
+        "assets/5.3/maps/ember-gate.png": "https://star-battle.talv.space/patch/assets/5.3/maps/ember-gate.png",
+        "assets/5.3/maps/islands.png": "https://star-battle.talv.space/patch/assets/5.3/maps/islands.png"
+      }
+    },
     {
       "version": "5.2",
       "published": "2026-08-14T00:00Z",
       "updated": null,
-      "buildId": "v5.2",
+      "buildId": "v5.2-1-g857845ed",
       "status": "live",
       "tags": [
         "game-balance",

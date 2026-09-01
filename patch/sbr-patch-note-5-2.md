@@ -2,7 +2,7 @@
 version: "5.2"
 published: "2026-08-14T00:00Z"
 updated: null
-buildId: "v5.2"
+buildId: "v5.2-1-g857845ed"
 status: live
 tags: [game-balance, bugfixes, new-content, ui]
 ---
