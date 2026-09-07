@@ -11,13 +11,17 @@ tags: [new-content, ui, game-balance, bugfixes]
 
 ## Maps
 
-### Experimental — nine new maps by VoivoD
+Three things change in the pool this patch: fifteen maps join, one leaves, and the standard list stops offering you the same battlefield twice over. All **31** maps you can pick are listed in the [map pool catalogue](https://tmp.talv.space/sbr/map-pool/), with per-map layout figures and a guide to reading the previews.
 
-Nine community maps join the pool, in a new **Experimental** category for maps that haven't been reviewed or playtested yet. They're pickable by name in the lobby — marked with a leading `*` so you can see at a glance that they're unproven — and there's a new **Random [Experimental]** entry to roll one at random.
+### Experimental — fifteen new maps by VoivoD
+
+Fifteen community maps join the pool, in a new **Experimental** category for maps that haven't been reviewed or playtested yet. They're pickable by name in the lobby — marked with a leading `*` so you can see at a glance that they're unproven — and there's a new **Random [Experimental]** entry to roll one at random.
 
 Experimental maps are deliberately left out of **Random [All]**, the lobby default, so nobody lands on an untested layout without choosing to. A map that plays well graduates into the Community pool and loses its `*`; one that doesn't gets pulled. The old **Random [Misc]** entry is now **Random [Community]**.
 
-All nine share the same tuned economy: light fighters spawn about **10% faster** (1.36s vs. the usual 1.5s), heavy fighters **25% faster** (48s vs. 60s), and siege fighters **four times as often** (90s vs. 360s). That's the author's own tuning, carried over from his originals intact.
+Fourteen of the fifteen share the same tuned economy: light fighters spawn about **10% faster** (1.36s vs. the usual 1.5s), heavy fighters **25% faster** (48s vs. 60s), and siege fighters **four times as often** (90s vs. 360s). That's the author's own tuning, carried over from his originals intact. Mindfuck is the one exception and runs its own numbers — see its entry below.
+
+Some of these maps give every object its own spawn chance, so they rebuild themselves on each load and no two matches use quite the same field; where the difference is large, both numbers are given below. Several of the later maps were drafted with LLM assistance and then fixed and tuned by hand, as VoivoD notes on each.
 
 **Tunnel to Oblivion** · 227 obj
 
@@ -37,7 +41,7 @@ All nine share the same tuned economy: light fighters spawn about **10% faster**
 
 **Space Anomaly** · 104 obj
 
-The one map that flips the board: red spawns top-left and blue bottom-right, where every other map in the game runs bottom-left against top-right.
+Flips the board: red spawns top-left and blue bottom-right, where nearly every other map in the game runs bottom-left against top-right. Fault Line and Mindfuck, below, take the idea further.
 
 [![Space Anomaly](./assets/5.3/maps/space-anomaly.png)](./assets/5.3/maps/space-anomaly.png)
 
@@ -53,9 +57,9 @@ The one map that flips the board: red spawns top-left and blue bottom-right, whe
 >
 > — **VoivoD**
 
-**Kessel Run** · 455 authored, ~190 per match
+**Kessel Run** · 455 authored, ~191 per match
 
-Every object on this map carries its own spawn chance, so it rebuilds itself every time it loads — 237 of its 455 objects roll at 10%, another 102 at 50%. You never play the same Kessel Run twice.
+The most extreme of the semi-random layouts: 237 of its 455 objects roll at just 10% and another 102 at 50%, so only about a third of the field turns up on any given load. You never play the same Kessel Run twice.
 
 [![Kessel Run](./assets/5.3/maps/kessel-run.png)](./assets/5.3/maps/kessel-run.png)
 
@@ -95,6 +99,66 @@ Every object on this map carries its own spawn chance, so it rebuilds itself eve
 >
 > — **VoivoD**
 
+**Fault Line** · 102 obj
+
+One long rift of rock and cloud cuts the field from corner to corner, with a single gap through the middle — and like Space Anomaly, it plays across the opposite diagonal to the rest of the game.
+
+[![Fault Line](./assets/5.3/maps/fault-line.png)](./assets/5.3/maps/fault-line.png)
+
+> Basically long obstacle carving the map into two halves, with some clouds along the rocks. In the middle, the ships can pass through a passage. The opening was: most of the ships went one half, and enemy most ships went other half. Which was funny. Also game direction rotated 90 degrees.
+>
+> — **VoivoD**
+
+**Riptide** · 94 authored, ~64 per match
+
+The only map in the game on which *every* object rolls a spawn chance — there is no fixed furniture at all, so the wave bands sit somewhere different every single load.
+
+[![Riptide](./assets/5.3/maps/riptide.png)](./assets/5.3/maps/riptide.png)
+
+> Waves like rock formations, some clouds.
+>
+> — **VoivoD**
+
+**Delta** · 62 authored, ~46 per match
+
+[![Delta](./assets/5.3/maps/delta.png)](./assets/5.3/maps/delta.png)
+
+> The clouds have a random chance to spawn, so every time it's a bit different. Quite good map.
+>
+> — **VoivoD**
+
+**Crucible** · 74 authored, ~58 per match
+
+A dense knot of rock sits dead centre, sitting right across the line the fighters run along.
+
+[![Crucible](./assets/5.3/maps/crucible.png)](./assets/5.3/maps/crucible.png)
+
+> This is a big blob of rocks in the center with some junk spaced apart it. Some clouds. Similar to: Most Manly Map.
+>
+> — **VoivoD**
+
+**Binary** · 58 authored, ~41 per match
+
+[![Binary](./assets/5.3/maps/binary.png)](./assets/5.3/maps/binary.png)
+
+> It's two clusters of rocks connected by clouds. Pretty good gameplay.
+>
+> — **VoivoD**
+
+**Mindfuck** · 21 obj
+
+The outlier of the set in every direction. Play runs straight up and down instead of diagonally, the bases sit **84** apart instead of the usual 160, and the economy runs at **3×** stock across the board — a light fighter every **0.5s**, a heavy every **20s**, a siege every **120s** — with the fighter cap cut to **100**. Twenty-one objects on the entire field.
+
+[![Mindfuck](./assets/5.3/maps/mindfuck.png)](./assets/5.3/maps/mindfuck.png)
+
+> Game direction is now up and down. Bases are moved to the center, then spaced apart. There is some space behind bases. Cool looking clouds in the base, left and right of the center of the map, and in the center with few rocks. This is SBR action on steroids.
+>
+> — **VoivoD**
+
+### Four Lanes I retired
+
+**Four Lanes I** is out of the lobby list and both random pools after persistent negative feedback on how it played. It's still available in sandbox, in the map editor and via `-map`. **Four Lanes II** stays in the pool for now.
+
 ### One lobby entry per battlefield
 
 The standard map list has been showing you ten names for five battlefields. Every built-in layout shipped under two different skyboxes, and the lobby keyed its entries on the skybox rather than the battlefield — so Avernus and Braxis Alpha, Char and Port Zion, Skygeirr and Ulnar, Castanar and Ulaan, Deep Space and Korhal City were each the same field of play twice over, right down to the object placement.
@@ -111,9 +175,13 @@ Each pair now has a single entry, renamed to say what you're actually picking:
 
 Nothing about how these maps play has changed, and no layout was lost — the duplicates were identical to the entries that remain. What does go is five skyboxes, and the pick was made on how clearly gameplay objects read against the sky rather than on which looked best standing still. Avernus's planet-and-sunflare is the real casualty there.
 
-The retired backgrounds are still fully available in the map editor, in sandbox, and to saved custom maps; they're only gone from the lobby list, which drops from 36 rows to 31.
+The retired backgrounds are still fully available in the map editor, in sandbox, and to saved custom maps; they're only gone from the lobby list, where the standard map section drops from ten entries to five.
 
 ## Ships & Balance
+
+### Dreadnought
+
+- **Griffon** fighters attack faster — period **3.3s → 2.5s**, about a third more shots in the same time. 3.3s was the longest cooldown of any onboard fighter in the game, and it was drift rather than a decision: 2.5 is what Star Battle ran before SBR forked, and what the other forks still run. The info panel had been quoting **2.2s** throughout, matching neither, and now shows the real number.
 
 ### Frigate
 
@@ -139,14 +207,12 @@ The retired backgrounds are still fully available in the map editor, in sandbox,
 - **The payload no longer gets skipped by unusual deaths.** Endless Swarm used to fire only when the Guardian was killed by ordinary damage, so a kill that arrived any other way — a Queen's Neural Parasite ending its own host, for instance — dropped the whole thing silently. It now fires however the Guardian dies.
 - The death spawn itself is unchanged: still **15** Scourges, and **2** Broodlings per Brood Lord kill. Brood Lord strike escorts still expire normally.
 
-<!-- [TODO] Dark Swarm regeneration is NOT in the note because it has not landed: as of
-     2026-09-01 star-battle/sbr-map@e01c22618ba5ca2048914b779f3df9059182be13 is a lone unmerged
-     commit on branch 210-dark-swarm-regeneration (#210), and master is at 570ac4ea. When it
-     merges, add under Guardian: allied biological units regenerate inside the cloud — Zerg
-     capital ships (Guardian, Queen, Leviathan, Overlord) 50 life/s while out of combat,
-     spawned minions 5 life/s ungated; enemies keep the ranged protection but get no healing;
-     radius 4 and the 20s duration unchanged. Values verified against the behaviour diff and
-     the tooltip strings it rewrites. -->
+**Dark Swarm** now heals your own side for as long as it's up. Until this patch the cloud carried no stat effect at all — it existed purely to stop ranged weapons firing into it.
+
+- **Allied Zerg capital ships regenerate 50 life/s inside the cloud** while out of combat — Guardian, Queen, Leviathan and Overlord. The five-second out-of-combat gate is the same one a capital ship's own regeneration already uses, so the bonus and the base rate switch on and off together.
+- **Allied spawned minions regenerate 5 life/s**, with no combat gate at all. They're the units most likely to be under fire, and they already regenerated while taking it.
+- **Enemies get none of it.** Anything hostile sitting in the cloud keeps the ranged-attack protection it always had, but takes no healing from it.
+- Radius, the **20-second** duration and the ranged-attack protection itself are unchanged. The tooltip now states both rates.
 
 ### Queen
 
@@ -157,9 +223,44 @@ The retired backgrounds are still fully available in the map editor, in sandbox,
 - **The vision wall is gone.** Blinding Cloud used to stamp a block of sight-blocking terrain on the map, which never worked as intended and didn't conceal the cloud's interior anyway. It also no longer suppresses radar or detection, so a Raven keeps its radar and a Battlecruiser's active Scanner Sweep keeps detecting through the cloud.
 - Radius, duration and cast are unchanged, and the tooltip now spells out all four cases.
 
-<!-- [TODO] No designer-rationale issue exists for 5.3 yet (v5.2's was sbr-map#177,
-     "changelog 5.2 explanation - save for release"). When OG files the 5.3 one, fold each
-     block in as a "> " aside under the ship it explains — Guardian and Queen both want one. -->
+<!-- [TODO] No designer-rationale issue exists for 5.3 yet. Re-confirmed 2026-09-07: the only
+     match for `changelog in:title` / `explanation in:title` / "save for release" across
+     star-battle/sbr-map, any state, is v5.2's #177. When OG files the 5.3 one, fold each block
+     in as a "> " aside under the ship it explains — Dreadnought, Frigate, Guardian and Queen
+     all changed this release and none of them carries a rationale aside yet. -->
+
+## Squads
+
+Squads used to be claimed on the Battle.net lobby screen, in public, before the game began. Everyone could see who had paired with whom, and hosts had started kicking squadded players on sight — which defeated the whole point of the feature. Pairing has moved out of the lobby entirely.
+
+**Your squad is now a standing list on your profile.** It lives in your bank and persists between games, so you set it up once with the people you actually play with instead of re-declaring it every lobby. A pair is only honoured when *both* of you hold each other on your list — consent is built into how it's stored, so adding someone one-sidedly achieves nothing.
+
+- **A Squad tab on your own profile** holds the list, marks who's in the current match with you, and lets you add someone by handle, remove them, or switch pairing off entirely. It holds **16** people and nothing on it expires.
+- **A "Play together" button on another player's profile** sends a private invite to accept or decline. When a request wouldn't go through the button greys out and says why, and invites are capped so they can't be used to pester anyone.
+- **Nothing is ever shown to a third party.** Nobody else sees that you're paired, that you sent an invite, or that one was declined. A public broadcast is precisely what produced the problem this replaces.
+- **A squad starts from your *next* match.** The teams for the game you arrange it in were settled before either of you clicked, so it never applies to that one — the thing most likely to look broken when it isn't.
+- **Pairing no longer distorts your rating.** Being squadded still counts toward how the teams are seated — that is what stops a strong player pairing with an underrated alt to bend the balance — but it's dropped from the rating you gain or lose at the end, so results are scored on honest numbers.
+
+**Squads no longer break team sizes.** A mechanism meant to keep a pair together could seat a 12-player game as 5v7, and it fired far more often than intended — with the top-rated pair in the lobby it happened *every* game. It's gone, and team sizes are never bent to fit a squad.
+
+If a lobby holds more squads than can be seated evenly, the surplus is skipped for that match, highest-rated first, and both players in a skipped pair are told; your list isn't touched and it applies again next game. Up to six squads can be honoured in one match, up from five.
+
+Two further fixes to how squads feed team balance:
+
+- **A partner who left before the match started no longer inflates your rating.** Theirs was still being counted toward yours for seating — by as much as **400** points — long after they'd gone.
+- **A squad with only one player in it no longer pins that player in place.** The balancer refuses to move anyone carrying a squad, so a half-claimed pair left the remaining player stuck wherever they first landed.
+
+Squads set on the old lobby screen do nothing any more. If you had a regular partner, the two of you need to add each other in game once, and it then stands. There's a [full walkthrough](https://tmp.talv.space/sbr/squads/) with screenshots and the complete rule list.
+
+<!-- [TODO] The linked page is framed as an unreleased preview — "Status: not released, and no
+     date yet. This page is the feedback round." That is true today, and is how the Discord
+     thread ("Squads: keep it simple", sbrmain) is currently reading it, but it contradicts this
+     note the moment 5.3 publishes. Reframe the page from preview to shipped in the SAME change
+     that sets status: live here — not before, or it goes wrong in the other direction.
+     Page content verified against Galaxy source 2026-09-07 and accurate: the capacity cap
+     (sb_squad_capacity in match_loader.galaxy), mutual consent, same-region gate, invite caps
+     and the eviction notice all match. It is missing only the accept/decline prompt screenshot,
+     which needs two Battle.net accounts in one game to capture. -->
 
 ## Interface
 
@@ -187,6 +288,7 @@ The exemption that lets your recorded match history stand in for wins has been b
 
 ## Bugfixes
 
+- **A full lobby no longer starts a player short.** With every slot taken and fewer than two left free, the game could draft one of the actual participants as a team's base NPC. That player never got a start location or a ship, so a game balanced as 6v6 began 5v6, and if they then left, their own team inherited control of the base and its mineral pool. The draft can no longer land on somebody who is playing, and a player with no start location no longer burns a team ship slot to produce nothing.
 - **A leaver's ship no longer locks up when the player who claimed it dies.** Claiming an abandoned ship transfers control to you — but if you were then killed, that control was never handed back, and the ship stayed stuck to a dead player for the rest of the match. Nobody on the team could command or upgrade it, whatever they tried. Control now returns to the team on death, the same way it already did when a claimer left or was declared traitor.
 - **The weapon range indicator no longer silently fails.** On weapons whose tooltip range isn't a plain number, the indicator simply didn't draw — it now falls back to the computed range.
 - **Ripwave Warheads tells you what it costs.** The tooltip never mentioned that each volley drains energy; it now states the figure — **15** per volley — and reads it from the ability itself, so it can't go stale again.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T09:26:36.332Z",
+  "generated": "2026-09-07T10:58:44.195Z",
   "patches": [
     {
       "version": "5.3",
@@ -23,7 +23,13 @@
         "assets/5.3/maps/most-manly-map.png": "https://star-battle.talv.space/patch/assets/5.3/maps/most-manly-map.png",
         "assets/5.3/maps/maelstrom.png": "https://star-battle.talv.space/patch/assets/5.3/maps/maelstrom.png",
         "assets/5.3/maps/ember-gate.png": "https://star-battle.talv.space/patch/assets/5.3/maps/ember-gate.png",
-        "assets/5.3/maps/islands.png": "https://star-battle.talv.space/patch/assets/5.3/maps/islands.png"
+        "assets/5.3/maps/islands.png": "https://star-battle.talv.space/patch/assets/5.3/maps/islands.png",
+        "assets/5.3/maps/fault-line.png": "https://star-battle.talv.space/patch/assets/5.3/maps/fault-line.png",
+        "assets/5.3/maps/riptide.png": "https://star-battle.talv.space/patch/assets/5.3/maps/riptide.png",
+        "assets/5.3/maps/delta.png": "https://star-battle.talv.space/patch/assets/5.3/maps/delta.png",
+        "assets/5.3/maps/crucible.png": "https://star-battle.talv.space/patch/assets/5.3/maps/crucible.png",
+        "assets/5.3/maps/binary.png": "https://star-battle.talv.space/patch/assets/5.3/maps/binary.png",
+        "assets/5.3/maps/mindfuck.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck.png"
       }
     },
     {
