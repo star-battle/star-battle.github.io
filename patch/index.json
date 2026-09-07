@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T11:09:10.569Z",
+  "generated": "2026-09-07T11:32:15.149Z",
   "patches": [
     {
       "version": "5.3",
@@ -44,7 +44,13 @@
         "assets/5.3/maps/binary-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/binary-sm.png",
         "assets/5.3/maps/binary.png": "https://star-battle.talv.space/patch/assets/5.3/maps/binary.png",
         "assets/5.3/maps/mindfuck-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck-sm.png",
-        "assets/5.3/maps/mindfuck.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck.png"
+        "assets/5.3/maps/mindfuck.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck.png",
+        "assets/5.3/frigate-jamming-sm.png": "https://star-battle.talv.space/patch/assets/5.3/frigate-jamming-sm.png",
+        "assets/5.3/frigate-jamming.png": "https://star-battle.talv.space/patch/assets/5.3/frigate-jamming.png",
+        "assets/5.3/squad-tab.png": "https://star-battle.talv.space/patch/assets/5.3/squad-tab.png",
+        "assets/5.3/upcoming-events-card.png": "https://star-battle.talv.space/patch/assets/5.3/upcoming-events-card.png",
+        "assets/5.3/loading-screen-takeover-sm.png": "https://star-battle.talv.space/patch/assets/5.3/loading-screen-takeover-sm.png",
+        "assets/5.3/loading-screen-takeover.png": "https://star-battle.talv.space/patch/assets/5.3/loading-screen-takeover.png"
       }
     },
     {

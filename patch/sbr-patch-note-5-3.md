@@ -191,6 +191,10 @@ The retired backgrounds are still fully available in the map editor, in sandbox,
 - **Cloak detection is untouched.** A jammed Battlecruiser keeps detecting; it only loses the sweep's map-wide vision. Jamming interferes with what the enemy can *see at range*, not with what they can *reveal*.
 - **The downtime is gone entirely.** Jamming Systems used to switch off for 20 seconds whenever the Frigate used Afterburners, Ion Cannon, Magnetic Mine, Quick Reload, Fusion Torpedo, or fired a Ripwave volley. There is no lockout any more — it is simply always on.
 
+The same enemy ship, in the same place, seen on radar from outside the bubble and from inside it:
+
+[![An enemy radar blip disappearing once a jamming Frigate is within range](./assets/5.3/frigate-jamming-sm.png)](./assets/5.3/frigate-jamming.png)
+
 **Shield Booster** picks up the out-of-combat shield regeneration that used to ride on Jamming Systems, at a quarter of its old strength.
 
 - **Out of combat**, shields ramp back up to **+100/s** over 60 seconds — down from the **+400/s** the old Jamming Systems ramp reached over the same 60. The bonus is flat rather than per-level, so it matters most to a Frigate that hasn't invested in shields yet and fades as you upgrade.
@@ -241,6 +245,8 @@ Squads used to be claimed on the Battle.net lobby screen, in public, before the 
 - **A squad starts from your *next* match.** The teams for the game you arrange it in were settled before either of you clicked, so it never applies to that one — the thing most likely to look broken when it isn't.
 - **Pairing no longer distorts your rating.** Being squadded still counts toward how the teams are seated — that is what stops a strong player pairing with an underrated alt to bend the balance — but it's dropped from the rating you gain or lose at the end, so results are scored on honest numbers.
 
+![The Squad tab on your own profile](./assets/5.3/squad-tab.png)
+
 **Squads no longer break team sizes.** A mechanism meant to keep a pair together could seat a 12-player game as 5v7, and it fired far more often than intended — with the top-rated pair in the lobby it happened *every* game. It's gone, and team sizes are never bent to fit a squad.
 
 If a lobby holds more squads than can be seated evenly, the surplus is skipped for that match, highest-rated first, and both players in a skipped pair are told; your list isn't touched and it applies again next game. Up to six squads can be honoured in one match, up from five.
@@ -268,9 +274,13 @@ Squads set on the old lobby screen do nothing any more. If you had a regular par
 
 The end-of-game screen now carries an **UPCOMING EVENTS** card alongside the existing links, listing the next tournament dates with a live countdown against each one — `TODAY`, `TOMORROW`, or `IN n DAYS`, with the nearest date highlighted. Dates drop off the card as they pass, and once they've all gone the card disappears with them. An **ENTER THE ARENA** button goes straight to the tournament page.
 
+![The UPCOMING EVENTS card on the post-game screen](./assets/5.3/upcoming-events-card.png)
+
 ### Event takeover on the loading screen
 
 The loading screen can now hand itself over to a full-screen tournament promo while an event is running. The loading bar and its percentage stay on top of the takeover, so you can still see how far along the load is. Outside an event window the usual loading screen is untouched.
+
+[![The loading screen handed over to a tournament promo](./assets/5.3/loading-screen-takeover-sm.png)](./assets/5.3/loading-screen-takeover.png)
 
 ### Lobby
 
