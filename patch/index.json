@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T10:58:44.195Z",
+  "generated": "2026-09-07T11:09:10.569Z",
   "patches": [
     {
       "version": "5.3",
@@ -15,20 +15,35 @@
       ],
       "file": "https://star-battle.talv.space/patch/sbr-patch-note-5-3.md",
       "assets": {
+        "assets/5.3/maps/tunnel-to-oblivion-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/tunnel-to-oblivion-sm.png",
         "assets/5.3/maps/tunnel-to-oblivion.png": "https://star-battle.talv.space/patch/assets/5.3/maps/tunnel-to-oblivion.png",
+        "assets/5.3/maps/circle-of-death-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/circle-of-death-sm.png",
         "assets/5.3/maps/circle-of-death.png": "https://star-battle.talv.space/patch/assets/5.3/maps/circle-of-death.png",
+        "assets/5.3/maps/space-anomaly-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/space-anomaly-sm.png",
         "assets/5.3/maps/space-anomaly.png": "https://star-battle.talv.space/patch/assets/5.3/maps/space-anomaly.png",
+        "assets/5.3/maps/two-bacons-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/two-bacons-sm.png",
         "assets/5.3/maps/two-bacons.png": "https://star-battle.talv.space/patch/assets/5.3/maps/two-bacons.png",
+        "assets/5.3/maps/kessel-run-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/kessel-run-sm.png",
         "assets/5.3/maps/kessel-run.png": "https://star-battle.talv.space/patch/assets/5.3/maps/kessel-run.png",
+        "assets/5.3/maps/most-manly-map-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/most-manly-map-sm.png",
         "assets/5.3/maps/most-manly-map.png": "https://star-battle.talv.space/patch/assets/5.3/maps/most-manly-map.png",
+        "assets/5.3/maps/maelstrom-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/maelstrom-sm.png",
         "assets/5.3/maps/maelstrom.png": "https://star-battle.talv.space/patch/assets/5.3/maps/maelstrom.png",
+        "assets/5.3/maps/ember-gate-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/ember-gate-sm.png",
         "assets/5.3/maps/ember-gate.png": "https://star-battle.talv.space/patch/assets/5.3/maps/ember-gate.png",
+        "assets/5.3/maps/islands-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/islands-sm.png",
         "assets/5.3/maps/islands.png": "https://star-battle.talv.space/patch/assets/5.3/maps/islands.png",
+        "assets/5.3/maps/fault-line-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/fault-line-sm.png",
         "assets/5.3/maps/fault-line.png": "https://star-battle.talv.space/patch/assets/5.3/maps/fault-line.png",
+        "assets/5.3/maps/riptide-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/riptide-sm.png",
         "assets/5.3/maps/riptide.png": "https://star-battle.talv.space/patch/assets/5.3/maps/riptide.png",
+        "assets/5.3/maps/delta-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/delta-sm.png",
         "assets/5.3/maps/delta.png": "https://star-battle.talv.space/patch/assets/5.3/maps/delta.png",
+        "assets/5.3/maps/crucible-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/crucible-sm.png",
         "assets/5.3/maps/crucible.png": "https://star-battle.talv.space/patch/assets/5.3/maps/crucible.png",
+        "assets/5.3/maps/binary-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/binary-sm.png",
         "assets/5.3/maps/binary.png": "https://star-battle.talv.space/patch/assets/5.3/maps/binary.png",
+        "assets/5.3/maps/mindfuck-sm.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck-sm.png",
         "assets/5.3/maps/mindfuck.png": "https://star-battle.talv.space/patch/assets/5.3/maps/mindfuck.png"
       }
     },

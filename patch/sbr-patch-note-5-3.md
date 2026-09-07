@@ -11,7 +11,7 @@ tags: [new-content, ui, game-balance, bugfixes]
 
 ## Maps
 
-Three things change in the pool this patch: fifteen maps join, one leaves, and the standard list stops offering you the same battlefield twice over. All **31** maps you can pick are listed in the [map pool catalogue](https://tmp.talv.space/sbr/map-pool/), with per-map layout figures and a guide to reading the previews.
+Three things change in the pool this patch: fifteen maps join, one leaves, and the standard list stops offering you the same battlefield twice over. Click any layout below to open it full size. All **31** maps you can pick are listed in the [map pool catalogue](https://tmp.talv.space/sbr/map-pool/), with full-size layouts, per-map figures and a guide to reading the previews.
 
 ### Experimental — fifteen new maps by VoivoD
 
@@ -25,7 +25,7 @@ Some of these maps give every object its own spawn chance, so they rebuild thems
 
 **Tunnel to Oblivion** · 227 obj
 
-[![Tunnel to Oblivion](./assets/5.3/maps/tunnel-to-oblivion.png)](./assets/5.3/maps/tunnel-to-oblivion.png)
+[![Tunnel to Oblivion](./assets/5.3/maps/tunnel-to-oblivion-sm.png)](./assets/5.3/maps/tunnel-to-oblivion.png)
 
 > The main idea was to make a corridor at the bottom that will connect two bases. As I couldn't place bases on the bottom (SBR map editor only gives you ability to offset them), then I put them in the middle. The tunnel has passages for smaller ships. But bigger ships must go all the way through.
 >
@@ -33,7 +33,7 @@ Some of these maps give every object its own spawn chance, so they rebuild thems
 
 **Circle of Death** · 151 obj
 
-[![Circle of Death](./assets/5.3/maps/circle-of-death.png)](./assets/5.3/maps/circle-of-death.png)
+[![Circle of Death](./assets/5.3/maps/circle-of-death-sm.png)](./assets/5.3/maps/circle-of-death.png)
 
 > Basically a circle of obstacles with passages for smaller and bigger ships. There are some other obstacles at the map borders. Once bigger ships enter the circle, they must commit to exit at the other side or go back. Smaller ships have some passages to escape.
 >
@@ -43,7 +43,7 @@ Some of these maps give every object its own spawn chance, so they rebuild thems
 
 Flips the board: red spawns top-left and blue bottom-right, where nearly every other map in the game runs bottom-left against top-right. Fault Line and Mindfuck, below, take the idea further.
 
-[![Space Anomaly](./assets/5.3/maps/space-anomaly.png)](./assets/5.3/maps/space-anomaly.png)
+[![Space Anomaly](./assets/5.3/maps/space-anomaly-sm.png)](./assets/5.3/maps/space-anomaly.png)
 
 > Where every map makes you play *up right*/*down left*, this one changes the games direction to *up left*/*down right*, effectively disorienting (long time) players. This is the main idea behind the map. To screw everything around, to make things interesting and fresh.
 >
@@ -51,7 +51,7 @@ Flips the board: red spawns top-left and blue bottom-right, where nearly every o
 
 **Two Bacons** · 129 obj
 
-[![Two Bacons](./assets/5.3/maps/two-bacons.png)](./assets/5.3/maps/two-bacons.png)
+[![Two Bacons](./assets/5.3/maps/two-bacons-sm.png)](./assets/5.3/maps/two-bacons.png)
 
 > A fun map in the vein of fy_iceworld or fy_pool_day in cs 1.6. One of these to give variety to map rotation and be absurd. Similar to Char/Port Zion but the corridor is longer and rotated 100 degrees or so. Effectively splitting the map to 3 fighting areas with the corridor area very dangerous to pass through.
 >
@@ -61,7 +61,7 @@ Flips the board: red spawns top-left and blue bottom-right, where nearly every o
 
 The most extreme of the semi-random layouts: 237 of its 455 objects roll at just 10% and another 102 at 50%, so only about a third of the field turns up on any given load. You never play the same Kessel Run twice.
 
-[![Kessel Run](./assets/5.3/maps/kessel-run.png)](./assets/5.3/maps/kessel-run.png)
+[![Kessel Run](./assets/5.3/maps/kessel-run-sm.png)](./assets/5.3/maps/kessel-run.png)
 
 > This map is semi-randomly generated each time it's loaded. Or to be precise - filled with obstacles with fairly low chance to spawn. Large map, so faster farm spawn and limits. This map is different each time.
 >
@@ -69,7 +69,7 @@ The most extreme of the semi-random layouts: 237 of its 455 objects roll at just
 
 **Most Manly Map** · 181 obj
 
-[![Most Manly Map](./assets/5.3/maps/most-manly-map.png)](./assets/5.3/maps/most-manly-map.png)
+[![Most Manly Map](./assets/5.3/maps/most-manly-map-sm.png)](./assets/5.3/maps/most-manly-map.png)
 
 > This is a big heart of obstacles with red clouds all around it. Splits the map into two fighting areas. I added some cloud "horns" to enhance tactical play. Fun and absurd map just like "Two Bacons".
 >
@@ -77,7 +77,7 @@ The most extreme of the semi-random layouts: 237 of its 455 objects roll at just
 
 **Maelstrom** · 104 obj
 
-[![Maelstrom](./assets/5.3/maps/maelstrom.png)](./assets/5.3/maps/maelstrom.png)
+[![Maelstrom](./assets/5.3/maps/maelstrom-sm.png)](./assets/5.3/maps/maelstrom.png)
 
 > Just played this one, and the map is very good to play. This is one of the top maps, like Space Anomaly. Chaotic. Gameplay was really good.
 >
@@ -85,7 +85,7 @@ The most extreme of the semi-random layouts: 237 of its 455 objects roll at just
 
 **Ember Gate** · 93 obj
 
-[![Ember Gate](./assets/5.3/maps/ember-gate.png)](./assets/5.3/maps/ember-gate.png)
+[![Ember Gate](./assets/5.3/maps/ember-gate-sm.png)](./assets/5.3/maps/ember-gate.png)
 
 > Weird at first (no map like this one), but game was really fun. Bases are heavily fortified by obstacles, which actually makes the game a lot more balanced(!!!). There are some "vertical" obstacles, a lot of clouds, not really sure where is the actual cloud, which is unique and a plus.
 >
@@ -93,7 +93,7 @@ The most extreme of the semi-random layouts: 237 of its 455 objects roll at just
 
 **Islands** · 88 obj
 
-[![Islands](./assets/5.3/maps/islands.png)](./assets/5.3/maps/islands.png)
+[![Islands](./assets/5.3/maps/islands-sm.png)](./assets/5.3/maps/islands.png)
 
 > Basically few blobs of obstacles and some clouds. Solid map. When you try to pass the center obstacles as a bigger ship, you can get targeted by a torp and have a problem to outmaneuver it.
 >
@@ -103,7 +103,7 @@ The most extreme of the semi-random layouts: 237 of its 455 objects roll at just
 
 One long rift of rock and cloud cuts the field from corner to corner, with a single gap through the middle — and like Space Anomaly, it plays across the opposite diagonal to the rest of the game.
 
-[![Fault Line](./assets/5.3/maps/fault-line.png)](./assets/5.3/maps/fault-line.png)
+[![Fault Line](./assets/5.3/maps/fault-line-sm.png)](./assets/5.3/maps/fault-line.png)
 
 > Basically long obstacle carving the map into two halves, with some clouds along the rocks. In the middle, the ships can pass through a passage. The opening was: most of the ships went one half, and enemy most ships went other half. Which was funny. Also game direction rotated 90 degrees.
 >
@@ -113,7 +113,7 @@ One long rift of rock and cloud cuts the field from corner to corner, with a sin
 
 The only map in the game on which *every* object rolls a spawn chance — there is no fixed furniture at all, so the wave bands sit somewhere different every single load.
 
-[![Riptide](./assets/5.3/maps/riptide.png)](./assets/5.3/maps/riptide.png)
+[![Riptide](./assets/5.3/maps/riptide-sm.png)](./assets/5.3/maps/riptide.png)
 
 > Waves like rock formations, some clouds.
 >
@@ -121,7 +121,7 @@ The only map in the game on which *every* object rolls a spawn chance — there 
 
 **Delta** · 62 authored, ~46 per match
 
-[![Delta](./assets/5.3/maps/delta.png)](./assets/5.3/maps/delta.png)
+[![Delta](./assets/5.3/maps/delta-sm.png)](./assets/5.3/maps/delta.png)
 
 > The clouds have a random chance to spawn, so every time it's a bit different. Quite good map.
 >
@@ -131,7 +131,7 @@ The only map in the game on which *every* object rolls a spawn chance — there 
 
 A dense knot of rock sits dead centre, sitting right across the line the fighters run along.
 
-[![Crucible](./assets/5.3/maps/crucible.png)](./assets/5.3/maps/crucible.png)
+[![Crucible](./assets/5.3/maps/crucible-sm.png)](./assets/5.3/maps/crucible.png)
 
 > This is a big blob of rocks in the center with some junk spaced apart it. Some clouds. Similar to: Most Manly Map.
 >
@@ -139,7 +139,7 @@ A dense knot of rock sits dead centre, sitting right across the line the fighter
 
 **Binary** · 58 authored, ~41 per match
 
-[![Binary](./assets/5.3/maps/binary.png)](./assets/5.3/maps/binary.png)
+[![Binary](./assets/5.3/maps/binary-sm.png)](./assets/5.3/maps/binary.png)
 
 > It's two clusters of rocks connected by clouds. Pretty good gameplay.
 >
@@ -149,7 +149,7 @@ A dense knot of rock sits dead centre, sitting right across the line the fighter
 
 The outlier of the set in every direction. Play runs straight up and down instead of diagonally, the bases sit **84** apart instead of the usual 160, and the economy runs at **3×** stock across the board — a light fighter every **0.5s**, a heavy every **20s**, a siege every **120s** — with the fighter cap cut to **100**. Twenty-one objects on the entire field.
 
-[![Mindfuck](./assets/5.3/maps/mindfuck.png)](./assets/5.3/maps/mindfuck.png)
+[![Mindfuck](./assets/5.3/maps/mindfuck-sm.png)](./assets/5.3/maps/mindfuck.png)
 
 > Game direction is now up and down. Bases are moved to the center, then spaced apart. There is some space behind bases. Cool looking clouds in the base, left and right of the center of the map, and in the center with few rocks. This is SBR action on steroids.
 >
