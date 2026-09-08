@@ -3,7 +3,7 @@ version: "5.3"
 published: "2026-09-08T00:00Z"
 updated: null
 buildId: "v5.3"
-status: live
+status: test
 tags: [new-content, ui, game-balance, bugfixes]
 ---
 
@@ -227,7 +227,9 @@ The same enemy ship, in the same place, seen on radar from outside the bubble an
 - **Its armour no longer scales with Carapace.** Every Carapace level used to quietly buy extra armour through Decay on top of the ship's own — about **+0.7** per level at full stacks, climbing to **+15.6** by level 20. Decay's share is now flat. The ship's own armour still scales from Carapace exactly as before.
 - **Stacks bleed off one at a time.** They used to share a single timer and vanish together the moment it ran out. Each stack now runs its own **22-second** life, so after a disengage you lose them gradually instead of off a cliff.
 
-**Brood Lord and Corruptor acceleration is back to where it was before 5.0.** That patch raised both minions to 1.5; they return to **0.9375** for Corruptors and **0.1875** for Brood Lords. Measured over 20 units of open space, a Brood Lord now takes about **18.8s** to arrive where it took 14.6s, and a Corruptor **13.1s** against 12.8s — so it is the Brood Lord that really feels it.
+**Brood Lord acceleration is back to where it was before 5.0** — **1.5 → 0.1875**. Measured over 20 units of open space it now takes about **18.8s** to arrive where it took 14.6s. That one is deliberate.
+
+The Corruptor was carried along in the same revert (**1.5 → 0.9375**, 12.8s to 13.1s) and shouldn't have been — only the Brood Lord was meant to move. It will be put back.
 
 ### Queen
 

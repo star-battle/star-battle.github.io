@@ -301,7 +301,7 @@
   <h1>Star Battle Reloaded 5.3 - Patch Notes</h1>
   <div class="meta-row">
     <span class="meta-date">Sep 8, 2026</span>
-    <span class="status-badge status-live">Live on Battle.net</span>
+    <span class="status-badge status-test">Live on Battle.net as separate &#x27;Star Battle Reloaded &lt;TEST&gt;&#x27;</span>
     <span class="tag tag-new-content">new-content</span> <span class="tag tag-ui">ui</span> <span class="tag tag-game-balance">game-balance</span> <span class="tag tag-bugfixes">bugfixes</span>
   </div>
 </div>
@@ -490,7 +490,8 @@
 <li><strong>Its armour no longer scales with Carapace.</strong> Every Carapace level used to quietly buy extra armour through Decay on top of the ship's own — about <strong>+0.7</strong> per level at full stacks, climbing to <strong>+15.6</strong> by level 20. Decay's share is now flat. The ship's own armour still scales from Carapace exactly as before.</li>
 <li><strong>Stacks bleed off one at a time.</strong> They used to share a single timer and vanish together the moment it ran out. Each stack now runs its own <strong>22-second</strong> life, so after a disengage you lose them gradually instead of off a cliff.</li>
 </ul>
-<p><strong>Brood Lord and Corruptor acceleration is back to where it was before 5.0.</strong> That patch raised both minions to 1.5; they return to <strong>0.9375</strong> for Corruptors and <strong>0.1875</strong> for Brood Lords. Measured over 20 units of open space, a Brood Lord now takes about <strong>18.8s</strong> to arrive where it took 14.6s, and a Corruptor <strong>13.1s</strong> against 12.8s — so it is the Brood Lord that really feels it.</p>
+<p><strong>Brood Lord acceleration is back to where it was before 5.0</strong> — <strong>1.5 → 0.1875</strong>. Measured over 20 units of open space it now takes about <strong>18.8s</strong> to arrive where it took 14.6s. That one is deliberate.</p>
+<p>The Corruptor was carried along in the same revert (<strong>1.5 → 0.9375</strong>, 12.8s to 13.1s) and shouldn't have been — only the Brood Lord was meant to move. It will be put back.</p>
 <h3 id="queen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#queen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Queen</h3>
 <p><strong>Blinding Cloud</strong> has been rebuilt around what it was always supposed to do — blind things — and it now reaches the minions that were ignoring it entirely.</p>
 <ul>
