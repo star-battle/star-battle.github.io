@@ -68,6 +68,15 @@
       font-size: 0.875rem;
     }
 
+    /* Only present on a patch that was rebuilt and republished after release.
+       Italic rather than a badge: it qualifies the date beside it, and a second
+       pill next to the status badge reads as a second status. */
+    .meta-updated {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      font-style: italic;
+    }
+
     .status-badge {
       display: inline-block;
       padding: 0.15rem 0.55rem;
@@ -254,6 +263,8 @@
     .index-list a:hover { color: var(--accent); }
 
     .index-date { color: var(--text-muted); font-size: 0.875rem; }
+
+    .index-updated { color: var(--text-muted); font-size: 0.875rem; font-style: italic; }
 
     /* ── Site footer ───────────────────────────────── */
     .site-footer {
