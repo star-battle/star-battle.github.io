@@ -13,6 +13,8 @@
           "battletag": "Rosta#2881",
           "name": "Rosta",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -21,6 +23,8 @@
           "battletag": "BabinHood#21731",
           "name": "BabinHood",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -29,6 +33,8 @@
           "battletag": "Madkn1ght#2662",
           "name": "Madknight",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -37,6 +43,8 @@
           "battletag": "ThePunisher#21659",
           "name": "ThePunisher",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -45,6 +53,8 @@
           "battletag": "Damgood#2823",
           "name": "Damgood",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -53,6 +63,8 @@
           "battletag": "MåntisShrimp#2725",
           "name": "TairyHesticl",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         },
@@ -61,6 +73,8 @@
           "battletag": "Pringl#2495",
           "name": "Pringl",
           "rewards": [
+            "TF0",
+            "TF22",
             "TF23"
           ]
         }
@@ -75,55 +89,91 @@
           "handle": "2-S2-1-1517277",
           "battletag": "OGKush#2823",
           "name": "LionInCage",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-2909599",
           "battletag": "KraKen#2755",
           "name": "KraKen",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-2381777",
           "battletag": "Nox#12796",
           "name": "Nox",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-1674601",
           "battletag": "Seb#2685",
           "name": "Seb",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-2739766",
           "battletag": "LaptopPanda#1176",
           "name": "LaptopPanda",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-10094627",
           "battletag": "GKR#21288",
           "name": "GKR",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-2-2502119",
           "battletag": "Muse#21907",
           "name": "Muse",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-2789082",
           "battletag": "RSS82#2637",
           "name": "Redstar",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         },
         {
           "handle": "2-S2-1-8279175",
           "battletag": "schlachtvieh#21374",
           "name": "unox",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF16",
+            "TF21"
+          ]
         }
       ]
     },
@@ -136,61 +186,91 @@
           "handle": "2-S2-1-3743847",
           "battletag": "Abra#1318",
           "name": "Abra",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-5958028",
           "battletag": "PraetorAlex#1650",
           "name": "PraetorAlex",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-717000",
           "battletag": "IcE#2802",
           "name": "BeggiIcE",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-6343384",
           "battletag": "Ray#12678",
           "name": "Hacker",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-3556586",
           "battletag": "tripleQ#1596",
           "name": "QQQ",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-4750064",
           "battletag": "GeneralX#1606",
           "name": "GeneralX",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-5753237",
           "battletag": "RedDog#1655",
           "name": "RedDog",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-3267338",
           "battletag": "TheMaster1#2375",
           "name": "TheMaster",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-10376219",
           "battletag": "Jih4dJoe#1140",
           "name": "JihadJoe",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         },
         {
           "handle": "2-S2-1-3746957",
           "battletag": "Delta9#1134",
           "name": "DeltaNine",
-          "rewards": []
+          "rewards": [
+            "TF0",
+            "TF20"
+          ]
         }
       ]
     },
