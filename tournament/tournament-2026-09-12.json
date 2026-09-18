@@ -1,0 +1,391 @@
+{
+  "id": "sbr-monthly-2026-09",
+  "url": "https://starbattle.pro/tournaments/monthly-championship",
+  "date": "2026-09-12",
+  "teams": [
+    {
+      "name": "intruder",
+      "tag": "[5ints]",
+      "placement": 1,
+      "players": [
+        {
+          "handle": "2-S2-1-4936606",
+          "battletag": "Diaoyudao#3588",
+          "name": "Diaoyudao",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-11312716",
+          "battletag": "fastruggle#2152",
+          "name": "LIUSUSU",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-8336483",
+          "battletag": "loong#11765",
+          "name": "loong",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10408889",
+          "battletag": "nebula#13966",
+          "name": "nebula",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10128640",
+          "battletag": "Spitfire#31939",
+          "name": "Spitfire",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-2739641",
+          "battletag": "yzc#4598",
+          "name": "yzc",
+          "rewards": [
+            "TF13",
+            "TF16"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legacy Reborn",
+      "tag": "[Iegacy]",
+      "placement": 2,
+      "players": [
+        {
+          "handle": "2-S2-1-1517277",
+          "battletag": "OGKush#2823",
+          "name": "LionInCage",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-2381777",
+          "battletag": "Nox#12796",
+          "name": "Nox",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10045576",
+          "battletag": "Gratiskatze#221136",
+          "name": "Salvation",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1674601",
+          "battletag": "Seb#2685",
+          "name": "Seb",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10376219",
+          "battletag": "Jih4dJoe#1140",
+          "name": "JihadJoe",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-839462",
+          "battletag": "mrCAPSLOCK#2350",
+          "name": "mrCAPSLOCK",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-10949121",
+          "battletag": "DesktopPanda#1675",
+          "name": "DesktopPanda",
+          "rewards": [
+            "TF16"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Red Alert",
+      "tag": "[RA]",
+      "placement": 3,
+      "players": [
+        {
+          "handle": "2-S2-2-939019",
+          "battletag": "Animosus#2960",
+          "name": "Animosus",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-40115",
+          "battletag": "Ivanopala#2657",
+          "name": "Ivanopala",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-320919",
+          "battletag": "sanek#1598",
+          "name": "sanek",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-2-2253572",
+          "battletag": "Severfl#2297",
+          "name": "BattleStar",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-1837026",
+          "battletag": "Bionicle#21267",
+          "name": "Bio",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-830839",
+          "battletag": "VeoRod#21101",
+          "name": "Veo",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-222566",
+          "battletag": "Kidnaper#21369",
+          "name": "Kidnaper",
+          "rewards": []
+        }
+      ]
+    },
+    {
+      "name": "Ravagers of Space",
+      "tag": "[rages]",
+      "placement": 4,
+      "players": [
+        {
+          "handle": "2-S2-1-3211988",
+          "battletag": "Chewbacca#2826",
+          "name": "Chewbacca",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-3839252",
+          "battletag": "Astronyt3#1486",
+          "name": "astronyte",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-7035651",
+          "battletag": "BeasTMoRaL#2843",
+          "name": "TheFirst",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1045021",
+          "battletag": "Pringl#2495",
+          "name": "Pringl",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-342750",
+          "battletag": "Cherrycoke#2577",
+          "name": "Cherrycoke",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1412126",
+          "battletag": "Griskar#2158",
+          "name": "TripppleG",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-8279175",
+          "battletag": "schlachtvieh#21374",
+          "name": "unox",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-1494103",
+          "battletag": "Cyrik#2767",
+          "name": "Cyrik",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6959690",
+          "battletag": "Synaqk#1436",
+          "name": "Synaqk",
+          "rewards": [
+            "TF16"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucky Cow",
+      "tag": "[Lucky Cow]",
+      "placement": 5,
+      "players": [
+        {
+          "handle": "2-S2-1-5771866",
+          "battletag": "Helveticano#1623",
+          "name": "Helvetiжazø",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-2191647",
+          "battletag": "ТайныйКраб#24560",
+          "name": "Maestro",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-486860",
+          "battletag": "Odyzz#1269",
+          "name": "OdysseusVL",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-3829318",
+          "battletag": "MoneyScan#1466",
+          "name": "SoloFarmer",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-158371",
+          "battletag": "Student#2768",
+          "name": "Student",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-5953737",
+          "battletag": "MuRsE#1982",
+          "name": "MuRsE",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-2-1235709",
+          "battletag": "zlo#22169",
+          "name": "Zlo",
+          "rewards": [
+            "TF16"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Freelancers",
+      "tag": "[FRLNC]",
+      "placement": 6,
+      "players": [
+        {
+          "handle": "2-S2-1-2086135",
+          "battletag": "AdmiralNova#2466",
+          "name": "AdmiralNova",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-5205625",
+          "battletag": "Soricelul#2310",
+          "name": "Brenner",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-4872671",
+          "battletag": "Zoran#21543",
+          "name": "ZorLord",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-9156301",
+          "battletag": "Harrogath#21705",
+          "name": "Harrogath",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-2-2169811",
+          "battletag": "IDIM#21913",
+          "name": "IXIO",
+          "rewards": [
+            "TF16"
+          ]
+        },
+        {
+          "handle": "2-S2-1-4440236",
+          "battletag": "Angelo#1856",
+          "name": "Angelo",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-8546679",
+          "battletag": "Drymarro#1849",
+          "name": "Drymarro",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1902385",
+          "battletag": "Pallas#2686",
+          "name": "Hybrenet",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-6522974",
+          "battletag": "alex1338bm#2112",
+          "name": "peterpanus",
+          "rewards": []
+        },
+        {
+          "handle": "2-S2-1-1594292",
+          "battletag": "Sacrifice#2528",
+          "name": "SchakalXVIII",
+          "rewards": []
+        }
+      ]
+    }
+  ]
+}

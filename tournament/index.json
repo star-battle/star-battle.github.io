@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18T16:27:14.651Z",
+  "generated": "2026-09-18T17:56:35.300Z",
   "tournaments": [
     {
       "id": "starbattle2025",
@@ -10,6 +10,11 @@
       "id": "sbr-monthly-2026-08",
       "date": "2026-08-08",
       "file": "tournament-2026-08-08.json"
+    },
+    {
+      "id": "sbr-monthly-2026-09",
+      "date": "2026-09-12",
+      "file": "tournament-2026-09-12.json"
     }
   ],
   "rewards": "player-rewards.json"
