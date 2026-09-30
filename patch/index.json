@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-09T17:37:57.673Z",
+  "generated": "2026-09-30T20:24:54.293Z",
   "patches": [
     {
       "version": "5.3",
@@ -56,8 +56,8 @@
     {
       "version": "5.2",
       "published": "2026-08-14T00:00Z",
-      "updated": null,
-      "buildId": "v5.2-1-g857845ed",
+      "updated": "2026-09-21T19:18Z",
+      "buildId": "v5.2.1-2-ge5198933",
       "status": "live",
       "tags": [
         "game-balance",

@@ -1,8 +1,8 @@
 ---
 version: "5.2"
 published: "2026-08-14T00:00Z"
-updated: null
-buildId: "v5.2-1-g857845ed"
+updated: "2026-09-21T19:18Z"
+buildId: "v5.2.1-2-ge5198933"
 status: live
 tags: [game-balance, bugfixes, new-content, ui]
 ---
@@ -126,6 +126,13 @@ As the ruleset requires, only players who played **at least two games** are cred
 ### Legacy star counts corrected
 
 Separately from the sweep above, the pre-SBR records store cumulative *thresholds* rather than plain counts, and a negative entry in them is meaningful — it lowers the running threshold, which is how a legacy row records stars it should not display. Those entries were previously being discarded as import noise, which credited some profiles with stars that were never earned. Read as stored, **61** older profiles come back in line with their original records, and will show fewer legacy stars than they did in 5.1.
+
+## Hotfixes
+
+Build **v5.2.1-2-ge5198933**, live on EU since 12 September and on NA since 21 September. NA moved to it straight from the 14 August build.
+
+- **Tournament promo** (9 September) — the loading screen and the post-game screen carry a promo for the SBR Monthly Championship #2 on 12 September, with an **Upcoming events** card after each game.
+- **Tournament day** (12 September) — party hats, cakes on the towers, kill bursts and festive kill sounds, for 12–13 September only. Cosmetic; nothing is granted. The loading-screen promo became two panels: starbattle.live, and the tournament with a link to Abra's live cast on YouTube.
 
 ## Credits
 
